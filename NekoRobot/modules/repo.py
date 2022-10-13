@@ -45,8 +45,4 @@ It's Fully stable Repo so you can deploy and make own Bot.
 Powered By:- @Tiger_Networkk
 """
 
-    BUTTON = [
-        [
-            Button.url("📢 Repository", "https://github.com/Awesome-Gtash/OrekiRobot"),
-            
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
