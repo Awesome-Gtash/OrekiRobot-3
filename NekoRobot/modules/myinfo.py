@@ -14,8 +14,8 @@ edit_time = 5
 file1 = "https://te.legra.ph/file/79e8c5ec4a2e030c8782e.jpg"
 file2 = "https://te.legra.ph/file/2a2bc733a2cd06648eda0.jpg"
 file3 = "https://te.legra.ph/file/79e8c5ec4a2e030c8782e.jpg"
-file4 = "https://telegra.ph/file/a502e6322a201f5949058.jpg"
-file5 = "https://telegra.ph/file/737a7b4d519887c35ed21.jpg"
+file4 = "https://te.legra.ph/file/a21e651e3105e5bfec176.jpg"
+file5 = "https://te.legra.ph/file/5c5664308bf911a338983.jpg"
 """ =======================CONSTANTS====================== """
 
 
@@ -28,7 +28,7 @@ async def proboyx(event):
     on = await bot.send_file(
         event.chat_id,
         file=file2,
-        caption=f"♡ Hey {betsy}, I'm Neko\n♡ I'm Created By [Prince](tg://user?id=1732814103)\n♡ Click The Button Below To Get Your Info",
+        caption=f"♡ Hey {betsy}, I'm Oreki\n♡ I'm Created By [Gtash](tg://user?id=5189767566)\n♡ Click The Button Below To Get Your Info",
         buttons=button,
     )
 
