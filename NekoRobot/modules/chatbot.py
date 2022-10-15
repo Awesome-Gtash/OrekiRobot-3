@@ -47,7 +47,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                f"Hey Darling Neko Chatbot disable by {mention_html(user.id, user.first_name)}.",
+                f"Hey My Friend! Oreki Chatbot disable by {mention_html(user.id, user.first_name)}.",
                 parse_mode=ParseMode.HTML,
             )
 
@@ -71,7 +71,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                f"Hey Darling Neko Chatbot enable by {mention_html(user.id, user.first_name)}.",
+                f"Hey My Friend! Oreki Chatbot enable by {mention_html(user.id, user.first_name)}.",
                 parse_mode=ParseMode.HTML,
             )
 
