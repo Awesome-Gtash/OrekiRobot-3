@@ -463,13 +463,13 @@ def stats(update, context):
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
             + f"\n\n[✦ Support](https://t.me/Tigerr_Support) | [✦ Updates](https://t.me/Tiger_Updates)\n\n"
-            + "\n╘══「 by [Programmer • Network](https://t.me/Programmer_Network) 」\n",
+            + "\n╘══「 by [White Tiger • Network](https://t.me/Tiger_Networkk) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Repo", url="github.com/Awesome-Prince/NekoRobot-3"
+                            text="Repo", url="github.com/Awesome-Gtash/OrekiRobot"
                         )
                     ]
                 ]
