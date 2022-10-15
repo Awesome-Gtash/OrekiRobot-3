@@ -77,12 +77,12 @@ async def hmm(yes):
     NekoX += f"**♡ Python Version :** `{python_version}`\n\n"
     NekoX += f"**♡ Telethon Version :** `{tlhver}`\n\n"
     NekoX += f"**♡ Pyrogram Version :** `{pyrover}`\n\n"
-    NekoX += "**♡ My Master :** [LovelyPrince](https://t.me/Its_IZ_PRINCE_xD) "
+    NekoX += "**♡ My Master :** [AloneGtash](https://t.me/Awesome_GtashXD) "
     NekoX += f"Thanks For Adding Me In {yes.chat.title}"
     BUTTON = [
         [
             Button.url("【► Help ◄】", f"https://t.me/{BOT_USERNAME}?start=help"),
-            Button.url("【► Support ◄】", f"https://t.me/{SUPPORT_CHAT}"),
+            Button.url("【► Support ◄】", f"https://t.me/Tigerr_Support"),
         ]
     ]
     on = await neko.send_file(yes.chat_id, file=file2, caption=NekoX, buttons=BUTTON)
