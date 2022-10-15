@@ -293,7 +293,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_animation(
             random.choice(GROUP_START_IMG),
-            caption=f"<b>Yes, Darling I'm alive!\nHaven't sleep since</b>: <code>{uptime}</code>",
+            caption=f"<b>Yes, My Friend I'm alive!\nI didn't die</b>: <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -304,7 +304,7 @@ def start(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="📢 Updates",
-                            url="https://telegram.dog/Programmer_Updates",
+                            url="https://telegram.dog/Tiger_Updates",
                         ),
                     ]
                 ]
