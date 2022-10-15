@@ -37,11 +37,11 @@ from NekoRobot.events import register
 
 edit_time = 5
 """ =======================Neko====================== """
-file1 = "https://telegra.ph/file/cd7aad1ea310312886358.png"
-file2 = "https://telegra.ph/file/48a97320463caa61dba3d.png"
-file3 = "https://telegra.ph/file/2295a7207495eccbbe298.png"
-file4 = "https://telegra.ph/file/67e0bf231a97cd2e364ea.png"
-file5 = "https://telegra.ph/file/990684ecd3d119fa9fec6.png"
+file1 = "https://te.legra.ph/file/bf5880b15953d86e08ffe.jpg"
+file2 = "https://te.legra.ph/file/b85cca4ba0396a87c258c.jpg"
+file3 = "https://te.legra.ph/file/8ed12f0005c8c9c41873e.jpg"
+file4 = "https://te.legra.ph/file/dc3a126a2ff50bae2bd61.jpg"
+file5 = "https://telegra.ph/file/53f38b7a18243a8a2b890.jpg"
 """ =======================Neko====================== """
 
 START_TIME = datetime.utcnow()
