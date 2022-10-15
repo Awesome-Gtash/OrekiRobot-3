@@ -141,7 +141,7 @@ buttons = [
             text="🚑 Support", url=f"https://telegram.dog/Tigerr_Support"
         ),
         InlineKeyboardButton(
-            text="📢 Updates", url="https://telegram.dog/Tiger_Updates"
+            text="📢 Updates", url=f"https://telegram.dog/Tiger_Updates"
         ),
     ],
 ]
