@@ -35,7 +35,7 @@ async def awake(event):
     BUTTON = [
         [
             Button.url("  Updates 📢", "https://telegram.dog/Tiger_Updates"),
-            Button.url(" Support 🧩","https://telegram.dog/Tigerr_Support
+            Button.url(" Support 🛡️", "https://telegram.dog/Tigerr_Support
 "),
         ]
     ]
