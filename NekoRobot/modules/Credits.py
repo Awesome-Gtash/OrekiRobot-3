@@ -41,7 +41,7 @@ REPO LINK : [CLICK](https://github.com/Awesome-Gtash/OrekiRobot.git)
 ORGINAL REPO LINK : [CLICK](http://Github.com/Awesome-Prince/NekoRobot-3.git)
 --------------------------------------------------------------------------------
 I HOPE YOU ALL
-BECAME BEST PROGRAMMERS. THANKS {event.sender.first_name}
+BECAME BEST PROGRAMMERS. THANKS  
 """
     
     BUTTON = [
