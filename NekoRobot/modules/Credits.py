@@ -26,7 +26,7 @@ from telethon import Button
 from NekoRobot import tbot as tbot
 from NekoRobot.events import register
 
-PHOTO = "https://te.legra.ph/file/6464a36460c6daaea783f.jpg"
+PHOTO = "https://te.legra.ph/file/938f513926a01ce37073e.jpg"
 
 
 @register(pattern=("Credits"))
