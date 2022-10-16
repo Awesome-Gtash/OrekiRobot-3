@@ -117,10 +117,10 @@ PM_START_TEXT = """
 *Hola! {},*
 *I am an Anime Themed Advance Group Management Bot With Lot Of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Uptime:* `{}`
-❍ `{}` *Users, Across* `{}` *Chats.*
+➪ *Uptime:* `{}`
+➪ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Guidelines Button Below To Know My Abilities ××
+➪ Try The Help Button Below To Know My Abilities ××
 """
 
 buttons = [
@@ -131,9 +131,9 @@ buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="📓 Guidelines", callback_data="help_back"),
+        InlineKeyboardButton(text="📓 Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Source 🌐", url="https://github.com/Awesome-Gtash/OrekiRobot.git"
+            text="Source Code 🌐", url="https://github.com/Awesome-Gtash/OrekiRobot.git"
         ),
     ],
     [
