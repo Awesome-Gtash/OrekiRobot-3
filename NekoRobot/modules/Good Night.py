@@ -35,7 +35,7 @@ async def awake(event):
     BUTTON = [
         [
             Button.url(" Updates 📣", "https://telegram.dog/Tiger_Updates"),
-        ]🎸
+        ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
 Footer
