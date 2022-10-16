@@ -147,7 +147,9 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-*Main* commands available:
+Hey [{}](tg://user?id={}) your *Oreki* Is here!
+I Help Admins To Manage Their Groups!
+*Main* commands available: 
 ➪ /help: PM's you this message.
 ➪ /help <module name>: PM's you info about that module.
 ➪ /donate: information on how to donate!
