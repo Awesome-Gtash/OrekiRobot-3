@@ -147,7 +147,7 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-Hey [{}](tg://user?id={}) your *Oreki* Is here!
+Hey (tg://user?id={}) your *Oreki* Is here!
 I Help Admins To Manage Their Groups!
 *Main* commands available: 
 ➪ /help: PM's you this message.
