@@ -73,13 +73,13 @@ async def hmm(yes):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     NekoX = f"** ♡ Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}) I'm {BOT_NAME} **\n\n"
-    NekoX += f"**♡ My Uptime :** `{uptime}`\n\n"
-    NekoX += f"**♡ Telethon Version :** `{tlhver}`\n\n"
-    NekoX += f"**♡ Pyrogram Version :** `{pyrover}`\n\n"
-    NekoX += "**♡ My Master :** [The Gtash](https://t.me/Awesome_GtashXD) "
+    NekoX += f"**♡ My Uptime ~ 💝 :** `{uptime}`\n\n"
+    NekoX += f"**♡ Telethon Version ~ 💝 :** `{tlhver}`\n\n"
+    NekoX += f"**♡ Pyrogram Version ~ 💝 :** `{pyrover}`\n\n"
+    NekoX += "**♡ My Master ~ 💝 :** [The Gtash](https://t.me/Awesome_GtashXD) "
     BUTTON = [
         [
-            Button.url("【► Help ◄】", f"https://t.me/{BOT_USERNAME}?start=help"),
+            Button.url("【► Updates ◄】", f"https://t.me/Tiger_Updates"),
             Button.url("【► Support ◄】", f"https://t.me/Tigerr_Support"),
         ]
     ]
