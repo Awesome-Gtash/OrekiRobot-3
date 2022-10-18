@@ -113,11 +113,11 @@ HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
 START_MSG = "I'm Awake Already!\n<b>Haven't Slept Since:</b> <code>{}</code>"
 
 NEKO_STICKERS = (
-    "https://te.legra.ph/file/e6e23a07eac3c58f570b5.png",
-    "https://te.legra.ph/file/974680bb1a48bab7e5538.png",
-    "https://te.legra.ph/file/00804c8f1d5e5f6f8ab82.png",
-    "https://te.legra.ph/file/a6d050970116ff7ddecf1.png",
-    "https://te.legra.ph/file/816ae07a2c00cbdf11d64.png",
+    "CAACAgUAAx0Cb_P9BQACDH1jTqavn0z1I7xDpgEuFEXTKF4vNwACkQUAAh4u6VVHcMBtN7KI7SoE",
+    "CAACAgUAAx0Cb_P9BQACDItjTqcgCydO40sMMUNT-JWwzGbQMAACWAIAApiK6FUXPe9_BxOmqioE",
+    "CAACAgUAAx0Cb_P9BQACDIRjTqcK07LHh9c0acDdweiHdXkdmQACXgIAAr8w4FXfRk29RPXqVyoE",
+    "CAACAgUAAx0Cb_P9BQACDJpjTqdgf57DxAINkK98JfSdeH8vOgACEQIAAmXp6FUfTek8p7CMmSoE",
+    "CAACAgUAAx0Cb_P9BQACDJNjTqdEsd1RwF_TXsfDPZsoIKHuXgACRgIAAmpD4FVhU4OWz5dvgCoE",
 )
 
 PM_START_TEXT = """
