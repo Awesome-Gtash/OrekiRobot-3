@@ -1,40 +1,61 @@
-"""
-MIT License
-Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022 Awesome-Prince
-Copyright (c) 2022, Koy ki   Network, <https://github.com/Awesome-Prince/NekoRobot-3>
-This file is part of @NekoXRobot (Telegram Bot)
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the Software), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
-
 from telethon import Button
 
-from NekoRobot import tbot as tbot
+from NekoRobot import tbot as bot
+from NekoRobot import tbot as tgbot
 from NekoRobot.events import register
 
-PHOTO = "https://te.legra.ph/file/296e9168fa2553f7fde26.jpg"
+edit_time = 5
+""" =======================CONSTANTS====================== """
+file1 = "https://te.legra.ph/file/84696d6e1bebe28976e5a.jpg"
+file2 = "https://te.legra.ph/file/f30b3e091288e185414a3.jpg"
+file3 = "https://te.legra.ph/file/4624003c955098d4a4613.jpg"
+file4 = "https://te.legra.ph/file/f5856e243e9c03d1ed501.jpg"
+file5 = "https://te.legra.ph/file/4406fa4db464bf8316c7f.jpg"
+""" =======================CONSTANTS====================== """
 
 
-@register(pattern=("Hi"))
+@register(pattern="/hi")
+
+@register(pattern=("Hello"))
 async def awake(event):
-    NEKO = f"Hey My Friend, How are you?! {event.sender.first_name}"
+    NEKO = f"{event.sender.first_name} Hello Friend How are you?!"
     BUTTON = [
         [
-            Button.url("  Updates 📢", "https://telegram.dog/Tiger_Updates"),
+            Button.url(" Updates 🔮", "https://telegram.dog/Updates004"),
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
+    
+    await asyncio.sleep(edit_time)
+    ok = await bot.edit_message(event.chat_id, on, file=file3, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok2 = await bot.edit_message(event.chat_id, ok, file=file5, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok3 = await bot.edit_message(event.chat_id, ok2, file=file1, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok7 = await bot.edit_message(event.chat_id, ok6, file=file4, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok4 = await bot.edit_message(event.chat_id, ok3, file=file2, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok5 = await bot.edit_message(event.chat_id, ok4, file=file1, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok6 = await bot.edit_message(event.chat_id, ok5, file=file3, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok7 = await bot.edit_message(event.chat_id, ok6, file=file5, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok7 = await bot.edit_message(event.chat_id, ok6, file=file4, buttons=button)
+
+__help__ = """
+/hi: shows your info in inline button
+"""
+
+__mod_name__ = "Hi"
+__command_list__ = ["Hi"]
