@@ -54,8 +54,8 @@ async def awake(event):
     ok7 = await bot.edit_message(event.chat_id, ok6, file=file4, buttons=button)
 
 __help__ = """
-/hi: shows your info in inline button
+/hi: It will Reply as hi.
 """
 
 __mod_name__ = "Hi"
-__command_list__ = ["Hi"]
+__command_list__ = ["Hi/Hello"]
