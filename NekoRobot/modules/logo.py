@@ -239,6 +239,9 @@ LOGO_LINKS = [
     "https://telegra.ph/file/258c02c002e89287d5d9b.jpg",
     "https://telegra.ph/file/d2abc99773a9d4954c2ba.jpg",
     "https://telegra.ph/file/9849b3940f063b065f4e3.jpg",
+    "https://te.legra.ph/file/7bb2de7dca6e34c89ca9f.jpg",
+    "https://te.legra.ph/file/7a5f0f0a633a305f6c171.jpg",
+    "https://te.legra.ph/file/b1b0979bcaf1334881414.jpg",
 ]
 
 
