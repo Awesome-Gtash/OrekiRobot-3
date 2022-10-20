@@ -113,22 +113,23 @@ HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
 START_MSG = "I'm Awake Already!\n<b>Haven't Slept Since:</b> <code>{}</code>"
 
 NEKO_STICKERS = (
-    "CAACAgUAAx0Cb_P9BQACDH1jTqavn0z1I7xDpgEuFEXTKF4vNwACkQUAAh4u6VVHcMBtN7KI7SoE",
-    "CAACAgUAAx0Cb_P9BQACDItjTqcgCydO40sMMUNT-JWwzGbQMAACWAIAApiK6FUXPe9_BxOmqioE",
-    "CAACAgUAAx0Cb_P9BQACDIRjTqcK07LHh9c0acDdweiHdXkdmQACXgIAAr8w4FXfRk29RPXqVyoE",
-    "CAACAgUAAx0Cb_P9BQACDJpjTqdgf57DxAINkK98JfSdeH8vOgACEQIAAmXp6FUfTek8p7CMmSoE",
-    "CAACAgUAAx0Cb_P9BQACDJNjTqdEsd1RwF_TXsfDPZsoIKHuXgACRgIAAmpD4FVhU4OWz5dvgCoE",
+    "CAACAgQAAx0Cb_P9BQACFsdjUVxcW5w3HTH1k0dJWX172OVYSQACiggAAk3XEFKGGWr9yYBHjioE",
+    "CAACAgQAAx0Cb_P9BQACFtBjUV2Z2ptlwcaQIFz0aCvl2DLPzQACnwoAAnulCFJnpb4Q4L3qZSoE",
+    "CAACAgQAAx0Cb_P9BQACFttjUV3JS-Ma9JKJxYTIWKsidqogaAACnwcAAthvEFIVm9fgYJwwOCoE",
+    "CAACAgQAAx0Cb_P9BQACFuRjUV4ChyAN5IpndbVzhHqpga3M6gACGwgAAqDQEVJKBbDANRJGryoE",
+    "CAACAgQAAx0Cb_P9BQACFu1jUV4ldIfUKtqqINPTzD6NdhzOQQACvQ8AAiPoCFIw05rlLfpZpyoE",
 )
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/0b9c23d669775450ff748.jpg) 」────
-*Hola! {},*
+────「 [{}](https://te.legra.ph/file/fa8735a9cef4c52228518.jpg) 」────
+*Hey I'm Alive! {},*
 *I am an Anime Themed Advance Group Management Bot With Lot Of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ *Uptime:* `{}`
+➪ *Python:* 3.10.6
 ➪ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➪ Try The Help Button Below To Know My Abilities ××
+➪ Hit The *Help* Button Below To Know My Abilities ××
 """
 
 buttons = [
@@ -155,7 +156,7 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-Hey, your *Oreki* Is here!
+Hey Friend, your *Oreki* Is here!
 I Help Admins To Manage Their Groups!
 *Main* commands available: 
 ➪ /help: PM's you this message.
@@ -307,7 +308,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_animation(
             random.choice(GROUP_START_IMG),
-            caption=f"<b>Yes, My Friend I'm alive!\nI didn't die</b>: <code>{uptime}</code>",
+            caption=f"<b>Yes, My Friend I'm alive!\nHaven't sleep since</b>: <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
