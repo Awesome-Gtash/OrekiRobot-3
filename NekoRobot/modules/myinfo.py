@@ -65,11 +65,11 @@ async def callback_query_handler(event):
     try:
         boy = event.sender_id
         PRO = await bot.get_entity(boy)
-        NEKO = "YOUR DETAILS BY NEKO \n\n"
+        NEKO = "YOUR DETAILS BY OREKI  \n\n"
         NEKO += f"FIRST NAME : {PRO.first_name} \n"
         NEKO += f"LAST NAME : {PRO.last_name}\n"
-        NEKO += f"YOU BOT : {PRO.bot} \n"
-        NEKO += f"RESTRICTED : {PRO.restricted} \n"
+        NEKO += f"YOU BOT? : {PRO.bot} \n"
+        NEKO += f"RESTRICTED? : {PRO.restricted} \n"
         NEKO += f"USER ID : {boy}\n"
         NEKO += f"USERNAME : {PRO.username}\n"
         await event.answer(NEKO, alert=True)
