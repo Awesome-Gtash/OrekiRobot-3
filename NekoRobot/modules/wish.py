@@ -5,13 +5,17 @@ from telethon import events
 from NekoRobot import tbot as neko
 
 
-@neko.on(events.NewMessage(pattern="/wish ?(.*)"))
+@register(pattern="^/wish ?(.*)")
 async def wish(e):
+    quew = event.pattern_match.group(1)
+    if event.sender_id != OWNER_ID and not quew:
+        await event.reply(
+            "Friend, please give me some text to say how many that text have chance!\nExample `/wish <I want a chocolate>`"
 
     if e.is_reply:
         mm = random.randint(1, 100)
         lol = await e.get_reply_message()
-        fire = "https://telegra.ph/file/3fe0f7dedb81528a57313.jpg"
+        fire = "https://te.legra.ph/file/79b3c7bfa241a0e4c9fdd.jpg"
         await neko.send_file(
             e.chat_id,
             fire,
@@ -20,7 +24,7 @@ async def wish(e):
         )
     if not e.is_reply:
         mm = random.randint(1, 100)
-        fire = "https://telegra.ph/file/3fe0f7dedb81528a57313.jpg"
+        fire = "https://te.legra.ph/file/79b3c7bfa241a0e4c9fdd.jpg"
         await neko.send_file(
             e.chat_id,
             fire,
