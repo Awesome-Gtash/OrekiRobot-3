@@ -25,8 +25,9 @@ This repo was just reamped to suit an Anime-centric community. All original cred
 
 ### ╔═━「 Creator Info/Credits 」
 
-+ [Alone-Gtash](https://github.com/Awesome-Gtash) : OWNER | DEV
++ [Awesome-Gtash](https://github.com/Awesome-Gtash) : OWNER | DEV
 + [Lovely-Prince](https://github.com/Awesome-Prince) : DEV
++ [OTAZUKI](https://github.com/Otazuki_004) : DEV
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
