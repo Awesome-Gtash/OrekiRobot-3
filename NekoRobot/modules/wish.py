@@ -5,7 +5,7 @@ from telethon import events
 from NekoRobot import tbot as neko
 
 
-@register(pattern="^/wish ?(.*)")
+@neko.on(events.NewMessage(pattern="/wish ?(.*)"))
 async def wish(e):
 
     if e.is_reply:
