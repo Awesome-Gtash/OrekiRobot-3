@@ -26,23 +26,29 @@ from telethon import Button
 from NekoRobot import tbot as tbot
 from NekoRobot.events import register
 
-PHOTO = "https://telegra.ph/file/ab9f474736175a18f1a83.jpg"
+PHOTO = "https://te.legra.ph/file/c9c815a424418265ff2c6.jpg"
 
 
 @register(pattern=("/repo"))
 async def awake(event):
-    NEKO = """
-         We Are So Happy To Announce That We Have Public Our OrekiRobot Repo. ✨🥀
+    HYDRA = """
+         We Are So Happy To Announce That We Have Public Our Oreki Repo. ✨🥀
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-「@OrekiXPro_bot」
+「@OrekiXProRoBot」
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-Here is the Repo Deploy your Own OrekiRobot.
+Here the Repo Deploy your Own Bot.
 ⚜️Repo ➤ https://github.com/Awesome-Gtash/OrekiRobot.git
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-🔰 Thanks for your support 
+🔰 Thanks for your love & support❤️ 
 It's Fully stable Repo so you can deploy and make own Bot.
 ──────────────────
-Powered By:- @Tiger_Networkk
+Powered By:- @Besties_Xd
 """
 
-    await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
+    BUTTON = [
+        [
+            Button.url("📢 Repository", "https://github.com/Awesome-Gtash/OrekiRobot.git"),
+            Button.url("💻 Updates", "https://telegram.dog/Tigerr_Updates"),
+        ]
+    ]
+    await tbot.send_file(event.chat_id, PHOTO, caption=HYDRA, buttons=BUTTON)
