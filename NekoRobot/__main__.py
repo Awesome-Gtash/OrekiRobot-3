@@ -121,7 +121,7 @@ NEKO_STICKERS = (
 )
 
 PM_START_TEXT = """
-────「 [{}](https://te.legra.ph/file/fa8735a9cef4c52228518.jpg) 」────
+────「 [{}] 」────
 *Hey I'm Alive! {},*
 *I am an Anime Themed Advance Group Management Bot With Lot Of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -175,6 +175,12 @@ GROUP_START_IMG = (
     "https://telegra.ph/file/27251c4dfb9dc1da42995.mp4",
     "https://telegra.ph/file/72c9a97678ba7cbbd0092.mp4",
     "https://telegra.ph/file/58cc5ccabdafebcfb849a.mp4",
+)
+
+PM_PHOTO = (
+      "https://te.legra.ph/file/fa8735a9cef4c52228518.jpg",
+      "https://te.legra.ph/file/b0f05cb4e92f04adee6f6.jpg",
+      "https://te.legra.ph/file/31326cd9e6edc25054837.jpg",
 )
 
 DONATE_STRING = """❂ I'm Free for Everyone ❂"""
