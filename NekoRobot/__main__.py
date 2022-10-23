@@ -120,14 +120,8 @@ NEKO_STICKERS = (
     "CAACAgQAAx0Cb_P9BQACFu1jUV4ldIfUKtqqINPTzD6NdhzOQQACvQ8AAiPoCFIw05rlLfpZpyoE",
 )
 
-PM_PHOTO = (
-      "https://te.legra.ph/file/fa8735a9cef4c52228518.jpg",
-      "https://te.legra.ph/file/b0f05cb4e92f04adee6f6.jpg",
-      "https://te.legra.ph/file/31326cd9e6edc25054837.jpg",
-)
-
 PM_START_TEXT = """
-────「 [{}] 」────
+────「 [{}](https://te.legra.ph/file/fa8735a9cef4c52228518.jpg) 」────
 *Hey I'm Alive! {},*
 *I am an Anime Themed Advance Group Management Bot With Lot Of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
