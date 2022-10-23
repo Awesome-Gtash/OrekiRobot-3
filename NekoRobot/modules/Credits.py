@@ -34,12 +34,12 @@ async def awake(event):
     NEKO = """
     Credits:-
 
-*MY MASTER :* [MYAAV BOI](@Awesome_GtashXd)
-*ASSISTANT :* [OTAZUKI](@Otazuki_004)
-*SUPPORTER :* [BARATH](@Call_ME_PROCODER)
-*REPO OWNER :* [PRINCE](@Awesome_Prince)
-*REPO LINK :* [CLICK](https://github.com/Awesome-Gtash/OrekiRobot.git)
-*ORGINAL REPO LINK :* [CLICK](http://Github.com/Awesome-Prince/NekoRobot-3.git)
+**MY MASTER :** [MYAAV BOI](@Awesome_GtashXd)
+**ASSISTANT :** [OTAZUKI](@Otazuki_004)
+**SUPPORTER :** [BARATH](@Call_ME_PROCODER)
+**REPO OWNER :** [LOVELY PRINCE](@Awesome_Prince)
+**REPO LINK :** [CLICK HERE](https://github.com/Awesome-Gtash/OrekiRobot.git)
+**ORGINAL REPO LINK :** [CLICK HERE](http://Github.com/Awesome-Prince/NekoRobot-3.git)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 I HOPE YOU ALL!!!!
 
