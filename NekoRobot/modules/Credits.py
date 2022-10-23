@@ -26,23 +26,24 @@ from telethon import Button
 from NekoRobot import tbot as tbot
 from NekoRobot.events import register
 
-PHOTO = "https://te.legra.ph/file/938f513926a01ce37073e.jpg"
+PHOTO = "https://te.legra.ph/file/51e5179533e2cd4527d31.jpg"
 
 
 @register(pattern=("Credits"))
 async def awake(event):
     NEKO = """
-    Credits
-BOT OWNER : [GTASH](@Awesome_GtashXd)
-REPO OWNER : [PRINCE](@Its_IZ_PRINCE_xD)
-HELPER : [OTAZUKI](@Otazuki_004)
-SUPPORTER : [BARATH](@Call_ME_PROCODER)
-REPO LINK : [CLICK](https://github.com/Awesome-Gtash/OrekiRobot.git)
-ORGINAL REPO LINK : [CLICK](http://Github.com/Awesome-Prince/NekoRobot-3.git)
---------------------------------------------------------------------------------
-I HOPE YOU ALL
-BECAME BEST PROGRAMMERS. THANKS  
-"""
+    Credits:-
+
+*MY MASTER :* [MYAAV BOI](@Awesome_GtashXd)
+*ASSISTANT :* [OTAZUKI](@Otazuki_004)
+*SUPPORTER :* [BARATH](@Call_ME_PROCODER)
+*REPO OWNER :* [PRINCE](@Awesome_Prince)
+*REPO LINK :* [CLICK](https://github.com/Awesome-Gtash/OrekiRobot.git)
+*ORGINAL REPO LINK :* [CLICK](http://Github.com/Awesome-Prince/NekoRobot-3.git)
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+I HOPE YOU ALL!!!!
+
+BECAME THE BEST PROGRAMMERS!. THANKS!!!
     
     BUTTON = [
         [
