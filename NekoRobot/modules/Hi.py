@@ -31,7 +31,7 @@ PHOTO = "https://te.legra.ph/file/880e3d713b81dfd7afaad.jpg"
 
 @register(pattern=("Hi"))
 async def awake(event):
-    NEKO = f"Hi my Friend! How are You?! {event.sender.first_name}"
+    NEKO = f"Hi My Friend! How are You? {event.sender.first_name}"
     BUTTON = [
         [
             Button.url("  Updates 📢", "https://telegram.dog/Tiger_Updates"),
