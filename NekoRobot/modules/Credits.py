@@ -32,7 +32,7 @@ PHOTO = "https://te.legra.ph/file/51e5179533e2cd4527d31.jpg"
 @register(pattern=("Credits"))
 async def awake(event):
     NEKO = """
-    Credits:-
+    **Credits:-**
 
 **MY MASTER :** [MYAAV BOI](@Awesome_GtashXd)
 **ASSISTANT :** [OTAZUKI](@Otazuki_004)
@@ -41,9 +41,9 @@ async def awake(event):
 **REPO LINK :** [CLICK HERE](https://github.com/Awesome-Gtash/OrekiRobot.git)
 **ORGINAL REPO LINK :** [CLICK HERE](http://Github.com/Awesome-Prince/NekoRobot-3.git)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-I HOPE YOU ALL!!!!
+**I Hope You All Guys!!!!**
 
-BECAME THE BEST PROGRAMMERS!. THANKS!!!
+**Become a Best Programmers List!. Thanking You!!!**
 """
 
 
