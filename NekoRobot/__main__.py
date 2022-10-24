@@ -308,14 +308,14 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_animation(
             random.choice(GROUP_START_IMG),
-            caption=f"<b>Hello, My Friend I'm awake already!\nOreki Is Here since</b>: <code>{uptime}</code>",
+            caption=f"<b>Heyyy, My Friend I'm awake already!\nOreki Is Here since</b>: <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
                             text="🚑 Support",
-                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                            url=f"https://telegram.dog/Tiger_SupportChat",
                         ),
                         InlineKeyboardButton(
                             text="📢 Updates",
@@ -395,7 +395,7 @@ def help_button(update: Update, context: CallbackContext) -> None:
                                 text="[► Back ◄]", callback_data="help_back"
                             ),
                             InlineKeyboardButton(
-                                text="[► Support ◄]", url=f"https://t.me/{SUPPORT_CHAT}"
+                                text="[► Support ◄]", url=f"https://t.me/Tiger_SupportChat"
                             ),
                         ]
                     ]
@@ -684,11 +684,11 @@ def donate(update: Update, context: CallbackContext) -> None:
                         [
                             InlineKeyboardButton(
                                 text="📢 Updates",
-                                url="https://telegram.dog/Programmer_Updates",
+                                url="https://telegram.dog/Tiger_Updates",
                             ),
                             InlineKeyboardButton(
                                 text="🚑 Support",
-                                url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                                url=f"https://telegram.dog/Tiger_SupportChat",
                             ),
                         ]
                     ]
