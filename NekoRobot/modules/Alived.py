@@ -26,10 +26,10 @@ from telethon import Button
 from NekoRobot import tbot as tbot
 from NekoRobot.events import register
 
-PHOTO = "https://te.legra.ph/file/2fa3d93813575fd1966c0.jpg"
+PHOTO = "https://te.legra.ph/file/4fad6ec13c07480a0444e.jpg"
 
 
-@register(pattern=("!Alived"))
+@register(pattern=("Alivet"))
 async def awake(event):
     NEKO = f"HEY MY FRIEND, I'm ALIVE!"
     BUTTON = [
