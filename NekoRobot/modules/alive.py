@@ -76,7 +76,7 @@ async def hmm(yes):
     NekoX += f"**♡ My Uptime ~ 💝 :** `{uptime}`\n\n"
     NekoX += f"**♡ Telethon Version ~ 💝 :** `{tlhver}`\n\n"
     NekoX += f"**♡ Pyrogram Version ~ 💝 :** `{pyrover}`\n\n"
-    NekoX += "**♡ My Master ~ 💝 :** [The Gtash](https://t.me/Awesome_GtashXD) "
+    NekoX += "**♡ My Master ~ 💝 :** [Myaav Boi](https://t.me/Awesome_GtashXD) "
     BUTTON = [
         [
             Button.url("【► Updates ◄】", f"https://t.me/Tiger_Updates"),
