@@ -150,7 +150,7 @@ __help__ = """
 *Admins only Commands*:
   • `/Chatbot`*:* Shows chatbot control panel
   
-*Powered By @Tiger_Networkk*
+*Powered By @WhiteTiger_Network*
 """
 
 __mod_name__ = "ChatBot"
