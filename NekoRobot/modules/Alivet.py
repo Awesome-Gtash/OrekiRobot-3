@@ -1,9 +1,9 @@
 """
 MIT License
 Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022 Awesome-Prince
-Copyright (c) 2022, Koy ki   Network, <https://github.com/Awesome-Prince/NekoRobot-3>
-This file is part of @NekoXRobot (Telegram Bot)
+Copyright (C) 2022-2023, Awesome-Gtash
+Copyright (c) 2022-2023, White Tiger • Network, <https://github.com/Awesome-Gtash/OrekiRobot>
+This file is part of @OrekiXProRobot (Telegram Bot)
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the Software), to deal
 in the Software without restriction, including without limitation the rights
