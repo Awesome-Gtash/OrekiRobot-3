@@ -34,7 +34,7 @@ async def awake(event):
     NEKO = f"Go and Make your life is awesome!!! {event.sender.first_name}"
     BUTTON = [
         [
-            Button.url("  Updates 📢", "https://telegram.dog/Updates004"),
+            Button.url("  Support 💌", "https://telegram.dog/Updates004"),
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
@@ -43,5 +43,5 @@ __help__ = """
 Bye: Send Without The "/" & See the magic!
 """
 
-__mod_name__ = "Bye"
-__command_list__ = ["OrekiFunMods"]
+__mod_name__ = "OrekiFunHelps"
+__command_list__ = ["OrekiFunHelps"]
