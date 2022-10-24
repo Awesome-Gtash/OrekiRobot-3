@@ -126,7 +126,7 @@ PM_START_TEXT = """
 *I am an Anime Themed Advance Group Management Bot With Lot Of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ *Uptime:* `{}`
-➪ *Python:* 3.10.6
+➪ *Python:* 3.10.8
 ➪ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ Hit The *Help* Button Below To Know My Abilities ××
