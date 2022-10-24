@@ -31,10 +31,10 @@ PHOTO = "https://te.legra.ph/file/2fa3d93813575fd1966c0.jpg"
 
 @register(pattern=("!Alived"))
 async def awake(event):
-    NEKO = f"HEY MY FRIEND, I'm ALIVE! {event.sender.first_name}"
+    NEKO = f"HEY MY FRIEND, I'm ALIVE!"
     BUTTON = [
         [
-            Button.url("  Support 💌", "https://telegram.dog/Tiger_Updates"),
+            Button.url("  Support 💌", "https://telegram.dog/Tiger_SupportChat"),
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
