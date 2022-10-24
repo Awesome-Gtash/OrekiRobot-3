@@ -38,3 +38,10 @@ async def awake(event):
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
+
+__help__ = """
+Bye: Send Without The "/" & See the magic!
+"""
+
+__mod_name__ = "Bye"
+__command_list__ = ["OrekiFunMods"]
