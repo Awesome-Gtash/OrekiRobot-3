@@ -122,7 +122,7 @@ def chatbot(update: Update, context: CallbackContext):
         Message = message.text
         bot.send_chat_action(chat_id, action="typing")
         kukiurl = requests.get(
-            f"https://api.roseloverx.com/api/chatbot?message=Hi"
+            f"https://api.roseloverx.com/api/chatbot?message={message}"
         )
 
         Kuki = json.loads(kukiurl.text)
