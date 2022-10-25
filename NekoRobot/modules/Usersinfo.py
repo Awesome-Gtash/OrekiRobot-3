@@ -11,24 +11,24 @@ from NekoRobot.events import register
 
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://te.legra.ph/file/79e8c5ec4a2e030c8782e.jpg"
-file2 = "https://te.legra.ph/file/2a2bc733a2cd06648eda0.jpg"
-file3 = "https://te.legra.ph/file/79e8c5ec4a2e030c8782e.jpg"
-file4 = "https://te.legra.ph/file/a21e651e3105e5bfec176.jpg"
-file5 = "https://te.legra.ph/file/5c5664308bf911a338983.jpg"
+file1 = "https://te.legra.ph/file/89b904cc6929e3018f31e.jpg"
+file2 = "https://te.legra.ph/file/ef94e5c2acb389edef9a9.jpg"
+file3 = "https://te.legra.ph/file/0433e4802b235a8e55b8f.jpg"
+file4 = "https://te.legra.ph/file/27a10045aae7e46534436.jpg"
+file5 = "https://te.legra.ph/file/197d0508537753ea61850.jpg"
 """ =======================CONSTANTS====================== """
 
 
-@register(pattern="/myinfo")
+@register(pattern="/userinfo")
 async def proboyx(event):
     await event.get_chat()
     datetime.utcnow()
     betsy = event.sender.first_name
-    button = [[custom.Button.inline("Click Here", data="information")]]
+    button = [[custom.Button.inline("Your Info", data="information")]]
     on = await bot.send_file(
         event.chat_id,
         file=file2,
-        caption=f"♡ Hey {betsy}, I'm Oreki\n♡ I'm Created By [Gtash](tg://user?id=5189767566)\n♡ Click The Button Below To Get Your Info",
+        caption=f"♡ Hey {betsy}, I'm Oreki\n♡ I'm Created By [Myaav Boi](tg://user?id=5189767566)\n♡ Click The Button Below To Get Your Info",
         buttons=button,
     )
 
@@ -69,7 +69,7 @@ async def callback_query_handler(event):
         NEKO += f"FIRST NAME : {PRO.first_name} \n"
         NEKO += f"LAST NAME : {PRO.last_name}\n"
         NEKO += f"YOU BOT? : {PRO.bot} \n"
-        NEKO += f"RESTRICTED? : {PRO.restricted} \n"
+        NEKO += f"RESTRICTED USER? : {PRO.restricted} \n"
         NEKO += f"USER ID : {boy}\n"
         NEKO += f"USERNAME : {PRO.username}\n"
         await event.answer(NEKO, alert=True)
@@ -78,8 +78,8 @@ async def callback_query_handler(event):
 
 
 __help__ = """
-/myinfo: shows your info in inline button
+/userinfo: shows your info in inline button
 """
 
-__mod_name__ = "myinfo"
-__command_list__ = ["myinfo"]
+__mod_name__ = "userinfo"
+__command_list__ = ["usernifo"]
