@@ -1,50 +1,85 @@
-"""
-MIT License
-Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022 Awesome-Prince
-Copyright (c) 2022, Koy ki   Network, <https://github.com/Awesome-Prince/NekoRobot-3>
-This file is part of @NekoXRobot (Telegram Bot)
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the Software), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
+import asyncio
+import datetime
+import re
+from datetime import datetime
 
-from telethon import Button
+from telethon import custom, events
 
-from NekoRobot import tbot as tbot
+from NekoRobot import tbot as bot
+from NekoRobot import tbot as tgbot
 from NekoRobot.events import register
 
-PHOTO = "https://te.legra.ph/file/51e5179533e2cd4527d31.jpg"
+edit_time = 5
+""" =======================CONSTANTS====================== """
+file1 = "https://te.legra.ph/file/79e8c5ec4a2e030c8782e.jpg"
+file2 = "https://te.legra.ph/file/2a2bc733a2cd06648eda0.jpg"
+file3 = "https://te.legra.ph/file/79e8c5ec4a2e030c8782e.jpg"
+file4 = "https://te.legra.ph/file/a21e651e3105e5bfec176.jpg"
+file5 = "https://te.legra.ph/file/5c5664308bf911a338983.jpg"
+""" =======================CONSTANTS====================== """
 
 
-@register(pattern=("/userinfo"))
-async def awake(event):
-    NEKO = """
-    **Your Info:-**
+@register(pattern="/myinfo")
+async def proboyx(event):
+    await event.get_chat()
+    datetime.utcnow()
+    betsy = event.sender.first_name
+    button = [[custom.Button.inline("Click Here", data="information")]]
+    on = await bot.send_file(
+        event.chat_id,
+        file=file2,
+        caption=f"♡ Hey {betsy}, I'm Oreki\n♡ I'm Created By [Gtash](tg://user?id=5189767566)\n♡ Click The Button Below To Get Your Info",
+        buttons=button,
+    )
 
-    msg = f"\n**USER ID**: {user.id}"
-    msg += f"\n**FIRST NAME**: {first_name}"
-    msg += f"\n**LAST NAME**: {last_name}"
-    msg += f"\n**USERNAME**: {entity.username}"
+    await asyncio.sleep(edit_time)
+    ok = await bot.edit_message(event.chat_id, on, file=file3, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok2 = await bot.edit_message(event.chat_id, ok, file=file5, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok3 = await bot.edit_message(event.chat_id, ok2, file=file1, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok7 = await bot.edit_message(event.chat_id, ok6, file=file4, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok4 = await bot.edit_message(event.chat_id, ok3, file=file2, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok5 = await bot.edit_message(event.chat_id, ok4, file=file1, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok6 = await bot.edit_message(event.chat_id, ok5, file=file3, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok7 = await bot.edit_message(event.chat_id, ok6, file=file5, buttons=button)
+
+    await asyncio.sleep(edit_time)
+    ok7 = await bot.edit_message(event.chat_id, ok6, file=file4, buttons=button)
+
+
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"information")))
+async def callback_query_handler(event):
+    try:
+        boy = event.sender_id
+        PRO = await bot.get_entity(boy)
+        NEKO = "YOUR DETAILS BY OREKI  \n\n"
+        NEKO += f"FIRST NAME : {PRO.first_name} \n"
+        NEKO += f"LAST NAME : {PRO.last_name}\n"
+        NEKO += f"YOU BOT? : {PRO.bot} \n"
+        NEKO += f"RESTRICTED? : {PRO.restricted} \n"
+        NEKO += f"USER ID : {boy}\n"
+        NEKO += f"USERNAME : {PRO.username}\n"
+        await event.answer(NEKO, alert=True)
+    except Exception as e:
+        await event.reply(f"{e}")
+
+
+__help__ = """
+/myinfo: shows your info in inline button
 """
 
-
-    BUTTON = [
-        [
-            Button.url("  Updates 📢 ", "https://telegram.dog/Tiger_Updates"),
-            Button.url(" Support 🛡️ ","https://telegram.dog/Tigerr_Support"),
-        ]
-    ]
-    await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
+__mod_name__ = "myinfo"
+__command_list__ = ["myinfo"]
