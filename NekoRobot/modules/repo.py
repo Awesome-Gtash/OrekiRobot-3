@@ -31,7 +31,7 @@ PHOTO = "https://te.legra.ph/file/c9c815a424418265ff2c6.jpg"
 
 @register(pattern=("/repo"))
 async def awake(event):
-    HYDRA = """
+    OREKI = """
          We Are So Happy To Announce That We Have Public Our Oreki Repo. ✨🥀
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 「@OrekiXProRoBot」
@@ -42,13 +42,13 @@ Here the Repo Deploy your Own Bot.
 🔰 Thanks for your love & support❤️ 
 It's Fully stable Repo so you can deploy and make own Bot.
 ──────────────────
-Powered By:- @Besties_Xd
+Powered By:- @Tiger_SupportChat
 """
 
     BUTTON = [
         [
             Button.url("📢 Repository", "https://github.com/Awesome-Gtash/OrekiRobot.git"),
-            Button.url("💻 Updates", "https://telegram.dog/Tigerr_Updates"),
+            Button.url("💻 Updates", "https://telegram.dog/Tiger_Updates"),
         ]
     ]
-    await tbot.send_file(event.chat_id, PHOTO, caption=HYDRA, buttons=BUTTON)
+    await tbot.send_file(event.chat_id, PHOTO, caption=OREKI, buttons=BUTTON)
