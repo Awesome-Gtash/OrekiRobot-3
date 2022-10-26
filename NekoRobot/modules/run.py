@@ -1,9 +1,9 @@
 """
 MIT License
 Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2023, Awesome-Prince
+Copyright (C) 2022-2023, Awesome-Gtash
 Copyright (c) 2022-2023, White Tiger • Network, <https://github.com/Awesome-Gtash/OrekiRobot>
-This file is part of @ElainaXProRobot (Telegram Bot)
+This file is part of @OrekiXProRobot (Telegram Bot)
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the Software), to deal
 in the Software without restriction, including without limitation the rights
@@ -26,8 +26,9 @@ from telethon import Button
 from NekoRobot import tbot as tbot
 from NekoRobot.events import register
 
-PHOTO = "https://te.legra.ph/file/4b0e1482be7287843d876.mp4"
-        "
+PHOTO = "https://te.legra.ph/file/4a33c7d65b7e13832f60b.mp4",
+        "https://te.legra.ph/file/3cb341be8c7ab350872a7.mp4",
+
 
 @register(pattern=("/run"))
 async def awake(event):
