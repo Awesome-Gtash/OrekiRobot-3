@@ -31,11 +31,11 @@ PHOTO = "https://te.legra.ph/file/4a33c7d65b7e13832f60b.mp4",
 
 @register(pattern=("/run"))
 async def awake(event):
-    NEKO = f"I'm Awake Already"
+    OREKI = f"Hello, I'm Awake Already"
     BUTTON = [
         [
             Button.url("  Updates 📢", "https://telegram.dog/Tiger_Updates"),
-            Button.url(" Support 🛡️","https://telegram.dog/Tiger_SupportChat"),
+            Button.url("  Support 🛡️", "https://telegram.dog/Tiger_SupportChat"),
         ]
     ]
-    await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
+    await tbot.send_file(event.chat_id, PHOTO, caption=OREKI, buttons=BUTTON)
