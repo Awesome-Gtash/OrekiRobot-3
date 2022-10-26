@@ -27,7 +27,6 @@ from NekoRobot import tbot as tbot
 from NekoRobot.events import register
 
 PHOTO = "https://te.legra.ph/file/4a33c7d65b7e13832f60b.mp4",
-        "https://te.legra.ph/file/3cb341be8c7ab350872a7.mp4",
 
 
 @register(pattern=("/run"))
