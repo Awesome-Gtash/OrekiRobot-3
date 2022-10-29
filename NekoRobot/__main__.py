@@ -121,15 +121,15 @@ NEKO_STICKERS = (
 )
 
 PM_START_TEXT = """
-────「 [{}](https://te.legra.ph/file/fa8735a9cef4c52228518.jpg) 」────
-*Hey I'm Alive! {},*
+────「 [{}](https://te.legra.ph/file/5aadfffa390146c1fb9a2.jpg) 」────
+*Hey Prince Is Here! {},*
 *I am an Anime Themed Advance Group Management Bot With Lot Of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ *Uptime:* `{}`
 ➪ *Python:* 3.10.8
 ➪ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➪ Hit The *Help* Button Below To Know My Abilities ××
+➪ Hit The *Help* Button Below To Know My Powers ××
 """
 
 buttons = [
@@ -142,7 +142,7 @@ buttons = [
     [
         InlineKeyboardButton(text="📓 Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="My Master 💝", url=f"https://telegram.dog/Awesome_GtashXd"
+            text="My Master 💌", url=f"https://telegram.dog/Awesome_GtashXd"
         ),
     ],
     [
@@ -156,7 +156,7 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-Hey Friend, your *Oreki* Is here!
+Hey, your *Prince* Is here!
 I Help Admins To Manage Their Groups!
 *Main* commands available: 
 ➪ /help: PM's you this message.
