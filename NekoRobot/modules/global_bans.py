@@ -38,7 +38,7 @@ from NekoRobot.modules.sql.users_sql import get_user_com_chats
 GBAN_ENFORCE_GROUP = 6
 
 GBAN_ERRORS = {
-    "User is an administrator of the chat",
+    "User is an admin of this chat",
     "Chat not found",
     "Not enough rights to restrict/unrestrict chat member",
     "User_not_participant",
@@ -46,14 +46,14 @@ GBAN_ERRORS = {
     "Group chat was deactivated",
     "Need to be inviter of a user to kick it from a basic group",
     "Chat_admin_required",
-    "Only the creator of a basic group can kick group administrators",
+    "Only the creator of a basic group can kick group admins",
     "Channel_private",
     "Not in the chat",
-    "Can't remove chat owner",
+    "How i wil remove the group owner?",
 }
 
 UNGBAN_ERRORS = {
-    "User is an administrator of the chat",
+    "User is an admin of the chat",
     "Chat not found",
     "Not enough rights to restrict/unrestrict chat member",
     "User_not_participant",
