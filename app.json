@@ -1,7 +1,7 @@
 {
       "name": "OrekiRobot",
       "description": "An Anime themed Telegram group management bot in development.",
-      "logo": "https://telegra.ph/file/18e6b01aa06b93c13d1ab.png",
+      "logo": "https://te.legra.ph/file/770701af477da095273fc.jpg",
       "keywords": [
          "telegram",
          "anime",
@@ -9,7 +9,7 @@
          "manager",
          "NekoRobot"
       ],   
-   "repository": "https://github.com/Awesome-Prince/NekoRobot-3",
+   "repository": "https://github.com/Awesome-Gtash/OrekiRobot",
    "addons": [
       {
          "options": {
@@ -20,7 +20,7 @@
    ],
    "env": {
       "TOKEN": {
-         "description": "Your bot token. Get one from @BotFather duh",
+         "description": "Your bot token. Get token from @BotFather on telegram",
          "required": true,
          "value": ""
       },
@@ -45,41 +45,41 @@
          "value": "sqldbtype://username:pw@hostname:port/db_name"
       },    
       "BOT_NAME": {
-         "description": "Your Bot Name.",
+         "description": "Replace Your Bot Name.",
          "required": true,
-         "value": "Neko X"
+         "value": "Prince Oreki"
       },
       "BOT_USERNAME": {
-         "description": "Your Bot UserName Without @.",
+         "description": "Your Bot UserName Without the @.",
          "required": true,
-         "value": "Nekox_Robot"
+         "value": "OrekiXProRobot"
       },
       "ERROR_LOGS": {
-         "description": "Error Logs (Channel Ya Group Choice Is Yours)",
+         "description": "Error Logs (Channel or Group Choice Is Yours)",
          "required": true,
          "value": ""
       },
        "HELP_IMG": {
-         "description": "Group Help Img Link.",
+         "description": "Give Your Bot Group Help Image Link.",
          "required": true,
-         "value": "https://telegra.ph/file/ab36976c685575c4e1a5f.png"
+         "value": "https://te.legra.ph/file/3fc4ca9097c7ec4522dbf.jpg"
       },
       "OWNER_ID": {
-         "description": "Your user ID as an integer.",
+         "description": "Replace Your user ID as an integer.",
          "required": true,
-         "value": "5629305049"
+         "value": "5189767566"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "Its_IZ_PRINCE_xD"
+         "value": "Awesome_MB"
       },
       "SUPPORT_CHAT": {
-         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
+         "description": "Replace Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "ProgrammerSupport"
+         "value": "Tiger_SupportChat"
       },
       "EVENT_LOGS": {
-         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+         "description": "Replace Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
          "value": "-123456798"
       },
@@ -91,7 +91,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
          "required": true,
-         "value": "5629305049"
+         "value": "5189767566"
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -156,9 +156,9 @@
          "value": "True"
       },
       "DONATION_LINK": {
-         "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it",
+         "description": "Optional: link where you would like to receive donations. If you dont know leave it",
          "required": false,
-         "value": "t.me/Its_IZ_PRINCE_xD"
+         "value": "t.me/Awesome_GtashXd"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
