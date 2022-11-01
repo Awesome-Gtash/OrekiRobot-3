@@ -156,7 +156,7 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-────「 [{}](https://te.legra.ph/file/5aadfffa390146c1fb9a2.jpg) 」────
+────「 [{}](https://te.legra.ph/file/39b288a934734512d98e5.jpg) 」────
 Hey, your *Prince* Is here!
 I Help Admins To Manage Their Groups!
 *Main* commands available: 
@@ -309,7 +309,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_animation(
             random.choice(GROUP_START_IMG),
-            caption=f"<b>Heyyy, My Friend I'm awake already!\nOreki Is Here since</b>: <code>{uptime}</code>",
+            caption=f"<b>Hola, I'm awake already!\nPrince Oreki Is Here since</b>: <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
