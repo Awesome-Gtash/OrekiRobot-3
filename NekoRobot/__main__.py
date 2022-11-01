@@ -2,8 +2,8 @@
 BSD 2-Clause License
 
 Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince ]
-Copyright (c) 2022-2023, Programmer • Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (C) 2022-2023, Awesome-Gtash, [ https://github.com/Awesome-Gtash ]
+Copyright (c) 2022-2023, White Tiger • Network, [ https://github.com/Awesome-Gtash/OrekiRobot ]
 
 All rights reserved.
 
@@ -156,6 +156,7 @@ buttons = [
 ]
 
 HELP_STRINGS = """
+────「 [{}](https://te.legra.ph/file/5aadfffa390146c1fb9a2.jpg) 」────
 Hey, your *Prince* Is here!
 I Help Admins To Manage Their Groups!
 *Main* commands available: 
