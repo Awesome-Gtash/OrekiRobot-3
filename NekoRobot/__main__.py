@@ -169,13 +169,13 @@ I Help Admins To Manage Their Groups!
 """
 
 GROUP_START_IMG = (
-    "https://telegra.ph/file/e9856732c35fd643b2405.mp4",
-    "https://telegra.ph/file/9f12f99a977d56f3a6784.mp4",
-    "https://telegra.ph/file/a968b9d69c279904bae40.mp4",
-    "https://telegra.ph/file/bf647bb096701fe931edb.mp4",
-    "https://telegra.ph/file/27251c4dfb9dc1da42995.mp4",
-    "https://telegra.ph/file/72c9a97678ba7cbbd0092.mp4",
-    "https://telegra.ph/file/58cc5ccabdafebcfb849a.mp4",
+    "https://te.legra.ph/file/5daed3fffea5dace6bdf6.mp4",
+    "https://te.legra.ph/file/b9cf9f626f8c5e44791d9.mp4",
+    "https://te.legra.ph/file/e6cdb76fc7e86d83b97d5.mp4",
+    "https://te.legra.ph/file/41d159193b7169d71b6a4.mp4",
+    "https://te.legra.ph/file/5ab83524f880813db5b9e.mp4",
+    "https://te.legra.ph/file/8d08411d24225176e28cd.mp4",
+    "https://te.legra.ph/file/7bb995073f9e1bab6ca88.mp4",
 )
 
 DONATE_STRING = """❂ I'm Free for Everyone ❂"""
