@@ -156,7 +156,7 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-────「 [{}](https://te.legra.ph/file/39b288a934734512d98e5.jpg) 」────
+────「 [Prince Oreki 왕자](https://te.legra.ph/file/39b288a934734512d98e5.jpg) 」────
 Hey, your *Prince* Is here!
 I Help Admins To Manage Their Groups!
 *Main* commands available: 
