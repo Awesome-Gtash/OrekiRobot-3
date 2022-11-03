@@ -29,12 +29,13 @@ from NekoRobot.events import register
 PHOTO = "https://te.legra.ph/file/4fad6ec13c07480a0444e.jpg"
 
 
-@register(pattern=("Alivet"))
+@register(pattern=("Oreki"))
 async def awake(event):
-    NEKO = f"HEY MY FRIEND, I'm ALIVE!"
+    OREKI = f"HEY, I'm ALIVE!"
     BUTTON = [
         [
-            Button.url("  Support 💌", "https://telegram.dog/Tiger_SupportChat"),
+            Button.url(" Support 💌", "https://telegram.dog/Tiger_SupportChat"),
+            Button.url(" 📢 Updates", "https://telegram.dog/Tiger_Updates"),
         ]
     ]
-    await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
+    await tbot.send_file(event.chat_id, PHOTO, caption=OREKI, buttons=BUTTON)
