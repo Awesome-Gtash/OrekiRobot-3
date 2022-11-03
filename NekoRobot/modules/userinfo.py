@@ -275,7 +275,7 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Appraising...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b>• Appraisal results •</b> 」\n"
+        f"╒═══「<b>• Your Info •</b> 」\n"
         f"• ID: <code>{user.id}</code>\n"
         f"• First Name: {html.escape(user.first_name)}"
     )
@@ -460,7 +460,7 @@ def stats(update, context):
         update.effective_message.reply_photo(
             NEKO_IMG,
             status
-            + "\n*Bot statistics*:\n"
+            + "\n*Bot status*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
             + f"\n\n[✰ Support](https://t.me/Tiger_SupportChat) | [✰ Updates](https://t.me/Tiger_Updates)\n\n"
             + "\n╘══「 by [White Tiger • Network](https://t.me/WhiteTiger_Network) 」\n",
@@ -480,7 +480,7 @@ def stats(update, context):
             (
                 (
                     (
-                        "\n*Bot statistics*:\n"
+                        "\n*Bot status*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
                     + f"\n\n✰ [Support](https://t.me/Tiger_SupportChat) | ✰ [Updates](https://t.me/Tiger_Updates)\n\n"
