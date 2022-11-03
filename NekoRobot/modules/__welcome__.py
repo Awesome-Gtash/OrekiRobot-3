@@ -31,7 +31,7 @@ PHOTO = "https://te.legra.ph/file/4b0e1482be7287843d876.mp4"
 
 @register(pattern=("Welcome"))
 async def awake(event):
-    NEKO = f" Hey Welcome To The Group, I hope u get many friends in this group"
+    OREKI = f" Hey Welcome To The Group, I hope u get many friends in this group"
     BUTTON = [
         [
             Button.url("  Updates 📢", "https://telegram.dog/Tiger_Updates"),
