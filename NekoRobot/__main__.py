@@ -142,7 +142,7 @@ buttons = [
     [
         InlineKeyboardButton(text="🎗️ Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Source Code 🖤", url=f"https://github.com/Awesome-Gtash/OrekiRobot-2"
+            text="Source Code 🖤", url=f"https://github.com/Awesome-Gtash/OrekiRobot-2.git"
         ),
     ],
     [
