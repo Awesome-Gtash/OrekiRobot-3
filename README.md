@@ -28,4 +28,4 @@ Click The Black Deploy Button & Fill the vars Then Bot Runs Heroku!
 
 ## 💘 Join our Support Group & Updates Channel
 <a href="https://t.me/Tiger_SupportChat"><img src="https://img.shields.io/badge/Support 💌-Telegram%20Group-red.svg?logo=telegram"></a>
-<a href="https://t.me/Tiger_Updates"><img src="https://img.shields.io/badge/Updates 📣-Telegram%20Group-red.svg?logo=telegram"></a>
+<a href="https://t.me/Tiger_Updates"><img src="https://img.shields.io/badge/Updates 📣-Telegram%20Channel-red.svg?logo=telegram"></a>
