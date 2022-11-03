@@ -1,8 +1,8 @@
 """
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (C) 2022-2023, Awesome-Gtash, [ https://github.com/Awesome-Gtash]
+Copyright (c) 2022-2023, White Tiger • Network, [ https://github.com/Awesome-Gtash/OrekiRobot-2 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -37,11 +37,11 @@ from NekoRobot.events import register
 
 edit_time = 5
 """ =======================Neko====================== """
-file1 = "https://te.legra.ph/file/bf5880b15953d86e08ffe.jpg"
-file2 = "https://te.legra.ph/file/b85cca4ba0396a87c258c.jpg"
-file3 = "https://te.legra.ph/file/8ed12f0005c8c9c41873e.jpg"
-file4 = "https://te.legra.ph/file/dc3a126a2ff50bae2bd61.jpg"
-file5 = "https://telegra.ph/file/53f38b7a18243a8a2b890.jpg"
+file1 = "https://te.legra.ph/file/e3a37df24dd0965dba2cf.jpg"
+file2 = "https://te.legra.ph/file/0de0f032e682c031f17d9.jpg"
+file3 = "https://te.legra.ph/file/283d0016973127a7f6cbf.jpg"
+file4 = "https://te.legra.ph/file/964030fa52d6dcc53fe4d.jpg"
+file5 = "https://te.legra.ph/file/d64efaf679941b87b1341.jpg"
 """ =======================Neko====================== """
 
 START_TIME = datetime.utcnow()
@@ -72,15 +72,16 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    NekoX = f"** ♡ Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}) I'm {BOT_NAME} **\n\n"
-    NekoX += f"**♡ My Uptime ~ 💝 :** `{uptime}`\n\n"
-    NekoX += f"**♡ Telethon Version ~ 💝 :** `{tlhver}`\n\n"
-    NekoX += f"**♡ Pyrogram Version ~ 💝 :** `{pyrover}`\n\n"
-    NekoX += "**♡ My Master ~ 💝 :** [Myaav Boi](https://t.me/Awesome_GtashXD) "
+    NekoX = f"** ♡ Hey [{yes.sender.first_name}] I'm Prince! **\n\n"
+    NekoX += f"**♡ My Uptime ~ 💞 :** `{uptime}`\n\n"
+    NekoX += f"**♡ Python Version ~ 💞 :** `{pythver}`\n\n"
+    NekoX += f"**♡ Telethon Version ~ 💞 :** `{tlhver}`\n\n"
+    NekoX += f"**♡ Pyrogram Version ~ 💞 :** `{pyrover}`\n\n"
+    NekoX += f"**♡ My Master ~ 💞 :** [Myaav Boi](https://t.me/Awesome_MB) "
     BUTTON = [
         [
             Button.url("【► Updates ◄】", f"https://t.me/Tiger_Updates"),
-            Button.url("【► Support ◄】", f"https://t.me/Tigerr_Support"),
+            Button.url("【► Support ◄】", f"https://t.me/Tiger_SupportChat"),
         ]
     ]
     on = await neko.send_file(yes.chat_id, file=file2, caption=NekoX, buttons=BUTTON)
