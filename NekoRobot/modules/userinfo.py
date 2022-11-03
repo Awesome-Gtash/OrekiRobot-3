@@ -329,7 +329,7 @@ def info(update: Update, context: CallbackContext):
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Wolf'."
     elif user.id == 5189767566:
-        text += "\n\nSenorita Is Girlfriend Of @Awesome_GtashxD."
+        text += "\n\nIam a Myaav cat @Awesome_MB."
 
     try:
         user_member = chat.get_member(user.id)
@@ -440,7 +440,7 @@ def set_about_me(update: Update, context: CallbackContext):
 def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
     botuptime = get_readable_time((time.time() - StartTime))
-    status = "*╒═══「 System statistics 」*\n\n"
+    status = "*╒═══「 System status 」*\n\n"
     status += "*➪ System Start time:* " + str(uptime) + "\n"
     uname = platform.uname()
     status += "*➪ System:* " + str(uname.system) + "\n"
