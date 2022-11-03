@@ -81,5 +81,5 @@ __help__ = """
 /userinfo: shows your info in inline button
 """
 
-__mod_name__ = "userinfo"
-__command_list__ = ["usernifo"]
+__mod_name__ = "Userinfo"
+__command_list__ = ["Userinfo"]
