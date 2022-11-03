@@ -6,11 +6,11 @@
   <a href="https://github.com/W2HGalaxy-OP/SuzieRoBot/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" /> </a>
 </p>
 
-<p align="center"><a href="https://t.me/ElainaXProbot"><img src="https://te.legra.ph/file/3f9f763cbf14d4b3deee6.jpg" width="600"></a></p>
+<p align="center"><a href="https://t.me/OrekiXProRobot"><img src="https://te.legra.ph/file/bf426ef1ca910801efbd3.jpg" width="600"></a></p>
 
 <p align="center">
-    <a href="https://github.com/Awesome-Gtash/ElainaXRobot"> <img src="https://img.shields.io/github/repo-size/Awesome-Gtash/ElainaXRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Awesome-Gtash/ElainXRobot/commits/princess"> <img src="https://img.shields.io/github/last-commit/Awesome-Gtash/ElainXRobot?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Awesome-Gtash/OrekiRobot-2"> <img src="https://img.shields.io/github/repo-size/Awesome-Gtash/OrekiRobot-2?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Awesome-Gtash/OrekiRobot-2/commits/oreki"> <img src="https://img.shields.io/github/last-commit/Awesome-Gtash/ElainXRobot?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/Awesome-Gtash/ElainaXRobot/issues"> <img src="https://img.shields.io/github/issues/Awesome-Gtash/ElainaXRobot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
