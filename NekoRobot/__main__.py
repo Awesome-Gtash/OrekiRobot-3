@@ -140,9 +140,9 @@ buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="📓 Help", callback_data="help_back"),
+        InlineKeyboardButton(text="🎗️ Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="My Master 💌", url=f"https://telegram.dog/Awesome_GtashXd"
+            text="Source Code 🖤", url=f"https://github.com/Awesome-Gtash/OrekiRobot-2"
         ),
     ],
     [
@@ -151,6 +151,11 @@ buttons = [
         ),
         InlineKeyboardButton(
             text="📢 Updates", url=f"https://telegram.dog/Tiger_Updates"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+            text="My Master 💌", url=f"https://telegram.dog/Awesome_MB"
         ),
     ],
 ]
