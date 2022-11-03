@@ -44,8 +44,8 @@ Support: @Tiger_SupportChat
 
     BUTTON = [
         [
-            Button.url("", "https://github.com/Awesome-Gtash/OrekiRobot.git"),
-            Button.url("💻 Updates", "https://telegram.dog/Tiger_Updates"),
+            Button.url("[► Repo ◄]", "https://github.com/Awesome-Gtash/OrekiRobot-2.git"),
+            Button.url("[► Updates ◄]", "https://telegram.dog/Tiger_Updates"),
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=OREKI, buttons=BUTTON)
