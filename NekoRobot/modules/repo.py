@@ -1,9 +1,9 @@
 """
 MIT License
 Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022 Awesome-Prince
-Copyright (c) 2022, Koyūki • Network, <https://github.com/Awesome-Prince/NekoRobot-3>
-This file is part of @NekoXRobot (Telegram Bot)
+Copyright (C) 2022-2023, Awesome-Gtash
+Copyright (c) 2022-2023, White Tiger • Network, <https://github.com/Awesome-Gtash/OrekiRobot-2>
+This file is part of @OrekiXProRobot (Telegram Bot)
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the Software), to deal
 in the Software without restriction, including without limitation the rights
@@ -32,22 +32,19 @@ PHOTO = "https://te.legra.ph/file/3fad527f4557d914834ee.jpg"
 @register(pattern=("/repo"))
 async def awake(event):
     OREKI = """
-         We Are So Happy To Announce That We Have Public Our Oreki Repo. ✨🥀
+         Hey Guys Now Prince Oreki On Public 🎗️.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-「@OrekiXProRoBot」
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-Here the Repo Deploy your Own Bot.
-⚜️Repo ➤ https://github.com/Awesome-Gtash/OrekiRobot.git
+Click The Repo Button To get the Repo..🤞
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 🔰 Thanks for your love & support❤️ 
-It's Fully stable Repo so you can deploy and make own Bot.
-──────────────────
-Powered By:- @Tiger_SupportChat
+It's Fully stable Repo so you can deploy & make your own Bot.
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+Support: @Tiger_SupportChat
 """
 
     BUTTON = [
         [
-            Button.url("📢 Repository", "https://github.com/Awesome-Gtash/OrekiRobot.git"),
+            Button.url("", "https://github.com/Awesome-Gtash/OrekiRobot.git"),
             Button.url("💻 Updates", "https://telegram.dog/Tiger_Updates"),
         ]
     ]
