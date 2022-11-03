@@ -8,12 +8,11 @@
 
 <p align="center"><a href="https://t.me/OrekiXProRobot"><img src="https://te.legra.ph/file/bf426ef1ca910801efbd3.jpg" width="600"></a></p>
 
-<p align="center">
-    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=pink&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
-</p>
+<p align="center"><a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=pink&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a></p>
 
 
-Your stars 💫 are my motivation.😄 Going to fork this repo?.. first Giva a star 👀.
+Your stars 💫 are my motivation.😄 Going to fork this repo?
+first Giva a star 💫 & Fork🤞...
 
 ## Available on Telegram as [@OrekiXProRoBot](https://t.me/OrekiXProRobot)
 
