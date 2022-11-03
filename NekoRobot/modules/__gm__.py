@@ -1,9 +1,9 @@
 """
 MIT License
 Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022 Awesome-Prince
-Copyright (c) 2022, Koy ki   Network, <https://github.com/Awesome-Prince/NekoRobot-3>
-This file is part of @NekoXRobot (Telegram Bot)
+Copyright (C) 2022-2023, Awesome-Gtash
+Copyright (c) 2022-2023, White Tiger • Network, <https://github.com/Awesome-Gtash/OrekiRobot-2>
+This file is part of @OrekiXProRobot (Telegram Bot)
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the Software), to deal
 in the Software without restriction, including without limitation the rights
@@ -31,10 +31,10 @@ PHOTO = "https://te.legra.ph/file/880e3d713b81dfd7afaad.jpg"
 
 @register(pattern=("Good morning"))
 async def awake(event):
-    NEKO = f"Good morning Friend with a smile on your face. I hope youll have a great day today. Wishing you a very good morning! {event.sender.first_name}"
+    OREKI = f"Good morning Friend with a smile on your face. I hope youll have a great day today. Wishing you a very good morning! {event.sender.first_name}"
     BUTTON = [
         [
             Button.url("  Support 💌", "https://telegram.dog/Tiger_SupportChat"),
         ]
     ]
-    await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
+    await tbot.send_file(event.chat_id, PHOTO, caption=OREKI, buttons=BUTTON)
