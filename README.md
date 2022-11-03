@@ -9,10 +9,7 @@
 <p align="center"><a href="https://t.me/OrekiXProRobot"><img src="https://te.legra.ph/file/bf426ef1ca910801efbd3.jpg" width="600"></a></p>
 
 <p align="center">
-    <a href="https://github.com/Awesome-Gtash/OrekiRobot-2"> <img src="https://img.shields.io/github/repo-size/Awesome-Gtash/OrekiRobot-2?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Awesome-Gtash/OrekiRobot-2/commits/main"> <img src="https://img.shields.io/github/last-commit/Awesome-Gtash/OrekiRobot-2?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Awesome-Gtash/OrekiRobot-2/issues"> <img src="https://img.shields.io/github/issues/Awesome-Gtash/OrekiRobot-2?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=pink&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
 
