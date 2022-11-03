@@ -11,8 +11,7 @@
 <p align="center"><a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=pink&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a></p>
 
 
-Your stars 💫 are my motivation.😄 Going to fork this repo?
-first Giva a star 💫 & Fork🤞...
+**Your stars 💫 are my motivation.😄 Going to fork this repo? first Hit a star 💫 & Fork🤞...**
 
 ## Available on Telegram as [@OrekiXProRoBot](https://t.me/OrekiXProRobot)
 
@@ -27,6 +26,6 @@ Click The Black Deploy Button & Fill the vars Then Bot Runs Heroku!
 ## REPO MADE BY: [@Awesome_MB](https://t.me/Awesome_MB)
 
 
-# 💘 Join our Support Group & Updates Channel
+## 💘 Join our Support Group & Updates Channel
 <a href="https://t.me/Tiger_SupportChat"><img src="https://img.shields.io/badge/Support 💌-Telegram%20Group-red.svg?logo=telegram"></a>
 <a href="https://t.me/Tiger_Updates"><img src="https://img.shields.io/badge/Updates 📣-Telegram%20Group-red.svg?logo=telegram"></a>
