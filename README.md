@@ -28,7 +28,7 @@ Click The Black Deploy Button & Fill the vars Then Bot Runs Heroku!
 ## Credits
 - NekoRobot - Base
 
-## REPO MADE BY: [Myaav Boi](t.me/Awesome_MB)
+## REPO MADE BY: [@Awesome_MB](https://t.me/Awesome_MB)
 
 
 # 💘 Join our Support Group & Updates Channel
