@@ -1,8 +1,8 @@
 """
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (C) 2022-2023, Awesome-Gtash, [ https://github.com/Awesome-Gtash]
+Copyright (c) 2022-2023, White Tiger • Network, [ https://github.com/Awesome-Gtash/OrekiRobot-2 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -40,7 +40,7 @@ data = telegraph.create_account(short_name=babe)
 auth_url = data["auth_url"]
 
 
-@register(pattern="^/t(gm|gt) ?(.*)")
+@register(pattern="^/t(m|gt) ?(.*)")
 async def telegrap(event):
     optional_title = event.pattern_match.group(2)
     if event.reply_to_msg_id:
@@ -68,7 +68,7 @@ async def telegrap(event):
                 os.remove(downloaded_file_name)
                 await tbot.send_message(
                     event.chat_id,
-                    "Your telegraph is complete uploaded!",
+                    "Your tm is now uploaded!",
                     buttons=[
                         [
                             types.KeyboardButtonUrl(
@@ -104,7 +104,7 @@ async def telegrap(event):
             datetime.now()
             await tbot.send_message(
                 event.chat_id,
-                "Your telegraph is complete uploaded!",
+                "Your tm is now uploaded!",
                 buttons=[
                     [
                         types.KeyboardButtonUrl(
@@ -124,4 +124,4 @@ def resize_image(image):
     im.save(image, "PNG")
 
 
-__mod_name__ = "Telegraph"
+__mod_name__ = "TM"
