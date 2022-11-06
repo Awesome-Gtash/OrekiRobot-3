@@ -7,7 +7,7 @@
          "anime",
          "group",
          "manager",
-         "NekoRobot"
+         "OrekiRobot"
       ],   
    "repository": "https://github.com/Awesome-Gtash/OrekiRobot",
    "addons": [
@@ -73,10 +73,19 @@
          "description": "Your username without the @",
          "value": "Awesome_MB"
       },
+      "BOT_ID": {
+         "description": "Needs your bot ID. Use any other bot to get it.",
+         "required": true,
+         "value": ""
+      },
       "SUPPORT_CHAT": {
          "description": "Replace Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
          "value": "Tiger_SupportChat"
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
+        "value": ""
       },
       "EVENT_LOGS": {
          "description": "Replace Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
@@ -87,6 +96,11 @@
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
          "value": "-123456798"
+      },
+      "MONGO_DB_URI": {
+         "description": "Required for database connections.",
+         "required": true,
+         "value": ""
       },      
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
