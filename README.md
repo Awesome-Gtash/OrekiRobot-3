@@ -2,7 +2,7 @@
 
 <h4 align="center">I am an anime themed advanced telegram group management bot with a lot of cool features <br> ... Written with Pyrogram & Telethon...</h4>
 <p align='center'>
-  <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat-square&logo=python&color=green" /> </a>
+  <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat-square&logo=python&color=blue" /> </a>
   <a href="https://github.com/Awesome-Gtash/OrekiRobot-2/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-red.svg?style=flat-square" /> </a>
 </p>
 
@@ -13,11 +13,13 @@
 
 **Your stars 💫 are my motivation.😄 Going to fork this repo? first Hit a star 💫 & Fork🤞...**
 
-## Available on Telegram as [@OrekiXProRoBot](https://t.me/OrekiXProRobot)
+
+
+## Available on Telegram as [@OrekiXProRobot](https://t.me/Orekixprorobot)
 
 ## ✨ Deploy to Heroku ✨
 
-Click The Blue Deploy Button & Fill the vars Then Bot Runs Heroku!
+Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-2"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 ## Credits
