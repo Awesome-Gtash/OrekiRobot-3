@@ -1,6 +1,6 @@
 <h1 align="center"><b>Prince Oreki</b></h1>
 
-<h4 align="center">I am an anime themed advanced telegram group management bot with a lot of cool features <br> ... Written with Pyrogram & Telethon...</h4>
+<h4 align="center">I am an anime themed advanced telegram group management bot with a lot of cool features <br> ..Written with Pyrogram & Telethon..</h4>
 <p align='center'>
   <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat-square&logo=python&color=blue" /> </a>
   <a href="https://github.com/Awesome-Gtash/OrekiRobot-2/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-red.svg?style=flat-square" /> </a>
