@@ -11,7 +11,7 @@
 <p align="center"><a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=pink&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a></p>
 
 
-**Your stars 💫 are my motivation.😄 Going to fork this repo? first Hit a star 💫 Then Fork🤞...**
+**Going to fork this repo? first Hit a star 💫 Then Fork🤞...**
 
 
 
