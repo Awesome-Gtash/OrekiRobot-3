@@ -73,11 +73,11 @@ async def hmm(yes):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     Oreki  = f"**♡ Hey, I'm Prince Oreki!**\n\n"
-    Oreki += f"**♡ My Uptime ~ 💞 :** `{uptime}`\n\n"
-    Oreki += f"**♡ Python Version ~ 💞 :** 3.10.8\n\n"
-    Oreki += f"**♡ Telethon Version ~ 💞 :** `{tlhver}`\n\n"
-    Oreki += f"**♡ Pyrogram Version ~ 💞 :** `{pyrover}`\n\n"
-    Oreki += f"**♡ My Master ~ 💞 :** [Myaav Boi](https://t.me/Awesome_MB)"
+    Oreki += f"**♡ My Uptime ~ 🖤 :** `{uptime}`\n\n"
+    Oreki += f"**♡ Python-telegram-bot Version :** `{ptb}`\n\n"
+    Oreki += f"**♡ Telethon Version ~ 🖤 :** `{tlhver}`\n\n"
+    Oreki += f"**♡ Pyrogram Version ~ 🖤 :** `{pyrover}`\n\n"
+    Oreki += f"**♡ My Master ~ 🖤 :** [Myaav Boi](https://t.me/Awesome_MB)"
     BUTTON = [
         [
             Button.url("【► Updates ◄】", f"https://t.me/Tiger_Updates"),
