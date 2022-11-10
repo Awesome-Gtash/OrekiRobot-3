@@ -24,7 +24,7 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 
 ## Special Creditz
 <a href="https://github.com/Awesome-Gtash"> <img src="https://img.shields.io/badge/Myaav Boi-black?style=for-the-badge&logo=github" alt="myaav boi" /> </a> - OWNER
-<a href="https://github.com/Awesome-Prince"> <img src="https://img.shields.io/badge/Myaav Boi-black?style=for-the-badge&logo=github" alt="lovely prince" /> </a> - SPECIAL HELPER
+<a href="https://github.com/Awesome-Prince"> <img src="https://img.shields.io/badge/Myaav Boi-black?style=for-the-badge&logo=github" alt="lovely prince" /> </a> - SPECIAL
 <a href="https://github.com/Otazuki004"> <img src="https://img.shields.io/badge/Myaav Boi-black?style=for-the-badge&logo=github" alt="otazuki" /> </a> - HELPER
 <a href="https://github.com/Awesome-Prince/NekoRobot-3"> <img src="https://img.shields.io/badge/Myaav Boi-black?style=for-the-badge&logo=github" alt="Neko" /> </a> - Base
 
