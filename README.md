@@ -1,4 +1,4 @@
-<h1 align="center"><b>──「 PRINCE OREKI 」──<h2 align="center">
+<h1 align="center"><b>PRINCE OREKI<h2 align="center">
 
 <h4 align="center">I am an anime themed advanced telegram group management bot with a lot of cool features <br> ..Written with Pyrogram & Telethon..</h4>
 <p align='center'>
@@ -29,9 +29,7 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 
 <a href="https://github.com/Otazuki004"> <img src="https://img.shields.io/badge/otazuki-black?style=for-the-badge&logo=github" alt="otazuki" /> </a> - HELPER
 
-<a href="https://github.com/Awesome-Prince/NekoRobot-3"> <img src="https://img.shields.io/badge/nekorobot-black?style=for-the-badge&logo=github" alt="Neko" /> </a> - Base
-
-## REPO MADE BY: [@Awesome_MB](https://t.me/Awesome_MB)
+<a href="https://github.com/Awesome-Prince/NekoRobot-3"> <img src="https://img.shields.io/badge/nekorobot-black?style=for-the-badge&logo=github" alt="Neko" /> </a> - BASE
 
 
 ## 💘 Join our Support Group & Updates Channel
