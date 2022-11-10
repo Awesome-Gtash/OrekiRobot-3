@@ -1,4 +1,4 @@
-<h1 align="center"><b>──「 Prince Oreki」──<h2 align="center">
+<h1 align="center"><b>──「 PRINCE OREKI 」──<h2 align="center">
 
 <h4 align="center">I am an anime themed advanced telegram group management bot with a lot of cool features <br> ..Written with Pyrogram & Telethon..</h4>
 <p align='center'>
@@ -22,12 +22,11 @@
 Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-2"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-## Credits
-<a href="https://github.com/Awesome-Gtash"> <img src="https://img.shields.io/badge/Myaav Boi-black?style=for-the-badge&logo=github" alt="Myaav Boi" /> </a>
-- **[MyaavBoi](https://github.com/Awesome-Gtash) - Owner**
-- **[LovelyPrince](https://github.com/Awesome-Prince) - Special Helper**
-- **[OTAZUKI](https://github.com/Otazuki004) - Helper**
-- **[NekoRobot](https://github.com/Awesome-Prince/NekoRobot-3) - Base**
+## Special Creditz
+<a href="https://github.com/Awesome-Gtash"> <img src="https://img.shields.io/badge/Myaav Boi-black?style=for-the-badge&logo=github" alt="myaav boi" /> </a> - OWNER
+<a href="https://github.com/Awesome-Prince"> <img src="https://img.shields.io/badge/Myaav Boi-black?style=for-the-badge&logo=github" alt="lovely prince" /> </a> - SPECIAL HELPER
+<a href="https://github.com/Otazuki004"> <img src="https://img.shields.io/badge/Myaav Boi-black?style=for-the-badge&logo=github" alt="otazuki" /> </a> - HELPER
+<a href="https://github.com/Awesome-Prince/NekoRobot-3"> <img src="https://img.shields.io/badge/Myaav Boi-black?style=for-the-badge&logo=github" alt="Neko" /> </a> - Base
 
 ## REPO MADE BY: [@Awesome_MB](https://t.me/Awesome_MB)
 
