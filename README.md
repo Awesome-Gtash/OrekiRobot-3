@@ -15,9 +15,9 @@
 
 
 
-## Available on Telegram as [@OrekiXProRobot](https://t.me/Orekixprorobot)
+## Oreki Is Available on Telegram as [@OrekiXProRobot](https://t.me/Orekixprorobot)
 
-## ✨ Deploy to Heroku ✨
+## Deploy to Heroku 💌
 
 Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-2"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
