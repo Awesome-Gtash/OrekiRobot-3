@@ -1,5 +1,5 @@
 {
-      "name": "OrekiRobot",
+      "name": "Prince Oreki",
       "description": "an anime Themed Advanced Group Management bot with a lot of cool features.",
       "logo": "https://te.legra.ph/file/9b4b80b011fd5de41a35b.jpg",
       "keywords": [
@@ -28,6 +28,11 @@
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
          "value": ""
+      },
+      "AUTO_LEAVING_ASSISTANT": {
+         "description": "If you want your assistant to leave all chats automatically after some time.",
+         "value": "True",
+         "required": false
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
@@ -100,15 +105,10 @@
          "value": "-123456798"
       },
       "MONGO_DB_URI": {
-         "description": "Required for database connections.",
+         "description": "Get a mongodb url from https://cloud.mongodb.com You can leave it blank if you want bot will use Oreki's database for you.",
          "required": true,
          "value": ""
-      },     
-      "CASH_API_KEY": {
-         "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
-         "required": true,
-         "value": "-xyz"
-      },     
+      },
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
          "required": false,
@@ -198,6 +198,16 @@
         "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
         "required": true,
          "value": ""
+      },
+      "UPSTREAM_REPO": {
+        "description": "If you dont know this, Leave as it is",
+        "value": "https://github.com/Awesome-Gtash/OrekiRobot-2",
+        "required": true
+      },
+      "UPSTREAM_BRANCH": {
+        "description": "Upstream Repo's Branch Name",
+        "value": "main",
+        "required": true
       }
    }
 }
