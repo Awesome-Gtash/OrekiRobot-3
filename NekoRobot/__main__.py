@@ -3,7 +3,7 @@ BSD 2-Clause License
 
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Gtash, [ https://github.com/Awesome-Gtash ]
-Copyright (c) 2022-2023, White Tiger • Network, [ https://github.com/Awesome-Gtash/OrekiRobot ]
+Copyright (c) 2022-2023, White Tiger • Network, [ https://github.com/Awesome-Gtash/OrekiRobot-2 ]
 
 All rights reserved.
 
@@ -41,6 +41,7 @@ from sys import argv
 from typing import Optional
 
 from pyrogram import idle
+from pyrogram import __version__ as pyrover
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -126,7 +127,7 @@ PM_START_TEXT = """
 *I am an Anime Themed Advance Group Management Bot With Lot Of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ *Uptime:* `{}`
-➪ *Python:* 3.10.8
+➪ *Python:* `{pyrover}´
 ➪ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ Hit The *Help* Button Below To Know My Powers ××
