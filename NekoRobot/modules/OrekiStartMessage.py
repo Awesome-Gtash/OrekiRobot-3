@@ -20,4 +20,4 @@ BUTTON = [
             Button.url("  Help 🎗️", "https://t.me/OrekiXProRobot?start=help"),
         ]
     ]
-    tbot.send_file(-1001878260997, START_PIC, caption=OREKI, buttons=BUTTON)
+    tbot.send_file(1001878260997, START_PIC, caption=OREKI, buttons=BUTTON)
