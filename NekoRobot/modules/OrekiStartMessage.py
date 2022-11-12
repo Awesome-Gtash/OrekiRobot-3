@@ -1,9 +1,23 @@
-OREKI = """
-Prince Oreki 왕자 Is Started [!](https://te.legra.ph/file/5aadfffa390146c1fb9a2.jpg)
+from pyrogram import __version__ as pyrover
+from telegram import __version__ as ptb
+from telethon import Button
+from telethon import __version__ as thlver
 
-➪ Uptime: I'm Always Awaken✨👀
-➪ Python Vesion: 3.10.6
-➪ Pyrogram Version: 2.0.40
-➪ Telethon Version: 1.24.0
-➪ Python-Telegram-Bot Version: 13.13
+OREKI_PIC = "https://te.legra.ph/file/61bbf07e33a148006dc67.jpg"
+
+START_OREKI = f"""
+Prince Oreki 왕자 Is Started!
+
+➪ Uptime:<b><code>{}<b><code>
+➪ Python Version:<b><code>{}<b><code>
+➪ Pyrogram Version: {pyrover}
+➪ Telethon Version: {thlver}
+➪ Python-Telegram-Bot Version: {ptb}
 """
+
+START_BUTTON = [
+    [
+        Button.url("Help 🎗️", "https://t.me/orekixprorobot?start=help"),
+    ]
+]
+await tbot.send_file(-1001878260997, OREKI_PIC, caption=OREKI, buttons=BUTTON),
