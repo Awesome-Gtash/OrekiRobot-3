@@ -21,4 +21,4 @@ BUTTON = [
         Button.url("Help 🎗️", "https//t.me/OrekiXProRobot?start=help"),
     ]
 ]
-await tbot.send file(-1001878260997, START_PIC, caption=OREKI, buttons=BUTTON)
+await tbot.send_file(-1001878260997, START_PIC, caption=OREKI, buttons=BUTTON)
