@@ -41,7 +41,6 @@ from sys import argv
 from typing import Optional
 
 from pyrogram import idle
-from pyrogram import __version__ as pyrover
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -127,7 +126,7 @@ PM_START_TEXT = """
 *I am an Anime Themed Advance Group Management Bot With Lot Of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ *Uptime:* `{}`
-➪ *Python:* `{pyrover}´
+➪ *Python:* 3.10.8
 ➪ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ Hit The *Help* Button Below To Know My Powers ××
