@@ -732,7 +732,6 @@ def main():
         try:
             NEKO_PTB.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                f"{OREKI}",
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     [
