@@ -27,8 +27,6 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 
 <a href="https://github.com/Awesome-Prince"> <img src="https://img.shields.io/badge/lovely prince-black?style=for-the-badge&logo=github" alt="lovely prince" /> </a> - SPECIAL
 
-<a href="https://github.com/Otazuki004"> <img src="https://img.shields.io/badge/otazuki-black?style=for-the-badge&logo=github" alt="otazuki" /> </a> - HELPER
-
 <a href="https://github.com/Awesome-Prince/NekoRobot-3"> <img src="https://img.shields.io/badge/nekorobot-black?style=for-the-badge&logo=github" alt="Neko" /> </a> - BASE
 
 
