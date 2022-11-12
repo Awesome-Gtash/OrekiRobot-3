@@ -30,7 +30,6 @@ from NekoRobot import (
     INFOPIC,
     NEKO_PTB,
     OWNER_ID,
-    SUPPORT_CHAT,
     TIGERS,
     WOLVES,
     StartTime,
@@ -241,12 +240,8 @@ def info(update: Update, context: CallbackContext):
     chat = update.effective_chat
     buttons = [
         [
-            InlineKeyboardButton(
-                text="Updates", url="https://t.me/Tiger_Updates"
-            ),
-            InlineKeyboardButton(
-                text="Support", url="https://t.me/Tiger_SupportChat"
-            ),
+            InlineKeyboardButton(text="Updates", url="https://t.me/Tiger_Updates"),
+            InlineKeyboardButton(text="Support", url="https://t.me/Tiger_SupportChat"),
         ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -479,10 +474,7 @@ def stats(update, context):
         update.effective_message.reply_text(
             (
                 (
-                    (
-                        "\n*Bot status*:\n"
-                        + "\n".join(mod.__stats__() for mod in STATS)
-                    )
+                    ("\n*Bot status*:\n" + "\n".join(mod.__stats__() for mod in STATS))
                     + f"\n\n✰ [Support](https://t.me/Tiger_SupportChat) | ✰ [Updates](https://t.me/Tiger_Updates)\n\n"
                 )
                 + "╘══「 by [White Tiger • Network](https://t.me/Tiger_Networkk) 」\n"

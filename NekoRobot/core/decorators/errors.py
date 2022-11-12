@@ -6,8 +6,6 @@ from functools import wraps
 
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
-from SophiaBot import EVENT_LOGS , pbot 
-
 
 def split_limits(text):
     if len(text) < 2048:

@@ -31,7 +31,7 @@ from pyrogram import __version__ as pyrover
 from telethon import Button
 from telethon import __version__ as tlhver
 
-from NekoRobot import BOT_NAME, BOT_USERNAME
+from NekoRobot import BOT_NAME
 from NekoRobot import tbot as neko
 from NekoRobot.events import register
 

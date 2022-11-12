@@ -44,7 +44,9 @@ Support: @Tiger_SupportChat
 
     BUTTON = [
         [
-            Button.url("[► Repo ◄]", "https://github.com/Awesome-Gtash/OrekiRobot-2.git"),
+            Button.url(
+                "[► Repo ◄]", "https://github.com/Awesome-Gtash/OrekiRobot-2.git"
+            ),
             Button.url("[► Updates ◄]", "https://telegram.dog/Tiger_Updates"),
         ]
     ]

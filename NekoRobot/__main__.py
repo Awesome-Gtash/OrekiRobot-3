@@ -84,6 +84,7 @@ from NekoRobot.modules.helper_funcs.chat_status import is_user_admin
 from NekoRobot.modules.helper_funcs.misc import paginate_modules
 from NekoRobot.modules.OrekiStartMessage import OREKI
 
+
 def get_readable_time(seconds: int) -> str:
     count = 0
     ping_time = ""
@@ -142,7 +143,8 @@ buttons = [
     [
         InlineKeyboardButton(text="🎗️ Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Source Code 🖤", url=f"https://github.com/Awesome-Gtash/OrekiRobot-2.git"
+            text="Source Code 🖤",
+            url=f"https://github.com/Awesome-Gtash/OrekiRobot-2.git",
         ),
     ],
     [
@@ -401,7 +403,8 @@ def help_button(update: Update, context: CallbackContext) -> None:
                                 text="[► Back ◄]", callback_data="help_back"
                             ),
                             InlineKeyboardButton(
-                                text="[► Support ◄]", url=f"https://t.me/Tiger_SupportChat"
+                                text="[► Support ◄]",
+                                url=f"https://t.me/Tiger_SupportChat",
                             ),
                         ]
                     ]
@@ -727,34 +730,27 @@ def migrate_chats(update: Update):
 def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            NEKO_PTB.bot.sendMessage(f"@{SUPPORT_CHAT}", f"{OREKI}", parse_mode=ParseMode.MARKDOWN,
-
-            reply_markup=InlineKeyboardMarkup(
-
-                [
-
-                  [                  
-
-                       InlineKeyboardButton(
-
-                             text="[► Click Here ◄]",
-
-                             url=f"https://t.me/Besties_XD"),
-
-
-                     ] 
-
-                ]
-
-            ),
-
-        )
+            NEKO_PTB.bot.sendMessage(
+                f"@{SUPPORT_CHAT}",
+                f"{OREKI}",
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(
+                                text="[► Click Here ◄]", url=f"https://t.me/Besties_XD"
+                            ),
+                        ]
+                    ]
+                ),
+            )
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!")
+                "Bot isnt able to send message to support_chat, go and check!"
+            )
         except BadRequest as e:
             LOGGER.warning(e.message)
-            
+
     test_handler = CommandHandler("test", test, run_async=True)
     start_handler = CommandHandler("start", start, run_async=True)
 
