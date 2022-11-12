@@ -4,13 +4,13 @@ from telethon import button
 from telethon import __version__ as tlhver
 from NekoRobot import tbot as tbot
 
-START_PIC = ""
+START_PIC = "https://te.legra.ph/file/af9b448b3f64853a806d7.jpg"
 
 OREKI = """
 Prince Oreki 왕자 Is Started!
 
 ➪ Uptime:</b> <code>{}</code>
-➪ Python:</b> <code>{}</code>
+➪ Python Vesion:</b> <code>{}</code>
 ➪ Pyrogram Version: {pyrover}
 ➪ Telethon Version: {tlhver}
 ➪ Python-Telegram-Bot Version: {ptb}
