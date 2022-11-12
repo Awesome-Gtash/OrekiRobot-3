@@ -1,6 +1,6 @@
 from pyrogram import __version__ as pyrover
-from telethon import __version__ as tlhver
 from telegram import __version__ as ptb
+from telethon import __version__ as tlhver
 
 OREKI = f"""
 Prince Oreki 왕자 Is Started!
