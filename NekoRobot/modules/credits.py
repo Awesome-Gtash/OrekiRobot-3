@@ -2,7 +2,7 @@
 MIT License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Gtash
-Copyright (c) 2022-2023, Koy ki   Network, <https://github.com/Awesome-Gtash/OrekiRobot-2>
+Copyright (c) 2022-2023, White Tiger • Network, <https://github.com/Awesome-Gtash/OrekiRobot-2>
 This file is part of @OrekiXProRobot (Telegram Bot)
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the Software), to deal
@@ -34,9 +34,9 @@ async def awake(event):
     OREKI = """
     **Credits:-**
 
-**MY MASTER :** [MYAAV BOI](@Awesome_MB)
-**ASSISTANT :** [OTAZUKI](@Otazuki_004)
-**SPECIAL HELPER :** [LOVELY PRINCE](@Awesome_Prince)
+**MASTER :** [MYAAV BOI](t.me/Awesome_MB)
+**DEV :** [OTAZUKI](t.me/Otazuki_004)
+**SPECIAL BOI :** [LOVELY PRINCE](t.me/Awesome_Prince)
 **REPO LINK :** [CLICK HERE](https://github.com/Awesome-Gtash/OrekiRobot-2.git)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 **I Hope You All Guys!!!!**
