@@ -83,7 +83,6 @@ from NekoRobot import (
 from NekoRobot.modules import ALL_MODULES
 from NekoRobot.modules.helper_funcs.chat_status import is_user_admin
 from NekoRobot.modules.helper_funcs.misc import paginate_modules
-from NekoRobot.modules.OrekiStartMessage import OREKI
 
 
 def get_readable_time(seconds: int) -> str:
