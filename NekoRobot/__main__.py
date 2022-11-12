@@ -82,7 +82,7 @@ from NekoRobot import (
 from NekoRobot.modules import ALL_MODULES
 from NekoRobot.modules.helper_funcs.chat_status import is_user_admin
 from NekoRobot.modules.helper_funcs.misc import paginate_modules
-
+from NekoRobot.modules.OrekiStartMessage import OREKI
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -727,7 +727,7 @@ def migrate_chats(update: Update):
 def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            NEKO_PTB.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Iam Alive!](https://te.legra.ph/file/af9b448b3f64853a806d7.jpg)", parse_mode=ParseMode.MARKDOWN,
+            NEKO_PTB.bot.sendMessage(f"@{SUPPORT_CHAT}", f"{OREKI}", parse_mode=ParseMode.MARKDOWN,
 
             reply_markup=InlineKeyboardMarkup(
 
