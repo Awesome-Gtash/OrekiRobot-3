@@ -2,7 +2,7 @@ from pyrogram import __version__ as pyrover
 from telegram import __version__ as ptb
 from telethon import button
 from telethon import __version__ as tlhver
-from NekoRobot import tbot as tbot
+from NekoRobot import tbot
 
 START_PIC = "https://te.legra.ph/file/af9b448b3f64853a806d7.jpg"
 
@@ -21,4 +21,4 @@ BUTTON = [
         Button.url("Help 🎗️", "https//t.me/OrekiXProRobot?start=help"),
     ]
 ]
-await tbot.send_file(-1001878260997, START_PIC, caption=OREKI, buttons=BUTTON)
+tbot.send_file(-1001878260997, START_PIC, caption=OREKI, buttons=BUTTON)
