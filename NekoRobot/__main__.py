@@ -725,6 +725,36 @@ def migrate_chats(update: Update):
 
 
 def main():
+    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
+        try:
+            NEKO_PTB.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Iam Alive!](https://te.legra.ph/file/af9b448b3f64853a806d7.jpg)", parse_mode=ParseMode.MARKDOWN,
+
+            reply_markup=InlineKeyboardMarkup(
+
+                [
+
+                  [                  
+
+                       InlineKeyboardButton(
+
+                             text="[► Click Here ◄]",
+
+                             url=f"https://t.me/Besties_XD"),
+
+
+                     ] 
+
+                ]
+
+            ),
+
+        )
+        except Unauthorized:
+            LOGGER.warning(
+                "Bot isnt able to send message to support_chat, go and check!")
+        except BadRequest as e:
+            LOGGER.warning(e.message)
+            
     test_handler = CommandHandler("test", test, run_async=True)
     start_handler = CommandHandler("start", start, run_async=True)
 
