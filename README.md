@@ -31,11 +31,11 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 <p align="center"><a href="https://railway.app/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-2"> <img src="https://img.shields.io/badge/Deploy%20On%20Railway-violet?style=for-the-badge&logo=railway" width="220" height="38.45"/></a></p>
   
 ## Special Creditz
-<a href="https://github.com/Awesome-Gtash"> <img src="https://img.shields.io/badge/myaav boi-black?style=for-the-badge&logo=github" alt="myaav boi" /> </a> - OWNER
+<a href="https://github.com/Awesome-Gtash"> <img src="https://img.shields.io/badge/myaav boi-black?style=for-the-badge&logo=github" alt="myaav boi" /> </a>
 
-<a href="https://github.com/Awesome-Prince"> <img src="https://img.shields.io/badge/lovely prince-black?style=for-the-badge&logo=github" alt="lovely prince" /> </a> - SPECIAL
+<a href="https://github.com/Awesome-Prince"> <img src="https://img.shields.io/badge/lovely prince-black?style=for-the-badge&logo=github" alt="lovely prince" /> </a>
 
-<a href="https://github.com/Awesome-Prince/NekoRobot-3"> <img src="https://img.shields.io/badge/nekorobot-black?style=for-the-badge&logo=github" alt="Neko" /> </a> - BASE
+<a href="https://github.com/Awesome-Prince/NekoRobot-3"> <img src="https://img.shields.io/badge/nekorobot-black?style=for-the-badge&logo=github" alt="Neko" /> </a>
 
 
 ## 💘 Join our Support Group & Updates Channel
