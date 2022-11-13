@@ -21,7 +21,24 @@
 
 Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-2"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
-  
+
+## Special Creditz
+	
+	
+<a href="https://github.com/Awesome-Gtash"> <img src="https://img.shields.io/badge/myaav boi-black?style=for-the-badge&logo=github" alt="myaav boi" /> </a>
+
+<a href="https://github.com/Awesome-Prince"> <img src="https://img.shields.io/badge/lovely prince-black?style=for-the-badge&logo=github" alt="lovely prince" /> </a>
+
+<a href="https://github.com/Awesome-Prince/NekoRobot-3"> <img src="https://img.shields.io/badge/nekorobot-black?style=for-the-badge&logo=github" alt="Neko" /> </a>
+
+
+## 💘 Join our Support Group & Updates Channel
+	
+	
+<a href="https://t.me/Tiger_SupportChat"><img src="https://img.shields.io/badge/Support 💌-Telegram%20Group-red.svg?logo=telegram"></a>
+<a href="https://t.me/Tiger_Updates"><img src="https://img.shields.io/badge/Updates 📣-Telegram%20Channel-red.svg?logo=telegram"></a>
+
+	
 <details>
 	<summary>More Deploy Options</summary>
 
@@ -31,16 +48,3 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 
 <a href="https://railway.app/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-2"> <img src="https://img.shields.io/badge/Deploy%20On%20Railway-violet?style=for-the-badge&logo=railway" width="220" height="38.45"/></a></p>
 <details>
-  
-  
-## Special Creditz
-<a href="https://github.com/Awesome-Gtash"> <img src="https://img.shields.io/badge/myaav boi-black?style=for-the-badge&logo=github" alt="myaav boi" /> </a>
-
-<a href="https://github.com/Awesome-Prince"> <img src="https://img.shields.io/badge/lovely prince-black?style=for-the-badge&logo=github" alt="lovely prince" /> </a>
-
-<a href="https://github.com/Awesome-Prince/NekoRobot-3"> <img src="https://img.shields.io/badge/nekorobot-black?style=for-the-badge&logo=github" alt="Neko" /> </a>
-
-
-## 💘 Join our Support Group & Updates Channel
-<a href="https://t.me/Tiger_SupportChat"><img src="https://img.shields.io/badge/Support 💌-Telegram%20Group-red.svg?logo=telegram"></a>
-<a href="https://t.me/Tiger_Updates"><img src="https://img.shields.io/badge/Updates 📣-Telegram%20Channel-red.svg?logo=telegram"></a>
