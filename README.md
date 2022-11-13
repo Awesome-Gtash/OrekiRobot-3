@@ -32,13 +32,13 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 
 ## Deploy On Okteto 🎗️
 
-<p align="center"><a href="https://okteto.com/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-2"> <img src="https://img.shields.io/badge/Deploy%20On%20Okteto-green?style=for-the-badge&logo=okteto" width="220" height="38.45"/></a></p>
+<a href="https://okteto.com/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-2"> <img src="https://img.shields.io/badge/Deploy%20On%20Okteto-green?style=for-the-badge&logo=okteto" width="220" height="38.45"/></a></p>
 
   
   
 ## Deploy On Railway 💖
 
-<p align="center"><a href="https://railway.app/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-2"> <img src="https://img.shields.io/badge/Deploy%20On%20Railway-violet?style=for-the-badge&logo=railway" width="220" height="38.45"/></a></p>
+<a href="https://railway.app/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-2"> <img src="https://img.shields.io/badge/Deploy%20On%20Railway-violet?style=for-the-badge&logo=railway" width="220" height="38.45"/></a></p>
   
   
   
