@@ -1,5 +1,5 @@
-NekoRobot/*.session
-NekoRobot/*.session-journal
+OrekiRobot/*.session
+OrekiRobot/*.session-journal
 log.txt
 *.pyc
 .idea/
@@ -7,13 +7,13 @@ log.txt
 .pydevproject
 .directory
 .vscode
-NekoRobot/modules/helper_funcs/temp.txt
-NekoRobot/elevated_users.json
-start-3.6.bat
+OrekiRobot/modules/helper_funcs/temp.txt
+OrekiRobot/elevated_users.json
+start-3.8.bat
 *.session
 kangsticker.png
 venv
 env
-neko.session-journal
+oreki.session-journal
 updates.txt
 *.exe
