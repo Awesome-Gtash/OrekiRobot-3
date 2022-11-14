@@ -4,15 +4,7 @@ import platform
 import time
 from platform import python_version
 
-import OrekiRobot.modules.sql.userinfo_sql as sql
 import requests
-from OrekiRobot.__main__ import STATS, TOKEN, USER_INFO
-from OrekiRobot.modules.disable import DisableAbleCommandHandler
-from OrekiRobot.modules.helper_funcs.chat_status import sudo_plus
-from OrekiRobot.modules.helper_funcs.extraction import extract_user
-from OrekiRobot.modules.sql.afk_sql import check_afk_status, is_afk
-from OrekiRobot.modules.sql.global_bans_sql import is_user_gbanned
-from OrekiRobot.modules.sql.users_sql import get_user_num_chats
 from psutil import boot_time, cpu_percent, disk_usage, virtual_memory
 from telegram import (
     MAX_MESSAGE_LENGTH,
@@ -30,6 +22,7 @@ from telethon import events
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.types import ChannelParticipantsAdmins
 
+import OrekiRobot.modules.sql.userinfo_sql as sql
 from OrekiRobot import (
     DEMONS,
     DEV_USERS,
@@ -43,6 +36,13 @@ from OrekiRobot import (
     sw,
     tbot,
 )
+from OrekiRobot.__main__ import STATS, TOKEN, USER_INFO
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot.modules.helper_funcs.chat_status import sudo_plus
+from OrekiRobot.modules.helper_funcs.extraction import extract_user
+from OrekiRobot.modules.sql.afk_sql import check_afk_status, is_afk
+from OrekiRobot.modules.sql.global_bans_sql import is_user_gbanned
+from OrekiRobot.modules.sql.users_sql import get_user_num_chats
 
 NEKO_IMG = "https://te.legra.ph/file/c3eac007902fab16f7aa2.jpg"
 

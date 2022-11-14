@@ -40,13 +40,6 @@ import traceback
 from sys import argv
 from typing import Optional
 
-import OrekiRobot.modules.sql.users_sql as sql
-
-# needed to dynamically load modules
-# NOTE: Module order is not guaranteed, specify that in the config file!
-from OrekiRobot.modules import ALL_MODULES
-from OrekiRobot.modules.helper_funcs.chat_status import is_user_admin
-from OrekiRobot.modules.helper_funcs.misc import paginate_modules
 from pyrogram import idle
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
@@ -66,6 +59,7 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown
 
+import OrekiRobot.modules.sql.users_sql as sql
 from OrekiRobot import (
     BOT_NAME,
     BOT_USERNAME,
@@ -83,6 +77,12 @@ from OrekiRobot import (
     tbot,
     updater,
 )
+
+# needed to dynamically load modules
+# NOTE: Module order is not guaranteed, specify that in the config file!
+from OrekiRobot.modules import ALL_MODULES
+from OrekiRobot.modules.helper_funcs.chat_status import is_user_admin
+from OrekiRobot.modules.helper_funcs.misc import paginate_modules
 
 
 def get_readable_time(seconds: int) -> str:

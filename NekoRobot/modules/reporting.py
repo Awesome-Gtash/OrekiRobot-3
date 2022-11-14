@@ -25,9 +25,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import html
 
-from OrekiRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from OrekiRobot.modules.log_channel import loggable
-from OrekiRobot.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
@@ -40,6 +37,9 @@ from telegram.ext import (
 from telegram.utils.helpers import mention_html
 
 from OrekiRobot import DRAGONS, LOGGER, NEKO_PTB, TIGERS, WOLVES
+from OrekiRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from OrekiRobot.modules.log_channel import loggable
+from OrekiRobot.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 12
 REPORT_IMMUNE_USERS = DRAGONS + TIGERS + WOLVES

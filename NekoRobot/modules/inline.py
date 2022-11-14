@@ -6,11 +6,7 @@ from platform import python_version
 from typing import List
 from uuid import uuid4
 
-import OrekiRobot.modules.sql.users_sql as sql
 import requests
-from OrekiRobot.modules.helper_funcs.decorators import nekoinline
-from OrekiRobot.modules.helper_funcs.miku_misc import article
-from OrekiRobot.modules.sudoers import bot_sys_stats as wall
 from pyrogram import __version__ as pyrover
 from pyrogram import filters
 from telegram import (
@@ -27,6 +23,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import mention_html
 
+import OrekiRobot.modules.sql.users_sql as sql
 from OrekiRobot import (
     DEMONS,
     DEV_USERS,
@@ -38,6 +35,9 @@ from OrekiRobot import (
     pgram,
     sw,
 )
+from OrekiRobot.modules.helper_funcs.decorators import nekoinline
+from OrekiRobot.modules.helper_funcs.miku_misc import article
+from OrekiRobot.modules.sudoers import bot_sys_stats as wall
 
 
 def remove_prefix(text, prefix):

@@ -26,17 +26,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import html
 from typing import Optional
 
-from OrekiRobot.modules.connection import connected
-from OrekiRobot.modules.helper_funcs.alternate import send_message
-from OrekiRobot.modules.helper_funcs.chat_status import (
-    bot_admin,
-    is_user_admin,
-    user_admin,
-    user_admin_no_reply,
-)
-from OrekiRobot.modules.helper_funcs.string_handling import extract_time
-from OrekiRobot.modules.log_channel import loggable
-from OrekiRobot.modules.sql import antiflood_sql as sql
 from telegram import Chat, ChatPermissions, Message, Update, User
 from telegram.error import BadRequest
 from telegram.ext import (
@@ -49,6 +38,17 @@ from telegram.ext import (
 from telegram.utils.helpers import mention_html
 
 from OrekiRobot import NEKO_PTB, TIGERS, WOLVES
+from OrekiRobot.modules.connection import connected
+from OrekiRobot.modules.helper_funcs.alternate import send_message
+from OrekiRobot.modules.helper_funcs.chat_status import (
+    bot_admin,
+    is_user_admin,
+    user_admin,
+    user_admin_no_reply,
+)
+from OrekiRobot.modules.helper_funcs.string_handling import extract_time
+from OrekiRobot.modules.log_channel import loggable
+from OrekiRobot.modules.sql import antiflood_sql as sql
 
 FLOOD_GROUP = 3
 

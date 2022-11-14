@@ -3,10 +3,10 @@ from datetime import datetime
 
 import requests
 from gtts import gTTS, gTTSError
-from OrekiRobot.events import register
 from telethon.tl import functions, types
 
 from OrekiRobot import tbot as tbot
+from OrekiRobot.events import register
 
 IBM_WATSON_CRED_PASSWORD = ""
 IBM_WATSON_CRED_URL = ""

@@ -24,11 +24,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
 
+from OrekiRobot import NEKO_PTB
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from OrekiRobot.modules.helper_funcs.alternate import send_message
 from OrekiRobot.modules.helper_funcs.chat_status import dev_plus
-
-from OrekiRobot import NEKO_PTB
 
 
 @dev_plus

@@ -25,8 +25,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import threading
 
-from OrekiRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, UnicodeText
+
+from OrekiRobot.modules.sql import BASE, SESSION
 
 
 class AFK(BASE):

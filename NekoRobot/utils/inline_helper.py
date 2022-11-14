@@ -6,8 +6,6 @@ from time import time
 
 import aiohttp
 from googletrans import Translator
-from OrekiRobot.utils.pluginhelpers import convert_seconds_to_minutes as time_convert
-from OrekiRobot.utils.pluginhelpers import fetch
 from pykeyboard import InlineKeyboard
 from pyrogram import __version__ as pyrover
 from pyrogram.raw.functions import Ping
@@ -20,6 +18,8 @@ from pyrogram.types import (
 from search_engine_parser import GoogleSearch
 
 from OrekiRobot import OWNER_ID, arq, pgram
+from OrekiRobot.utils.pluginhelpers import convert_seconds_to_minutes as time_convert
+from OrekiRobot.utils.pluginhelpers import fetch
 
 SUDOERS = OWNER_ID
 app = pgram

@@ -33,13 +33,13 @@ from functools import wraps
 from typing import Callable, Coroutine, Dict, List, Tuple, Union
 
 import aiohttp
-from OrekiRobot.utils.errors import split_limits
 from PIL import Image
 from pyrogram import Client
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Chat, Message, User
 
 from OrekiRobot import OWNER_ID, SUPPORT_CHAT, pgram
+from OrekiRobot.utils.errors import split_limits
 
 
 def get_user(message: Message, text: str) -> [int, str, None]:

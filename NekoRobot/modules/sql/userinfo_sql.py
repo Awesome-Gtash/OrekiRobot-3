@@ -1,8 +1,9 @@
 import threading
 
-from OrekiRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, UnicodeText
 from sqlalchemy.sql.sqltypes import BigInteger
+
+from OrekiRobot.modules.sql import BASE, SESSION
 
 
 class UserInfo(BASE):

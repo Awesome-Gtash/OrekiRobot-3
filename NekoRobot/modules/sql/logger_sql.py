@@ -1,7 +1,8 @@
 import threading
 
-from OrekiRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String
+
+from OrekiRobot.modules.sql import BASE, SESSION
 
 
 class LoggerSettings(BASE):

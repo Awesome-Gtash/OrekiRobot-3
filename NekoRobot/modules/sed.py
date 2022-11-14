@@ -27,12 +27,12 @@ import sre_constants
 
 import regex
 import telegram
-from OrekiRobot.modules.disable import DisableAbleMessageHandler
-from OrekiRobot.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters
 
 from OrekiRobot import LOGGER, NEKO_PTB
+from OrekiRobot.modules.disable import DisableAbleMessageHandler
+from OrekiRobot.modules.helper_funcs.regex_helper import infinite_loop_check
 
 DELIMITERS = ("/", ":", "|", "_")
 

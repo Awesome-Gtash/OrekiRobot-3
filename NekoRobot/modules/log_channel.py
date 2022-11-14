@@ -26,20 +26,21 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 from datetime import datetime
 from functools import wraps
 
-from OrekiRobot.modules.helper_funcs.misc import is_module_loaded
 from telegram.ext import CallbackContext
+
+from OrekiRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
 if is_module_loaded(FILENAME):
-    from OrekiRobot.modules.helper_funcs.chat_status import user_admin
-    from OrekiRobot.modules.sql import log_channel_sql as sql
     from telegram import ParseMode, Update
     from telegram.error import BadRequest, Unauthorized
     from telegram.ext import CommandHandler, JobQueue
     from telegram.utils.helpers import escape_markdown
 
     from OrekiRobot import EVENT_LOGS, LOGGER, NEKO_PTB
+    from OrekiRobot.modules.helper_funcs.chat_status import user_admin
+    from OrekiRobot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)

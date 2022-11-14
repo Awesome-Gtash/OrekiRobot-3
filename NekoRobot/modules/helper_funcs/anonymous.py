@@ -26,13 +26,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import functools
 from enum import Enum
 
-from OrekiRobot.modules.helper_funcs.decorators import nekocallback
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
 from telegram.inline.inlinekeyboardbutton import InlineKeyboardButton
 from telegram.inline.inlinekeyboardmarkup import InlineKeyboardMarkup
 
 from OrekiRobot import DEV_USERS, DRAGONS, NEKO_PTB
+from OrekiRobot.modules.helper_funcs.decorators import nekocallback
 
 
 class AdminPerms(Enum):

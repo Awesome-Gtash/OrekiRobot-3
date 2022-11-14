@@ -1,4 +1,3 @@
-import OrekiRobot.modules.sql.blacklistusers_sql as sql
 from pyrate_limiter import (
     BucketFullException,
     Duration,
@@ -9,6 +8,7 @@ from pyrate_limiter import (
 from telegram import Update
 from telegram.ext import CommandHandler, Filters, MessageHandler, RegexHandler
 
+import OrekiRobot.modules.sql.blacklistusers_sql as sql
 from OrekiRobot import ALLOW_EXCL, DEMONS, DEV_USERS, DRAGONS, TIGERS, WOLVES
 
 CMD_STARTERS = ("/", "!") if ALLOW_EXCL else ("/",)

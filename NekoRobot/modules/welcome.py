@@ -4,19 +4,6 @@ import re
 import time
 from functools import partial
 
-import OrekiRobot.modules.sql.welcome_sql as sql
-from OrekiRobot.modules.helper_funcs.chat_status import (
-    is_user_ban_protected,
-    user_admin,
-)
-from OrekiRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from OrekiRobot.modules.helper_funcs.msg_types import get_welcome_type
-from OrekiRobot.modules.helper_funcs.string_handling import (
-    escape_invalid_curly_brackets,
-    markdown_parser,
-)
-from OrekiRobot.modules.log_channel import loggable
-from OrekiRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -34,6 +21,7 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
+import OrekiRobot.modules.sql.welcome_sql as sql
 from OrekiRobot import (
     DEMONS,
     DEV_USERS,
@@ -45,6 +33,18 @@ from OrekiRobot import (
     WOLVES,
     sw,
 )
+from OrekiRobot.modules.helper_funcs.chat_status import (
+    is_user_ban_protected,
+    user_admin,
+)
+from OrekiRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from OrekiRobot.modules.helper_funcs.msg_types import get_welcome_type
+from OrekiRobot.modules.helper_funcs.string_handling import (
+    escape_invalid_curly_brackets,
+    markdown_parser,
+)
+from OrekiRobot.modules.log_channel import loggable
+from OrekiRobot.modules.sql.global_bans_sql import is_user_gbanned
 
 VALID_WELCOME_FORMATTERS = [
     "first",

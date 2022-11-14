@@ -26,10 +26,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import os
 import time
 
-import OrekiRobot.modules.sql.users_sql as sql
-import OrekiRobot.utils.formatter as formatter
 import psutil
 
+import OrekiRobot.modules.sql.users_sql as sql
+import OrekiRobot.utils.formatter as formatter
 from OrekiRobot import StartTime
 
 # Stats Module

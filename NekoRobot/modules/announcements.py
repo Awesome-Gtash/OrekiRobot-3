@@ -1,14 +1,14 @@
 import html
 from typing import Optional
 
-import OrekiRobot.modules.sql.logger_sql as sql
-from OrekiRobot.modules.log_channel import loggable
 from telegram import ParseMode, Update
 from telegram.chatmemberupdated import ChatMemberUpdated
 from telegram.ext import CallbackContext
 from telegram.ext.chatmemberhandler import ChatMemberHandler
 
+import OrekiRobot.modules.sql.logger_sql as sql
 from OrekiRobot import NEKO_PTB
+from OrekiRobot.modules.log_channel import loggable
 
 # Module to extract and log (optional: send to chat) status changes in chat members using ChatMemberUpdated
 # https://github.com/python-telegram-bot/python-telegram-bot/blob/master/examples/chatmemberbot.py

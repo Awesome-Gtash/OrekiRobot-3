@@ -29,6 +29,18 @@ SOFTWARE.
 import html
 import os
 
+from telegram import ParseMode, Update
+from telegram.error import BadRequest
+from telegram.ext import CallbackContext, CommandHandler, Filters
+from telegram.utils.helpers import mention_html
+from telethon import *
+from telethon import events
+from telethon.errors import *
+from telethon.tl import *
+from telethon.tl import functions, types
+
+from OrekiRobot import DRAGONS, NEKO_PTB
+from OrekiRobot import tbot as bot
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from OrekiRobot.modules.helper_funcs.alternate import send_message
 from OrekiRobot.modules.helper_funcs.chat_status import (
@@ -46,18 +58,6 @@ from OrekiRobot.modules.helper_funcs.extraction import (
     extract_user_and_text,
 )
 from OrekiRobot.modules.log_channel import loggable
-from telegram import ParseMode, Update
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CommandHandler, Filters
-from telegram.utils.helpers import mention_html
-from telethon import *
-from telethon import events
-from telethon.errors import *
-from telethon.tl import *
-from telethon.tl import functions, types
-
-from OrekiRobot import DRAGONS, NEKO_PTB
-from OrekiRobot import tbot as bot
 
 
 async def is_register_admin(chat, user):

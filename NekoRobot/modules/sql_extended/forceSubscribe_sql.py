@@ -1,5 +1,6 @@
-from OrekiRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Numeric, String
+
+from OrekiRobot.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):

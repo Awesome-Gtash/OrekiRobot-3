@@ -1,16 +1,16 @@
 from typing import Union
 
 from future.utils import string_types
-from OrekiRobot.modules.connection import connected
-from OrekiRobot.modules.helper_funcs.alternate import send_message, typing_action
-from OrekiRobot.modules.helper_funcs.handlers import CMD_STARTERS
-from OrekiRobot.modules.helper_funcs.misc import is_module_loaded
-from OrekiRobot.modules.language import gs
 from telegram import Chat, ParseMode, Update
 from telegram.ext import CommandHandler, MessageHandler
 from telegram.utils.helpers import escape_markdown
 
 from OrekiRobot import NEKO_PTB
+from OrekiRobot.modules.connection import connected
+from OrekiRobot.modules.helper_funcs.alternate import send_message, typing_action
+from OrekiRobot.modules.helper_funcs.handlers import CMD_STARTERS
+from OrekiRobot.modules.helper_funcs.misc import is_module_loaded
+from OrekiRobot.modules.language import gs
 
 
 def get_help(chat):
