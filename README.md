@@ -34,7 +34,7 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 	
 	
 <details>
-	<summary>More Deploy Options</summary>
+	<summary>Other Deploy Options</summary>
 
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?...)
 
@@ -45,7 +45,7 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 </details> 
 
 <details>
-    <summary>Other Deploy Options</summary>
+    <summary>More Deploy Options</summary>
     <br>
     <p align="center">
 
