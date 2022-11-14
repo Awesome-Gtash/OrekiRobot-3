@@ -20,3 +20,4 @@ from OrekiRobot import aiohttp
 ```python3
 from OrekiRobot.modules.sql import SESSION
 ```
+.
