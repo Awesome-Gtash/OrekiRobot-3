@@ -2,11 +2,10 @@ import re
 
 import bs4
 import requests
-from telethon import types
-from telethon.tl import functions
-
 from OrekiRobot import tbot
 from OrekiRobot.events import register
+from telethon import types
+from telethon.tl import functions
 
 langi = "en"
 

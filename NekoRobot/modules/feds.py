@@ -31,17 +31,6 @@ import time
 import uuid
 from io import BytesIO
 
-from telegram import (
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    MessageEntity,
-    ParseMode,
-    Update,
-)
-from telegram.error import BadRequest, TelegramError, Unauthorized
-from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
-from telegram.utils.helpers import mention_html, mention_markdown
-
 import OrekiRobot.modules.sql.feds_sql as sql
 from OrekiRobot import DRAGONS, EVENT_LOGS, LOGGER, NEKO_PTB, OWNER_ID, TIGERS, WOLVES
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
@@ -53,6 +42,16 @@ from OrekiRobot.modules.helper_funcs.extraction import (
     extract_user_fban,
 )
 from OrekiRobot.modules.helper_funcs.string_handling import markdown_parser
+from telegram import (
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    MessageEntity,
+    ParseMode,
+    Update,
+)
+from telegram.error import BadRequest, TelegramError, Unauthorized
+from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
+from telegram.utils.helpers import mention_html, mention_markdown
 
 FBAN_ERRORS = {
     "User is an administrator of the chat",

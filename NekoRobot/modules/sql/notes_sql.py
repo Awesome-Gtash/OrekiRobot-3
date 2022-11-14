@@ -26,10 +26,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 # Note: chat_id's are stored as strings because the int is too large to be stored in a PSQL database.
 import threading
 
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
-
 from OrekiRobot.modules.helper_funcs.msg_types import Types
 from OrekiRobot.modules.sql import BASE, SESSION
+from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
 
 
 class Notes(BASE):

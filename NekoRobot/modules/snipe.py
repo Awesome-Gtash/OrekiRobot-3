@@ -1,9 +1,8 @@
+from OrekiRobot import LOGGER, NEKO_PTB
+from OrekiRobot.modules.helper_funcs.filters import CustomFilters
 from telegram import TelegramError, Update
 from telegram.ext import CommandHandler
 from telegram.ext.dispatcher import CallbackContext
-
-from OrekiRobot import LOGGER, NEKO_PTB
-from OrekiRobot.modules.helper_funcs.filters import CustomFilters
 
 
 def snipe(update: Update, context: CallbackContext):

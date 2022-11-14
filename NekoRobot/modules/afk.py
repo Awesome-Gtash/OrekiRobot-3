@@ -1,10 +1,6 @@
 import html
 import random
 
-from telegram import MessageEntity, Update
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, Filters, MessageHandler
-
 from OrekiRobot import NEKO_PTB
 from OrekiRobot.modules.disable import (
     DisableAbleCommandHandler,
@@ -12,6 +8,9 @@ from OrekiRobot.modules.disable import (
 )
 from OrekiRobot.modules.sql import afk_sql as sql
 from OrekiRobot.modules.users import get_user_id
+from telegram import MessageEntity, Update
+from telegram.error import BadRequest
+from telegram.ext import CallbackContext, Filters, MessageHandler
 
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8

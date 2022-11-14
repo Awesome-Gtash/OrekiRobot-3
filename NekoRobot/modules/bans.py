@@ -1,16 +1,5 @@
 import html
 
-from telegram import (
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    ParseMode,
-    TelegramError,
-    Update,
-)
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler, Filters
-from telegram.utils.helpers import mention_html
-
 from OrekiRobot import (
     DEMONS,
     DEV_USERS,
@@ -39,6 +28,16 @@ from OrekiRobot.modules.helper_funcs.extraction import extract_user_and_text
 from OrekiRobot.modules.helper_funcs.filters import CustomFilters
 from OrekiRobot.modules.helper_funcs.string_handling import extract_time
 from OrekiRobot.modules.log_channel import gloggable, loggable
+from telegram import (
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    ParseMode,
+    TelegramError,
+    Update,
+)
+from telegram.error import BadRequest
+from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler, Filters
+from telegram.utils.helpers import mention_html
 
 
 @connection_status

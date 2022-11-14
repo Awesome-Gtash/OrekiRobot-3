@@ -29,6 +29,16 @@ import re
 from io import BytesIO
 from typing import Optional
 
+import OrekiRobot.modules.sql.notes_sql as sql
+from OrekiRobot import DRAGONS, JOIN_LOGGER, LOGGER, NEKO_PTB, SUPPORT_CHAT
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot.modules.helper_funcs.chat_status import connection_status, user_admin
+from OrekiRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from OrekiRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from OrekiRobot.modules.helper_funcs.msg_types import get_note_type
+from OrekiRobot.modules.helper_funcs.string_handling import (
+    escape_invalid_curly_brackets,
+)
 from telegram import (
     MAX_MESSAGE_LENGTH,
     InlineKeyboardButton,
@@ -46,15 +56,6 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import escape_markdown, mention_markdown
-
-import OrekiRobot.modules.sql.notes_sql as sql
-from OrekiRobot import DRAGONS, JOIN_LOGGER, LOGGER, NEKO_PTB, SUPPORT_CHAT
-from OrekiRobot.modules.disable import DisableAbleCommandHandler
-from OrekiRobot.modules.helper_funcs.chat_status import connection_status, user_admin
-from OrekiRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from OrekiRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from OrekiRobot.modules.helper_funcs.msg_types import get_note_type
-from OrekiRobot.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
 
 FILE_MATCHER = re.compile(r"^###file_id(!photo)?###:(.*?)(?:\s|$)")
 STICKER_MATCHER = re.compile(r"^###sticker(!photo)?###:")

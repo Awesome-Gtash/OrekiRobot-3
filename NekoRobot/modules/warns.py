@@ -28,26 +28,6 @@ import re
 from typing import Optional
 
 import telegram
-from telegram import (
-    CallbackQuery,
-    Chat,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    Message,
-    ParseMode,
-    Update,
-    User,
-)
-from telegram.error import BadRequest
-from telegram.ext import (
-    CallbackContext,
-    CallbackQueryHandler,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-)
-from telegram.utils.helpers import mention_html
-
 from OrekiRobot import NEKO_PTB, TIGERS, WOLVES
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from OrekiRobot.modules.helper_funcs.chat_status import (
@@ -67,6 +47,25 @@ from OrekiRobot.modules.helper_funcs.misc import split_message
 from OrekiRobot.modules.helper_funcs.string_handling import split_quotes
 from OrekiRobot.modules.log_channel import loggable
 from OrekiRobot.modules.sql import warns_sql as sql
+from telegram import (
+    CallbackQuery,
+    Chat,
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    Message,
+    ParseMode,
+    Update,
+    User,
+)
+from telegram.error import BadRequest
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+)
+from telegram.utils.helpers import mention_html
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"

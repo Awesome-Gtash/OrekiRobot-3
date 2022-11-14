@@ -4,10 +4,9 @@ import os
 import random
 
 import requests
-from PIL import Image, ImageDraw, ImageFont
-
 from OrekiRobot import OWNER_ID, tbot
 from OrekiRobot.events import register
+from PIL import Image, ImageDraw, ImageFont
 
 LOGO_LINKS = [
     "https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",

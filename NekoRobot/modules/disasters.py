@@ -28,10 +28,6 @@ import json
 import os
 from typing import Optional
 
-from telegram import ParseMode, TelegramError, Update
-from telegram.ext import CallbackContext, CommandHandler
-from telegram.utils.helpers import mention_html
-
 from OrekiRobot import (
     DEMONS,
     DEV_USERS,
@@ -49,6 +45,9 @@ from OrekiRobot.modules.helper_funcs.chat_status import (
 )
 from OrekiRobot.modules.helper_funcs.extraction import extract_user
 from OrekiRobot.modules.log_channel import gloggable
+from telegram import ParseMode, TelegramError, Update
+from telegram.ext import CallbackContext, CommandHandler
+from telegram.utils.helpers import mention_html
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "OrekiRobot/elevated_users.json")
 

@@ -31,10 +31,9 @@ import sys
 import traceback
 
 import pretty_errors
+from OrekiRobot import DEV_USERS, ERROR_LOGS, NEKO_PTB
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import CallbackContext, CommandHandler
-
-from OrekiRobot import DEV_USERS, ERROR_LOGS, NEKO_PTB
 
 from ..utils.pastebin import paste
 

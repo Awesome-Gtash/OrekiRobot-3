@@ -25,20 +25,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import html
 
-from alphabet_detector import AlphabetDetector
-from telegram import (
-    Chat,
-    ChatPermissions,
-    Message,
-    MessageEntity,
-    ParseMode,
-    TelegramError,
-)
-from telegram.error import BadRequest
-from telegram.ext import CommandHandler, Filters, MessageHandler
-from telegram.utils.helpers import mention_html
-
 import OrekiRobot.modules.sql.locks_sql as sql
+from alphabet_detector import AlphabetDetector
 from OrekiRobot import LOGGER, NEKO_PTB
 from OrekiRobot.modules.connection import connected
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
@@ -51,6 +39,17 @@ from OrekiRobot.modules.helper_funcs.chat_status import (
     user_not_admin,
 )
 from OrekiRobot.modules.log_channel import loggable
+from telegram import (
+    Chat,
+    ChatPermissions,
+    Message,
+    MessageEntity,
+    ParseMode,
+    TelegramError,
+)
+from telegram.error import BadRequest
+from telegram.ext import CommandHandler, Filters, MessageHandler
+from telegram.utils.helpers import mention_html
 
 ad = AlphabetDetector()
 

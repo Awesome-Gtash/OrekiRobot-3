@@ -1,6 +1,5 @@
-from sqlalchemy import Column, String
-
 from OrekiRobot.modules.sql import BASE, SESSION
+from sqlalchemy import Column, String
 
 
 class Nightmode(BASE):

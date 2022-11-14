@@ -28,10 +28,6 @@ import os
 import time
 from io import BytesIO
 
-from telegram import Message, ParseMode
-from telegram.error import BadRequest
-from telegram.ext import CommandHandler
-
 # from OrekiRobot.modules.sql import warns_sql as warnssql
 import OrekiRobot.modules.sql.blacklist_sql as blacklistsql
 
@@ -48,6 +44,9 @@ from OrekiRobot.modules.connection import connected
 from OrekiRobot.modules.helper_funcs.alternate import typing_action
 from OrekiRobot.modules.helper_funcs.chat_status import user_admin
 from OrekiRobot.modules.sql import disable_sql as disabledsql
+from telegram import Message, ParseMode
+from telegram.error import BadRequest
+from telegram.ext import CommandHandler
 
 
 @user_admin

@@ -40,25 +40,6 @@ import traceback
 from sys import argv
 from typing import Optional
 
-from pyrogram import idle
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from telegram.error import (
-    BadRequest,
-    ChatMigrated,
-    NetworkError,
-    TelegramError,
-    TimedOut,
-    Unauthorized,
-)
-from telegram.ext import (
-    CallbackContext,
-    CallbackQueryHandler,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-)
-from telegram.utils.helpers import escape_markdown
-
 import OrekiRobot.modules.sql.users_sql as sql
 from OrekiRobot import (
     BOT_NAME,
@@ -83,6 +64,24 @@ from OrekiRobot import (
 from OrekiRobot.modules import ALL_MODULES
 from OrekiRobot.modules.helper_funcs.chat_status import is_user_admin
 from OrekiRobot.modules.helper_funcs.misc import paginate_modules
+from pyrogram import idle
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.error import (
+    BadRequest,
+    ChatMigrated,
+    NetworkError,
+    TelegramError,
+    TimedOut,
+    Unauthorized,
+)
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+)
+from telegram.utils.helpers import escape_markdown
 
 
 def get_readable_time(seconds: int) -> str:

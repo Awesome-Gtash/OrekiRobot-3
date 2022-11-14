@@ -1,11 +1,6 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
 
-from telegram import ParseMode, Update
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CommandHandler
-from telegram.utils.helpers import mention_html
-
 import OrekiRobot.modules.sql.blacklistusers_sql as sql
 from OrekiRobot import DEMONS, DEV_USERS, DRAGONS, NEKO_PTB, OWNER_ID, TIGERS, WOLVES
 from OrekiRobot.modules.helper_funcs.chat_status import dev_plus
@@ -14,6 +9,10 @@ from OrekiRobot.modules.helper_funcs.extraction import (
     extract_user_and_text,
 )
 from OrekiRobot.modules.log_channel import gloggable
+from telegram import ParseMode, Update
+from telegram.error import BadRequest
+from telegram.ext import CallbackContext, CommandHandler
+from telegram.utils.helpers import mention_html
 
 BLACKLISTWHITELIST = [OWNER_ID] + DEV_USERS + DRAGONS + WOLVES + DEMONS
 BLABLEUSERS = [OWNER_ID] + DEV_USERS

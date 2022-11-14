@@ -21,10 +21,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from telethon import Button
-
 from OrekiRobot import tbot as tbot
 from OrekiRobot.events import register
+from telethon import Button
 
 PHOTO = "https://te.legra.ph/file/47d2f1cfb9029e9b0b453.jpg"
 

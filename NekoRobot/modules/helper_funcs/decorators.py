@@ -25,6 +25,12 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 from typing import List, Optional, Union
 
+from OrekiRobot import LOGGER
+from OrekiRobot import NEKO_PTB as d
+from OrekiRobot.modules.disable import (
+    DisableAbleCommandHandler,
+    DisableAbleMessageHandler,
+)
 from telegram.ext import (
     CallbackQueryHandler,
     CommandHandler,
@@ -32,13 +38,6 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.ext.filters import BaseFilter
-
-from OrekiRobot import LOGGER
-from OrekiRobot import NEKO_PTB as d
-from OrekiRobot.modules.disable import (
-    DisableAbleCommandHandler,
-    DisableAbleMessageHandler,
-)
 
 
 class NekoTelegramHandler:

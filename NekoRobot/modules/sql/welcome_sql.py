@@ -27,10 +27,9 @@ import random
 import threading
 from typing import Union
 
-from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
-
 from OrekiRobot.modules.helper_funcs.msg_types import Types
 from OrekiRobot.modules.sql import BASE, SESSION
+from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"
 DEFAULT_GOODBYE = "Goodbye!"

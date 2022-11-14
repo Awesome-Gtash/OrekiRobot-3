@@ -25,13 +25,12 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import time
 
-from telethon import events
-
 from OrekiRobot import tbot
 from OrekiRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
+from telethon import events
 
 
 async def purge_messages(event):

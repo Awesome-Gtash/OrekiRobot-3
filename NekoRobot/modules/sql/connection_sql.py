@@ -27,9 +27,8 @@ import threading
 import time
 from typing import Union
 
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
-
 from OrekiRobot.modules.sql import BASE, SESSION
+from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 
 
 class ChatAccessConnectionSettings(BASE):

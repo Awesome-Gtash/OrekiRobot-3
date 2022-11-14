@@ -3,11 +3,6 @@ import time
 from datetime import datetime
 from io import BytesIO
 
-from telegram import ParseMode, Update
-from telegram.error import BadRequest, TelegramError, Unauthorized
-from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
-from telegram.utils.helpers import mention_html
-
 import OrekiRobot.modules.sql.global_bans_sql as sql
 from OrekiRobot import (
     DEMONS,
@@ -34,6 +29,10 @@ from OrekiRobot.modules.helper_funcs.extraction import (
 )
 from OrekiRobot.modules.helper_funcs.misc import send_to_list
 from OrekiRobot.modules.sql.users_sql import get_user_com_chats
+from telegram import ParseMode, Update
+from telegram.error import BadRequest, TelegramError, Unauthorized
+from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
+from telegram.utils.helpers import mention_html
 
 GBAN_ENFORCE_GROUP = 6
 

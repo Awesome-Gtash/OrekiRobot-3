@@ -3,11 +3,6 @@ import re
 from html import escape
 
 import telegram
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Message, ParseMode
-from telegram.error import BadRequest
-from telegram.ext import CallbackQueryHandler, Filters, MessageHandler
-from telegram.utils.helpers import escape_markdown, mention_html
-
 from OrekiRobot import DRAGONS, LOGGER, NEKO_PTB
 from OrekiRobot.modules.connection import connected
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
@@ -25,6 +20,10 @@ from OrekiRobot.modules.helper_funcs.string_handling import (
     split_quotes,
 )
 from OrekiRobot.modules.sql import cust_filters_sql as sql
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Message, ParseMode
+from telegram.error import BadRequest
+from telegram.ext import CallbackQueryHandler, Filters, MessageHandler
+from telegram.utils.helpers import escape_markdown, mention_html
 
 HANDLER_GROUP = 10
 

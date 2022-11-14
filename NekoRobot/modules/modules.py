@@ -26,9 +26,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import collections
 import importlib
 
-from telegram import ParseMode, Update
-from telegram.ext import CallbackContext, CommandHandler
-
 from OrekiRobot import NEKO_PTB, tbot
 from OrekiRobot.__main__ import (
     CHAT_SETTINGS,
@@ -42,6 +39,8 @@ from OrekiRobot.__main__ import (
     USER_SETTINGS,
 )
 from OrekiRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from telegram import ParseMode, Update
+from telegram.ext import CallbackContext, CommandHandler
 
 
 @dev_plus

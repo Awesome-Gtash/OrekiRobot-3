@@ -25,9 +25,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import threading
 
-from sqlalchemy import Column, Integer, String, UnicodeText
-
 from OrekiRobot.modules.sql import BASE, SESSION
+from sqlalchemy import Column, Integer, String, UnicodeText
 
 DEF_COUNT = 1
 DEF_LIMIT = 0

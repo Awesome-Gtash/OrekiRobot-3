@@ -25,9 +25,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import threading
 
-from sqlalchemy import Column, String
-
 from OrekiRobot.modules.sql import BASE, SESSION
+from sqlalchemy import Column, String
 
 
 class KukiChats(BASE):

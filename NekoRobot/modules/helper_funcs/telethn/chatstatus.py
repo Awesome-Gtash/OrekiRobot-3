@@ -23,10 +23,9 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-from telethon.tl.types import ChannelParticipantsAdmins
-
 from OrekiRobot import DRAGONS
 from OrekiRobot.modules.helper_funcs.telethn import IMMUNE_USERS, tbot
+from telethon.tl.types import ChannelParticipantsAdmins
 
 
 async def user_is_ban_protected(user_id: int, message):

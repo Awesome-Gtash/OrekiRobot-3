@@ -3,11 +3,10 @@ import datetime
 import re
 from datetime import datetime
 
-from telethon import custom, events
-
 from OrekiRobot import tbot as bot
 from OrekiRobot import tbot as tgbot
 from OrekiRobot.events import register
+from telethon import custom, events
 
 edit_time = 5
 """ =======================CONSTANTS====================== """
