@@ -6,16 +6,16 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
 from telegram.utils.helpers import mention_html, mention_markdown
 
-import NekoRobot.modules.sql.blsticker_sql as sql
-from NekoRobot import LOGGER, NEKO_PTB
-from NekoRobot.modules.connection import connected
-from NekoRobot.modules.disable import DisableAbleCommandHandler
-from NekoRobot.modules.helper_funcs.alternate import send_message
-from NekoRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from NekoRobot.modules.helper_funcs.misc import split_message
-from NekoRobot.modules.helper_funcs.string_handling import extract_time
-from NekoRobot.modules.log_channel import loggable
-from NekoRobot.modules.warns import warn
+import OrekiRobot.modules.sql.blsticker_sql as sql
+from OrekiRobot import LOGGER, NEKO_PTB
+from OrekiRobot.modules.connection import connected
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot.modules.helper_funcs.alternate import send_message
+from OrekiRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from OrekiRobot.modules.helper_funcs.misc import split_message
+from OrekiRobot.modules.helper_funcs.string_handling import extract_time
+from OrekiRobot.modules.log_channel import loggable
+from OrekiRobot.modules.warns import warn
 
 
 def blackliststicker(update: Update, context: CallbackContext):

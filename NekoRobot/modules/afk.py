@@ -5,13 +5,13 @@ from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler
 
-from NekoRobot import NEKO_PTB
-from NekoRobot.modules.disable import (
+from OrekiRobot import NEKO_PTB
+from OrekiRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from NekoRobot.modules.sql import afk_sql as sql
-from NekoRobot.modules.users import get_user_id
+from OrekiRobot.modules.sql import afk_sql as sql
+from OrekiRobot.modules.users import get_user_id
 
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8

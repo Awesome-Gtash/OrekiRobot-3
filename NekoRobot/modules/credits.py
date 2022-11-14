@@ -23,8 +23,8 @@ SOFTWARE.
 
 from telethon import Button
 
-from NekoRobot import tbot as tbot
-from NekoRobot.events import register
+from OrekiRobot import tbot as tbot
+from OrekiRobot.events import register
 
 PHOTO = "https://te.legra.ph/file/51e5179533e2cd4527d31.jpg"
 

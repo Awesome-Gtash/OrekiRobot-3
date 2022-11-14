@@ -7,17 +7,17 @@ from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters
 
-import NekoRobot.modules.helper_funcs.string_store as fun
-import NekoRobot.modules.NekoFunBot_Strings as fun_strings
-from NekoRobot import NEKO_PTB, SUPPORT_CHAT
-from NekoRobot.events import register
-from NekoRobot.modules.disable import (
+import OrekiRobot.modules.helper_funcs.string_store as fun
+import OrekiRobot.modules.NekoFunBot_Strings as fun_strings
+from OrekiRobot import NEKO_PTB, SUPPORT_CHAT
+from OrekiRobot.events import register
+from OrekiRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from NekoRobot.modules.helper_funcs.alternate import typing_action
-from NekoRobot.modules.helper_funcs.chat_status import is_user_admin
-from NekoRobot.modules.helper_funcs.extraction import extract_user
+from OrekiRobot.modules.helper_funcs.alternate import typing_action
+from OrekiRobot.modules.helper_funcs.chat_status import is_user_admin
+from OrekiRobot.modules.helper_funcs.extraction import extract_user
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 

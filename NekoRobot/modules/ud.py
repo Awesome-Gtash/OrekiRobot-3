@@ -2,8 +2,8 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
 
-from NekoRobot import NEKO_PTB
-from NekoRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot import NEKO_PTB
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
 
 
 def ud(update: Update, context: CallbackContext):

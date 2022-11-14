@@ -2,7 +2,7 @@
 MIT License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022 Awesome-Prince
-Copyright (c) 2022, Koy ki   Network, <https://github.com/Awesome-Prince/NekoRobot-3>
+Copyright (c) 2022, Koy ki   Network, <https://github.com/Awesome-Prince/OrekiRobot-3>
 This file is part of @NekoXRobot (Telegram Bot)
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the Software), to deal
@@ -23,8 +23,8 @@ SOFTWARE.
 
 from telethon import Button
 
-from NekoRobot import tbot as tbot
-from NekoRobot.events import register
+from OrekiRobot import tbot as tbot
+from OrekiRobot.events import register
 
 PHOTO = "https://te.legra.ph/file/dd128ece3d79f8321aa11.jpg"
 

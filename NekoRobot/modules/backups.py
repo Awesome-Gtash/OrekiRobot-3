@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -32,22 +32,22 @@ from telegram import Message, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler
 
-# from NekoRobot.modules.sql import warns_sql as warnssql
-import NekoRobot.modules.sql.blacklist_sql as blacklistsql
+# from OrekiRobot.modules.sql import warns_sql as warnssql
+import OrekiRobot.modules.sql.blacklist_sql as blacklistsql
 
-# from NekoRobot.modules.sql import cust_filters_sql as filtersql
-# import NekoRobot.modules.sql.welcome_sql as welcsql
-import NekoRobot.modules.sql.locks_sql as locksql
-import NekoRobot.modules.sql.notes_sql as sql
+# from OrekiRobot.modules.sql import cust_filters_sql as filtersql
+# import OrekiRobot.modules.sql.welcome_sql as welcsql
+import OrekiRobot.modules.sql.locks_sql as locksql
+import OrekiRobot.modules.sql.notes_sql as sql
 
-# from NekoRobot.modules.rules import get_rules
-import NekoRobot.modules.sql.rules_sql as rulessql
-from NekoRobot import JOIN_LOGGER, LOGGER, NEKO_PTB, OWNER_ID
-from NekoRobot.__main__ import DATA_IMPORT
-from NekoRobot.modules.connection import connected
-from NekoRobot.modules.helper_funcs.alternate import typing_action
-from NekoRobot.modules.helper_funcs.chat_status import user_admin
-from NekoRobot.modules.sql import disable_sql as disabledsql
+# from OrekiRobot.modules.rules import get_rules
+import OrekiRobot.modules.sql.rules_sql as rulessql
+from OrekiRobot import JOIN_LOGGER, LOGGER, NEKO_PTB, OWNER_ID
+from OrekiRobot.__main__ import DATA_IMPORT
+from OrekiRobot.modules.connection import connected
+from OrekiRobot.modules.helper_funcs.alternate import typing_action
+from OrekiRobot.modules.helper_funcs.chat_status import user_admin
+from OrekiRobot.modules.sql import disable_sql as disabledsql
 
 
 @user_admin

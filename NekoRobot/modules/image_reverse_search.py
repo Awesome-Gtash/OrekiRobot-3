@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -36,8 +36,8 @@ from bs4 import BeautifulSoup
 from telegram import InputMediaPhoto, TelegramError, Update
 from telegram.ext import CallbackContext
 
-from NekoRobot import NEKO_PTB
-from NekoRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot import NEKO_PTB
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
 
 opener = urllib.request.build_opener()
 useragent = "Mozilla/5.0 (Linux; Android 6.0.1; SM-G920V Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36"

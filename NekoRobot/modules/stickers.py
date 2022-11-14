@@ -17,10 +17,10 @@ from telegram import (
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import mention_html
 
-from NekoRobot import NEKO_PTB
-from NekoRobot import tbot as bot
-from NekoRobot.events import register as Cutiepii
-from NekoRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot import NEKO_PTB
+from OrekiRobot import tbot as bot
+from OrekiRobot.events import register as Cutiepii
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 
@@ -606,7 +606,7 @@ async def drawText(image_path, text):
     if os.name == "nt":
         fnt = "ariel.ttf"
     else:
-        fnt = "./NekoRobot/LOGO_FONT/Vampire Wars.otf"
+        fnt = "./OrekiRobot/LOGO_FONT/Vampire Wars.otf"
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
     if ";" in text:
         upper_text, lower_text = text.split(";")

@@ -3,7 +3,7 @@ BSD 2-Clause License
 
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince ]
-Copyright (c) 2022-2023, Programmer • Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer • Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 
 All rights reserved.
 
@@ -36,7 +36,7 @@ from telethon.errors import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from NekoRobot import tbot
+from OrekiRobot import tbot
 
 spam_chats = []
 

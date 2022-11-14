@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -38,19 +38,19 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, MessageHandler
 from telegram.utils.helpers import mention_html
 
-import NekoRobot.modules.sql.locks_sql as sql
-from NekoRobot import LOGGER, NEKO_PTB
-from NekoRobot.modules.connection import connected
-from NekoRobot.modules.disable import DisableAbleCommandHandler
-from NekoRobot.modules.helper_funcs.alternate import send_message, typing_action
-from NekoRobot.modules.helper_funcs.chat_status import (
+import OrekiRobot.modules.sql.locks_sql as sql
+from OrekiRobot import LOGGER, NEKO_PTB
+from OrekiRobot.modules.connection import connected
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot.modules.helper_funcs.alternate import send_message, typing_action
+from OrekiRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_bot_admin,
     is_user_admin,
     user_admin,
     user_not_admin,
 )
-from NekoRobot.modules.log_channel import loggable
+from OrekiRobot.modules.log_channel import loggable
 
 ad = AlphabetDetector()
 

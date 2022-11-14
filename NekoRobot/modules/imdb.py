@@ -5,8 +5,8 @@ import requests
 from telethon import types
 from telethon.tl import functions
 
-from NekoRobot import tbot
-from NekoRobot.events import register
+from OrekiRobot import tbot
+from OrekiRobot.events import register
 
 langi = "en"
 

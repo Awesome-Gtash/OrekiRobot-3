@@ -6,14 +6,14 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import mention_html
 
-import NekoRobot.modules.sql.blacklistusers_sql as sql
-from NekoRobot import DEMONS, DEV_USERS, DRAGONS, NEKO_PTB, OWNER_ID, TIGERS, WOLVES
-from NekoRobot.modules.helper_funcs.chat_status import dev_plus
-from NekoRobot.modules.helper_funcs.extraction import (
+import OrekiRobot.modules.sql.blacklistusers_sql as sql
+from OrekiRobot import DEMONS, DEV_USERS, DRAGONS, NEKO_PTB, OWNER_ID, TIGERS, WOLVES
+from OrekiRobot.modules.helper_funcs.chat_status import dev_plus
+from OrekiRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from NekoRobot.modules.log_channel import gloggable
+from OrekiRobot.modules.log_channel import gloggable
 
 BLACKLISTWHITELIST = [OWNER_ID] + DEV_USERS + DRAGONS + WOLVES + DEMONS
 BLABLEUSERS = [OWNER_ID] + DEV_USERS

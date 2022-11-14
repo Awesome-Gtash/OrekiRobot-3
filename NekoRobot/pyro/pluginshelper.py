@@ -12,7 +12,7 @@ from pyrogram import Client
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Chat, Message, User
 
-from NekoRobot import OWNER_ID, SUPPORT_CHAT, pgram
+from OrekiRobot import OWNER_ID, SUPPORT_CHAT, pgram
 
 
 def get_user(message: Message, text: str) -> [int, str, None]:

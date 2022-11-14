@@ -59,8 +59,8 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown
 
-import NekoRobot.modules.sql.users_sql as sql
-from NekoRobot import (
+import OrekiRobot.modules.sql.users_sql as sql
+from OrekiRobot import (
     BOT_NAME,
     BOT_USERNAME,
     DONATION_LINK,
@@ -80,9 +80,9 @@ from NekoRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from NekoRobot.modules import ALL_MODULES
-from NekoRobot.modules.helper_funcs.chat_status import is_user_admin
-from NekoRobot.modules.helper_funcs.misc import paginate_modules
+from OrekiRobot.modules import ALL_MODULES
+from OrekiRobot.modules.helper_funcs.chat_status import is_user_admin
+from OrekiRobot.modules.helper_funcs.misc import paginate_modules
 
 
 def get_readable_time(seconds: int) -> str:
@@ -199,7 +199,7 @@ USER_SETTINGS = {}
 GDPR = []
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module(f"NekoRobot.modules.{module_name}")
+    imported_module = importlib.import_module(f"OrekiRobot.modules.{module_name}")
 
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__

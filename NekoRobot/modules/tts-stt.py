@@ -5,8 +5,8 @@ import requests
 from gtts import gTTS, gTTSError
 from telethon.tl import functions, types
 
-from NekoRobot import tbot as tbot
-from NekoRobot.events import register
+from OrekiRobot import tbot as tbot
+from OrekiRobot.events import register
 
 IBM_WATSON_CRED_PASSWORD = ""
 IBM_WATSON_CRED_URL = ""

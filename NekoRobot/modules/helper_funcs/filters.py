@@ -3,7 +3,7 @@ BSD 2-Clause License
 
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince ]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 
 All rights reserved.
 
@@ -31,7 +31,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 from telegram import Message
 from telegram.ext import MessageFilter
 
-from NekoRobot import DEMONS, DEV_USERS, DRAGONS
+from OrekiRobot import DEMONS, DEV_USERS, DRAGONS
 
 
 class CustomFilters:

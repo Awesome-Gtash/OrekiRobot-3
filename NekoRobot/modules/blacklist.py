@@ -6,20 +6,20 @@ from telegram.error import BadRequest
 from telegram.ext import Filters
 from telegram.utils.helpers import mention_html
 
-import NekoRobot.modules.sql.blacklist_sql as sql
-from NekoRobot import NEKO_PTB
-from NekoRobot.modules.connection import connected
-from NekoRobot.modules.helper_funcs.alternate import send_message, typing_action
-from NekoRobot.modules.helper_funcs.anonymous import AdminPerms, user_admin
-from NekoRobot.modules.helper_funcs.chat_status import user_admin as u_admin
-from NekoRobot.modules.helper_funcs.chat_status import user_not_admin
-from NekoRobot.modules.helper_funcs.decorators import nekocmd, nekomsg
-from NekoRobot.modules.helper_funcs.extraction import extract_text
-from NekoRobot.modules.helper_funcs.misc import split_message
-from NekoRobot.modules.helper_funcs.string_handling import extract_time
-from NekoRobot.modules.log_channel import loggable
-from NekoRobot.modules.sql.approve_sql import is_approved
-from NekoRobot.modules.warns import warn
+import OrekiRobot.modules.sql.blacklist_sql as sql
+from OrekiRobot import NEKO_PTB
+from OrekiRobot.modules.connection import connected
+from OrekiRobot.modules.helper_funcs.alternate import send_message, typing_action
+from OrekiRobot.modules.helper_funcs.anonymous import AdminPerms, user_admin
+from OrekiRobot.modules.helper_funcs.chat_status import user_admin as u_admin
+from OrekiRobot.modules.helper_funcs.chat_status import user_not_admin
+from OrekiRobot.modules.helper_funcs.decorators import nekocmd, nekomsg
+from OrekiRobot.modules.helper_funcs.extraction import extract_text
+from OrekiRobot.modules.helper_funcs.misc import split_message
+from OrekiRobot.modules.helper_funcs.string_handling import extract_time
+from OrekiRobot.modules.log_channel import loggable
+from OrekiRobot.modules.sql.approve_sql import is_approved
+from OrekiRobot.modules.warns import warn
 
 BLACKLIST_GROUP = -3
 
@@ -435,7 +435,7 @@ def __stats__():
 
 __mod_name__ = "Blacklists"
 
-from NekoRobot.modules.language import gs
+from OrekiRobot.modules.language import gs
 
 
 def get_help(chat):

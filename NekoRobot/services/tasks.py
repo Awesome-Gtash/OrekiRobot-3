@@ -1,7 +1,7 @@
 from asyncio import Lock, create_task
 from time import time
 
-from NekoRobot.services.sections import bold, section, w
+from OrekiRobot.services.sections import bold, section, w
 
 tasks = {}
 TASKS_LOCK = Lock()

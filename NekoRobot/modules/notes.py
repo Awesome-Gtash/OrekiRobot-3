@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -47,14 +47,14 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_markdown
 
-import NekoRobot.modules.sql.notes_sql as sql
-from NekoRobot import DRAGONS, JOIN_LOGGER, LOGGER, NEKO_PTB, SUPPORT_CHAT
-from NekoRobot.modules.disable import DisableAbleCommandHandler
-from NekoRobot.modules.helper_funcs.chat_status import connection_status, user_admin
-from NekoRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from NekoRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from NekoRobot.modules.helper_funcs.msg_types import get_note_type
-from NekoRobot.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
+import OrekiRobot.modules.sql.notes_sql as sql
+from OrekiRobot import DRAGONS, JOIN_LOGGER, LOGGER, NEKO_PTB, SUPPORT_CHAT
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot.modules.helper_funcs.chat_status import connection_status, user_admin
+from OrekiRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from OrekiRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from OrekiRobot.modules.helper_funcs.msg_types import get_note_type
+from OrekiRobot.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
 
 FILE_MATCHER = re.compile(r"^###file_id(!photo)?###:(.*?)(?:\s|$)")
 STICKER_MATCHER = re.compile(r"^###sticker(!photo)?###:")

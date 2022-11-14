@@ -1,8 +1,8 @@
 import requests
 from pyrogram import filters
 
-from NekoRobot import pgram
-from NekoRobot.utils.errors import capture_err
+from OrekiRobot import pgram
+from OrekiRobot.utils.errors import capture_err
 
 
 def ikb(data: dict, row_width: int = 2):

@@ -5,8 +5,8 @@ from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler
 from telethon import events
 
-from NekoRobot import NEKO_PTB, tbot
-from NekoRobot.modules.helper_funcs.chat_status import dev_plus
+from OrekiRobot import NEKO_PTB, tbot
+from OrekiRobot.modules.helper_funcs.chat_status import dev_plus
 
 DEBUG_MODE = False
 

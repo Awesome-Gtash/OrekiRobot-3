@@ -30,11 +30,11 @@ from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
 from telethon import types
 
-from NekoRobot import tbot
-from NekoRobot.events import register
+from OrekiRobot import tbot
+from OrekiRobot.events import register
 
 TMP_DOWNLOAD_DIRECTORY = "tg-File/"
-babe = "NekoRobot"
+babe = "OrekiRobot"
 telegraph = Telegraph()
 data = telegraph.create_account(short_name=babe)
 auth_url = data["auth_url"]

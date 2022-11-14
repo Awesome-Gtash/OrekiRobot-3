@@ -1,8 +1,8 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from NekoRobot import OWNER_ID
-from NekoRobot import pgram as bot
+from OrekiRobot import OWNER_ID
+from OrekiRobot import pgram as bot
 
 
 @bot.on_message(filters.private & filters.incoming)

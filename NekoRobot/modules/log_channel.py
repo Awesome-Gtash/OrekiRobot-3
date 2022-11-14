@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -28,7 +28,7 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from NekoRobot.modules.helper_funcs.misc import is_module_loaded
+from OrekiRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -38,9 +38,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue
     from telegram.utils.helpers import escape_markdown
 
-    from NekoRobot import EVENT_LOGS, LOGGER, NEKO_PTB
-    from NekoRobot.modules.helper_funcs.chat_status import user_admin
-    from NekoRobot.modules.sql import log_channel_sql as sql
+    from OrekiRobot import EVENT_LOGS, LOGGER, NEKO_PTB
+    from OrekiRobot.modules.helper_funcs.chat_status import user_admin
+    from OrekiRobot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)

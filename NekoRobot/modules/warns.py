@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -48,25 +48,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from NekoRobot import NEKO_PTB, TIGERS, WOLVES
-from NekoRobot.modules.disable import DisableAbleCommandHandler
-from NekoRobot.modules.helper_funcs.chat_status import (
+from OrekiRobot import NEKO_PTB, TIGERS, WOLVES
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from NekoRobot.modules.helper_funcs.extraction import (
+from OrekiRobot.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from NekoRobot.modules.helper_funcs.filters import CustomFilters
-from NekoRobot.modules.helper_funcs.misc import split_message
-from NekoRobot.modules.helper_funcs.string_handling import split_quotes
-from NekoRobot.modules.log_channel import loggable
-from NekoRobot.modules.sql import warns_sql as sql
+from OrekiRobot.modules.helper_funcs.filters import CustomFilters
+from OrekiRobot.modules.helper_funcs.misc import split_message
+from OrekiRobot.modules.helper_funcs.string_handling import split_quotes
+from OrekiRobot.modules.log_channel import loggable
+from OrekiRobot.modules.sql import warns_sql as sql
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"

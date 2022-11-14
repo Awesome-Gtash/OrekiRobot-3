@@ -23,8 +23,8 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import mention_html
 
-import NekoRobot.modules.sql.users_sql as sql
-from NekoRobot import (
+import OrekiRobot.modules.sql.users_sql as sql
+from OrekiRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -35,9 +35,9 @@ from NekoRobot import (
     pgram,
     sw,
 )
-from NekoRobot.modules.helper_funcs.decorators import nekoinline
-from NekoRobot.modules.helper_funcs.miku_misc import article
-from NekoRobot.modules.sudoers import bot_sys_stats as wall
+from OrekiRobot.modules.helper_funcs.decorators import nekoinline
+from OrekiRobot.modules.helper_funcs.miku_misc import article
+from OrekiRobot.modules.sudoers import bot_sys_stats as wall
 
 
 def remove_prefix(text, prefix):

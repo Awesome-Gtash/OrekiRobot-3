@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -29,10 +29,10 @@ from telethon import *
 from telethon import functions
 from telethon.tl.types import ChatBannedRights
 
-from NekoRobot import OWNER_ID
-from NekoRobot import tbot as tbot
-from NekoRobot.events import register
-from NekoRobot.modules.sql_extended.night_mode_sql import (
+from OrekiRobot import OWNER_ID
+from OrekiRobot import tbot as tbot
+from OrekiRobot.events import register
+from OrekiRobot.modules.sql_extended.night_mode_sql import (
     add_nightmode,
     get_all_chat_id,
     is_nightmode_indb,

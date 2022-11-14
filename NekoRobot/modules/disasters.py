@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -32,7 +32,7 @@ from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import mention_html
 
-from NekoRobot import (
+from OrekiRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -42,15 +42,15 @@ from NekoRobot import (
     TIGERS,
     WOLVES,
 )
-from NekoRobot.modules.helper_funcs.chat_status import (
+from OrekiRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from NekoRobot.modules.helper_funcs.extraction import extract_user
-from NekoRobot.modules.log_channel import gloggable
+from OrekiRobot.modules.helper_funcs.extraction import extract_user
+from OrekiRobot.modules.log_channel import gloggable
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "NekoRobot/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "OrekiRobot/elevated_users.json")
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:

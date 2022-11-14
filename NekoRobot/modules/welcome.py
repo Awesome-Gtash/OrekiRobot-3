@@ -21,8 +21,8 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
-import NekoRobot.modules.sql.welcome_sql as sql
-from NekoRobot import (
+import OrekiRobot.modules.sql.welcome_sql as sql
+from OrekiRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -33,15 +33,15 @@ from NekoRobot import (
     WOLVES,
     sw,
 )
-from NekoRobot.modules.helper_funcs.chat_status import is_user_ban_protected, user_admin
-from NekoRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from NekoRobot.modules.helper_funcs.msg_types import get_welcome_type
-from NekoRobot.modules.helper_funcs.string_handling import (
+from OrekiRobot.modules.helper_funcs.chat_status import is_user_ban_protected, user_admin
+from OrekiRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from OrekiRobot.modules.helper_funcs.msg_types import get_welcome_type
+from OrekiRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from NekoRobot.modules.log_channel import loggable
-from NekoRobot.modules.sql.global_bans_sql import is_user_gbanned
+from OrekiRobot.modules.log_channel import loggable
+from OrekiRobot.modules.sql.global_bans_sql import is_user_gbanned
 
 VALID_WELCOME_FORMATTERS = [
     "first",

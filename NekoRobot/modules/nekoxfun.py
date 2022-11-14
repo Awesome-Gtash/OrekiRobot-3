@@ -1,7 +1,7 @@
 """
 MIT License
 Copyright (C) 2022 Awesome-Prince
-Copyright (c) 2022, Programmer  •  Network, <https://github.com/Awesome-Prince/NekoRobot-3>
+Copyright (c) 2022, Programmer  •  Network, <https://github.com/Awesome-Prince/OrekiRobot-3>
 This file is part of @NekoXRobot (Telegram Bot)
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the Software), to deal
@@ -24,7 +24,7 @@ import nekos
 from telegram import Chat
 from telegram.ext import CommandHandler
 
-from NekoRobot import NEKO_PTB
+from OrekiRobot import NEKO_PTB
 
 
 def is_user_in_chat(chat: Chat, user_id: int) -> bool:

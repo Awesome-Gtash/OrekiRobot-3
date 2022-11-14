@@ -3,7 +3,7 @@ MIT License
 
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022 Awesome-Prince
-Copyright (c) 2022, Programmer  •  Network, <https://github.com/Awesome-Prince/NekoRobot-3>
+Copyright (c) 2022, Programmer  •  Network, <https://github.com/Awesome-Prince/OrekiRobot-3>
 
 This file is part of @NekoXRobot (Telegram Bot)
 
@@ -39,11 +39,11 @@ from telethon.errors import *
 from telethon.tl import *
 from telethon.tl import functions, types
 
-from NekoRobot import DRAGONS, NEKO_PTB
-from NekoRobot import tbot as bot
-from NekoRobot.modules.disable import DisableAbleCommandHandler
-from NekoRobot.modules.helper_funcs.alternate import send_message
-from NekoRobot.modules.helper_funcs.chat_status import (
+from OrekiRobot import DRAGONS, NEKO_PTB
+from OrekiRobot import tbot as bot
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot.modules.helper_funcs.alternate import send_message
+from OrekiRobot.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
     bot_admin,
     can_pin,
@@ -53,11 +53,11 @@ from NekoRobot.modules.helper_funcs.chat_status import (
     user_can_changeinfo,
     user_can_pin,
 )
-from NekoRobot.modules.helper_funcs.extraction import (
+from OrekiRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from NekoRobot.modules.log_channel import loggable
+from OrekiRobot.modules.log_channel import loggable
 
 
 async def is_register_admin(chat, user):

@@ -1,22 +1,22 @@
 # Clients
 ## Importing Telethon
 ```python3
-from NekoRobot import tbot
+from OrekiRobot import tbot
 ```
 ## Importing Pyrogram
 ```python3
-from NekoRobot import pgram
+from OrekiRobot import pgram
 ```
 ## Importing ARQ
 ```python3
-from NekoRobot import arq
+from OrekiRobot import arq
 ```
 ## Importing aiohttp
 ```python3
-from NekoRobot import aiohttp
+from OrekiRobot import aiohttp
 ```
 # DataBase
 ## Importing Postgres
 ```python3
-from NekoRobot.modules.sql import SESSION
+from OrekiRobot.modules.sql import SESSION
 ```

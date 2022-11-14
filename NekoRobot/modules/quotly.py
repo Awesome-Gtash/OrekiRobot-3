@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon import events
 from telethon.tl import functions, types
 
-from NekoRobot import tbot
+from OrekiRobot import tbot
 
 COLORS = [
     "#F07975",

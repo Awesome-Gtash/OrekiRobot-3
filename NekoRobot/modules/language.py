@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -30,10 +30,10 @@ from typing import Generator, List, Union
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import CallbackQueryHandler, CommandHandler
 
-import NekoRobot.modules.sql.language_sql as sql
-from NekoRobot import NEKO_PTB
-from NekoRobot.langs import get_language, get_languages, get_string
-from NekoRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+import OrekiRobot.modules.sql.language_sql as sql
+from OrekiRobot import NEKO_PTB
+from OrekiRobot.langs import get_language, get_languages, get_string
+from OrekiRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
 
 
 def paginate(iterable: Iterable, page_size: int) -> Generator[List, None, None]:

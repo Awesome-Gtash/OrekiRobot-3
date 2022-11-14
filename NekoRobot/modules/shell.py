@@ -2,7 +2,7 @@
 MIT License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022 Awesome-Prince
-Copyright (c) 2022, Programmer  •  Network, <https://github.com/Awesome-Prince/NekoRobot-3>
+Copyright (c) 2022, Programmer  •  Network, <https://github.com/Awesome-Prince/OrekiRobot-3>
 This file is part of @NekoXRobot (Telegram Bot)
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the Software), to deal
@@ -26,8 +26,8 @@ import subprocess
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 
-from NekoRobot import LOGGER, NEKO_PTB
-from NekoRobot.modules.helper_funcs.chat_status import dev_plus
+from OrekiRobot import LOGGER, NEKO_PTB
+from OrekiRobot.modules.helper_funcs.chat_status import dev_plus
 
 
 @dev_plus

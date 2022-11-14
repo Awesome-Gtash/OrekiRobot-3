@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Boolean, Column, String
 
-from NekoRobot.modules.sql import BASE, SESSION
+from OrekiRobot.modules.sql import BASE, SESSION
 
 
 class LoggerSettings(BASE):

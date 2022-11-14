@@ -3,7 +3,7 @@ BSD 2-Clause License
 
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince ]
-Copyright (c) 2022-2023, Programmer • Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer • Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 
 All rights reserved.
 
@@ -38,9 +38,9 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
-from NekoRobot import aiohttpsession, pgram
-from NekoRobot.utils.errors import capture_err
-from NekoRobot.utils.pastebin import paste
+from OrekiRobot import aiohttpsession, pgram
+from OrekiRobot.utils.errors import capture_err
+from OrekiRobot.utils.pastebin import paste
 
 pattern = re.compile(r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$")
 Neko_PYRO_Paste = filters.command("paste")

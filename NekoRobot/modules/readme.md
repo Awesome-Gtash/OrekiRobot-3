@@ -3,7 +3,7 @@
 ## Advanced: Decorators
 ```python3
 
-from NekoRobot.modules.helper_funcs.decorators import nekocmd
+from OrekiRobot.modules.helper_funcs.decorators import nekocmd
 from telegram import Update
 from telegram.ext import CallbackContext
 
@@ -24,7 +24,7 @@ __help__ = """
 
 ## Advanced: Pyrogram
 ```python3
-from NekoRobot import pgram
+from OrekiRobot import pgram
 
 Neko_PYRO_Hello = filters.command("hi")
 
@@ -43,8 +43,8 @@ __help__ = """
 ## Advanced: Telethon
 ```python3
 
-from NekoRobot import tbot
-from NekoRobot.events import register
+from OrekiRobot import tbot
+from OrekiRobot.events import register
 
 @register(pattern="^/hi$")
 async def hmm(event):
@@ -61,7 +61,7 @@ __help__ = """
 ## Advanced: PTB
 ```python3
 
-from NekoRobot import NEKO_PTB
+from OrekiRobot import NEKO_PTB
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler
 

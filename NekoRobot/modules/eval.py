@@ -3,7 +3,7 @@ BSD 2-Clause License
 
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince ]
-Copyright (c) 2022-2023, Programmer • Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer • Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 
 All rights reserved.
 
@@ -45,8 +45,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 
-from NekoRobot import DEV_USERS, LOGGER, NEKO_PTB, pgram
-from NekoRobot.modules.helper_funcs.chat_status import dev_plus
+from OrekiRobot import DEV_USERS, LOGGER, NEKO_PTB, pgram
+from OrekiRobot.modules.helper_funcs.chat_status import dev_plus
 
 Neko_PYRO_Eval = filters.command(["eval", "e"])
 namespaces = {}
@@ -118,7 +118,7 @@ async def do(func, bot, update):
     env = namespace_of(update.message.chat_id, update, bot)
     os.chdir(os.getcwd())
     with open(
-        os.path.join(os.getcwd(), "NekoRobot/modules/helper_funcs/temp.txt"),
+        os.path.join(os.getcwd(), "OrekiRobot/modules/helper_funcs/temp.txt"),
         "w",
     ) as temp:
         temp.write(body)

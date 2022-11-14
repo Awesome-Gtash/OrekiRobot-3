@@ -8,23 +8,23 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackQueryHandler, Filters, MessageHandler
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from NekoRobot import DRAGONS, LOGGER, NEKO_PTB
-from NekoRobot.modules.connection import connected
-from NekoRobot.modules.disable import DisableAbleCommandHandler
-from NekoRobot.modules.helper_funcs.alternate import send_message, typing_action
-from NekoRobot.modules.helper_funcs.chat_status import user_admin
-from NekoRobot.modules.helper_funcs.extraction import extract_text
-from NekoRobot.modules.helper_funcs.filters import CustomFilters
-from NekoRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from NekoRobot.modules.helper_funcs.misc import build_keyboard_parser
-from NekoRobot.modules.helper_funcs.msg_types import get_filter_type
-from NekoRobot.modules.helper_funcs.string_handling import (
+from OrekiRobot import DRAGONS, LOGGER, NEKO_PTB
+from OrekiRobot.modules.connection import connected
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot.modules.helper_funcs.alternate import send_message, typing_action
+from OrekiRobot.modules.helper_funcs.chat_status import user_admin
+from OrekiRobot.modules.helper_funcs.extraction import extract_text
+from OrekiRobot.modules.helper_funcs.filters import CustomFilters
+from OrekiRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from OrekiRobot.modules.helper_funcs.misc import build_keyboard_parser
+from OrekiRobot.modules.helper_funcs.msg_types import get_filter_type
+from OrekiRobot.modules.helper_funcs.string_handling import (
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
     split_quotes,
 )
-from NekoRobot.modules.sql import cust_filters_sql as sql
+from OrekiRobot.modules.sql import cust_filters_sql as sql
 
 HANDLER_GROUP = 10
 

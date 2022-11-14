@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -28,9 +28,9 @@ import time
 
 import psutil
 
-import NekoRobot.modules.sql.users_sql as sql
-import NekoRobot.utils.formatter as formatter
-from NekoRobot import StartTime
+import OrekiRobot.modules.sql.users_sql as sql
+import OrekiRobot.utils.formatter as formatter
+from OrekiRobot import StartTime
 
 # Stats Module
 

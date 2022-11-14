@@ -6,9 +6,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters
 from telegram.utils.helpers import mention_html
 
-from NekoRobot import DEMONS, DEV_USERS, DRAGONS, LOGGER, OWNER_ID, TIGERS, WOLVES
-from NekoRobot.modules.helper_funcs.anonymous import AdminPerms, user_admin
-from NekoRobot.modules.helper_funcs.chat_status import (
+from OrekiRobot import DEMONS, DEV_USERS, DRAGONS, LOGGER, OWNER_ID, TIGERS, WOLVES
+from OrekiRobot.modules.helper_funcs.anonymous import AdminPerms, user_admin
+from OrekiRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -16,10 +16,10 @@ from NekoRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     is_user_in_chat,
 )
-from NekoRobot.modules.helper_funcs.decorators import nekocmd
-from NekoRobot.modules.helper_funcs.extraction import extract_user_and_text
-from NekoRobot.modules.helper_funcs.string_handling import extract_time
-from NekoRobot.modules.log_channel import gloggable, loggable
+from OrekiRobot.modules.helper_funcs.decorators import nekocmd
+from OrekiRobot.modules.helper_funcs.extraction import extract_user_and_text
+from OrekiRobot.modules.helper_funcs.string_handling import extract_time
+from OrekiRobot.modules.log_channel import gloggable, loggable
 
 
 @nekocmd(command="cban", pass_args=True)
@@ -406,7 +406,7 @@ def selfunban(context: CallbackContext, update: Update) -> Optional[str]:
     return f"<b>{html.escape(chat.title)}:</b>\n#UNBANNED\n<b>User:</b> {mention_html(member.user.id, member.user.first_name)}"
 
 
-from NekoRobot.modules.language import gs
+from OrekiRobot.modules.language import gs
 
 
 def get_help(chat):

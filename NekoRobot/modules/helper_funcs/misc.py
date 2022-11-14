@@ -3,7 +3,7 @@ MIT License
 
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022 Awesome-Prince
-Copyright (c) 2022, Programmer Network, <https://github.com/Awesome-Prince/NekoRobot-3>
+Copyright (c) 2022, Programmer Network, <https://github.com/Awesome-Prince/OrekiRobot-3>
 
 This file is part of @NekoXRobot (Telegram Bot)
 
@@ -31,7 +31,7 @@ from typing import Dict, List
 from telegram import MAX_MESSAGE_LENGTH, Bot, InlineKeyboardButton, ParseMode
 from telegram.error import TelegramError
 
-from NekoRobot import NO_LOAD
+from OrekiRobot import NO_LOAD
 
 
 class EqInlineKeyboardButton(InlineKeyboardButton):

@@ -5,12 +5,12 @@ from telegram import Chat, ParseMode, Update
 from telegram.ext import CommandHandler, MessageHandler
 from telegram.utils.helpers import escape_markdown
 
-from NekoRobot import NEKO_PTB
-from NekoRobot.modules.connection import connected
-from NekoRobot.modules.helper_funcs.alternate import send_message, typing_action
-from NekoRobot.modules.helper_funcs.handlers import CMD_STARTERS
-from NekoRobot.modules.helper_funcs.misc import is_module_loaded
-from NekoRobot.modules.language import gs
+from OrekiRobot import NEKO_PTB
+from OrekiRobot.modules.connection import connected
+from OrekiRobot.modules.helper_funcs.alternate import send_message, typing_action
+from OrekiRobot.modules.helper_funcs.handlers import CMD_STARTERS
+from OrekiRobot.modules.helper_funcs.misc import is_module_loaded
+from OrekiRobot.modules.language import gs
 
 
 def get_help(chat):
@@ -24,8 +24,8 @@ FILENAME = __name__.rsplit(".", 1)[-1]
 
 # If module is due to be loaded, then setup all the magical handlers
 if is_module_loaded(FILENAME):
-    from NekoRobot.modules.helper_funcs.chat_status import is_user_admin, user_admin
-    from NekoRobot.modules.sql import disable_sql as sql
+    from OrekiRobot.modules.helper_funcs.chat_status import is_user_admin, user_admin
+    from OrekiRobot.modules.sql import disable_sql as sql
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []

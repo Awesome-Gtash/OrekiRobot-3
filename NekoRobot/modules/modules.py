@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -29,8 +29,8 @@ import importlib
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 
-from NekoRobot import NEKO_PTB, tbot
-from NekoRobot.__main__ import (
+from OrekiRobot import NEKO_PTB, tbot
+from OrekiRobot.__main__ import (
     CHAT_SETTINGS,
     DATA_EXPORT,
     DATA_IMPORT,
@@ -41,7 +41,7 @@ from NekoRobot.__main__ import (
     USER_INFO,
     USER_SETTINGS,
 )
-from NekoRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from OrekiRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 
 
 @dev_plus
@@ -190,7 +190,7 @@ def listmodules(update: Update, context: CallbackContext):
     for helpable_module in HELPABLE:
         helpable_module_info = IMPORTED[helpable_module]
         file_info = IMPORTED[helpable_module_info.__mod_name__.lower()]
-        file_name = file_info.__name__.rsplit("NekoRobot.modules.", 1)[1]
+        file_name = file_info.__name__.rsplit("OrekiRobot.modules.", 1)[1]
         mod_name = file_info.__mod_name__
         module_list.append(f"- <code>{mod_name} ({file_name})</code>\n")
     module_list = "Following modules are loaded : \n\n" + "".join(module_list)

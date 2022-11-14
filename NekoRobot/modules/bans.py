@@ -11,7 +11,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 
-from NekoRobot import (
+from OrekiRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -21,8 +21,8 @@ from NekoRobot import (
     TIGERS,
     WOLVES,
 )
-from NekoRobot.modules.disable import DisableAbleCommandHandler
-from NekoRobot.modules.helper_funcs.chat_status import (
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_delete,
     can_restrict,
@@ -35,10 +35,10 @@ from NekoRobot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     user_can_ban,
 )
-from NekoRobot.modules.helper_funcs.extraction import extract_user_and_text
-from NekoRobot.modules.helper_funcs.filters import CustomFilters
-from NekoRobot.modules.helper_funcs.string_handling import extract_time
-from NekoRobot.modules.log_channel import gloggable, loggable
+from OrekiRobot.modules.helper_funcs.extraction import extract_user_and_text
+from OrekiRobot.modules.helper_funcs.filters import CustomFilters
+from OrekiRobot.modules.helper_funcs.string_handling import extract_time
+from OrekiRobot.modules.log_channel import gloggable, loggable
 
 
 @connection_status

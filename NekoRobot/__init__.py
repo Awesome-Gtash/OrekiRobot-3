@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince ]
-Copyright (c) 2022-2023, Programmer • Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer • Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -162,7 +162,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from NekoRobot.config import Development as Config
+    from OrekiRobot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -254,18 +254,18 @@ pgram = Client(
 
 # Credits Logger
 print(
-    "[NEKOROBOT] NEKO Is Starting. | Programmer Network Project | BSD 2-Clause License."
+    "[OrekiRobot] NEKO Is Starting. | Programmer Network Project | BSD 2-Clause License."
 )
 print(
-    "[NEKOROBOT] Mewo Mewo! Successfully Connected With Programmer • Data Center • Chennai"
+    "[OrekiRobot] Mewo Mewo! Successfully Connected With Programmer • Data Center • Chennai"
 )
 print(
-    "[NEKOROBOT] Project Maintained By: github.com/Awesome-Prince (https://github.com/Awesome-Prince/NekoRobot-3)"
+    "[OrekiRobot] Project Maintained By: github.com/Awesome-Prince (https://github.com/Awesome-Prince/OrekiRobot-3)"
 )
 
-print("[NEKOROBOT]: Telegraph Installing")
+print("[OrekiRobot]: Telegraph Installing")
 telegraph = Telegraph()
-print("[NEKOROBOT]: Telegraph Account Creating")
+print("[OrekiRobot]: Telegraph Account Creating")
 telegraph.create_account(short_name="Neko")
 updater = tg.Updater(
     token=TOKEN,
@@ -273,12 +273,12 @@ updater = tg.Updater(
     request_kwargs={"read_timeout": 10, "connect_timeout": 10},
     use_context=True,
 )
-print("[NEKOROBOT]: TELETHON CLIENT STARTING")
+print("[OrekiRobot]: TELETHON CLIENT STARTING")
 tbot = TelegramClient(MemorySession(), API_ID, API_HASH)
 NEKO_PTB = updater.dispatcher
 # asyncio.get_event_loop().run_until_complete(NEKO_PTB.bot.initialize())
 # ------------------------------------------------------------------
-print("[NEKOROBOT]: PYROGRAM CLIENT STARTING")
+print("[OrekiRobot]: PYROGRAM CLIENT STARTING")
 PyroGram = TOKEN.split(":")[0]
 pgram = Client(
     name=PyroGram,
@@ -296,11 +296,11 @@ aiohttpsession = ClientSession()
 print("[INFO]: INITIALIZING ARQ CLIENT")
 arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsession)
 print(
-    "[NEKOROBOT]: Connecting To Programmer • Data Center • Chennai • PostgreSQL Database"
+    "[OrekiRobot]: Connecting To Programmer • Data Center • Chennai • PostgreSQL Database"
 )
 ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 print(
-    "[NEKOROBOT]: Connecting To Programmer • Neko Userbot (https://telegram.dog/Awesome_Neko)"
+    "[OrekiRobot]: Connecting To Programmer • Neko Userbot (https://telegram.dog/Awesome_Neko)"
 )
 timeout = httpx.Timeout(40)
 http = httpx.AsyncClient(http2=True, timeout=timeout)
@@ -342,7 +342,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from NekoRobot.modules.helper_funcs.handlers import (
+from OrekiRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
@@ -353,4 +353,4 @@ tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
 
-LOGGER.info("[NEKOROBOT IS READY]")
+LOGGER.info("[OrekiRobot IS READY]")

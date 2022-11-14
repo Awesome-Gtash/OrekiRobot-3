@@ -4,10 +4,10 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
 
-import NekoRobot.modules.sql.global_bans_sql as gban_sql
-import NekoRobot.modules.sql.users_sql as user_sql
-from NekoRobot import DEV_USERS, NEKO_PTB, OWNER_ID
-from NekoRobot.modules.helper_funcs.chat_status import dev_plus
+import OrekiRobot.modules.sql.global_bans_sql as gban_sql
+import OrekiRobot.modules.sql.users_sql as user_sql
+from OrekiRobot import DEV_USERS, NEKO_PTB, OWNER_ID
+from OrekiRobot.modules.helper_funcs.chat_status import dev_plus
 
 
 def get_invalid_chats(update: Update, context: CallbackContext, remove: bool = False):

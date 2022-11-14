@@ -4,7 +4,7 @@ import traceback
 
 from telethon.sync import events
 
-from NekoRobot import tbot as client
+from OrekiRobot import tbot as client
 
 # telethon eval
 

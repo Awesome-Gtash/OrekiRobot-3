@@ -4,11 +4,11 @@ from telegram import Update
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import mention_html
 
-import NekoRobot.modules.sql.logger_sql as sql
-from NekoRobot.modules.helper_funcs.anonymous import AdminPerms
-from NekoRobot.modules.helper_funcs.anonymous import user_admin as u_admin
-from NekoRobot.modules.helper_funcs.decorators import nekocmd
-from NekoRobot.modules.log_channel import loggable
+import OrekiRobot.modules.sql.logger_sql as sql
+from OrekiRobot.modules.helper_funcs.anonymous import AdminPerms
+from OrekiRobot.modules.helper_funcs.anonymous import user_admin as u_admin
+from OrekiRobot.modules.helper_funcs.decorators import nekocmd
+from OrekiRobot.modules.log_channel import loggable
 
 
 @nekocmd(command="announce", pass_args=True)

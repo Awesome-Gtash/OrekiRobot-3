@@ -23,7 +23,7 @@ SOFTWARE.
 """
 from asyncio import gather
 
-from NekoRobot import aiohttpsession as session
+from OrekiRobot import aiohttpsession as session
 
 
 async def get(url: str, *args, **kwargs):

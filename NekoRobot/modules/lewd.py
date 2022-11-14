@@ -3,7 +3,7 @@ MIT License
 
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022 Awesome-Prince
-Copyright (c) 2021, Programmer  •  Network, <https://github.com/Awesome-Prince/NekoRobot-3>
+Copyright (c) 2021, Programmer  •  Network, <https://github.com/Awesome-Prince/OrekiRobot-3>
 
 This file is part of @NekoXRobot (Telegram Bot)
 
@@ -38,11 +38,11 @@ from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import mention_html
 
-import NekoRobot.modules.sql.nsfw_sql as sql
-from NekoRobot import NEKO_PTB
-from NekoRobot.modules.helper_funcs.chat_status import user_admin
-from NekoRobot.modules.helper_funcs.filters import CustomFilters
-from NekoRobot.modules.log_channel import gloggable
+import OrekiRobot.modules.sql.nsfw_sql as sql
+from OrekiRobot import NEKO_PTB
+from OrekiRobot.modules.helper_funcs.chat_status import user_admin
+from OrekiRobot.modules.helper_funcs.filters import CustomFilters
+from OrekiRobot.modules.log_channel import gloggable
 
 
 @user_admin

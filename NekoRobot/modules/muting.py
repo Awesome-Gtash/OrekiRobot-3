@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -31,20 +31,20 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import mention_html
 
-from NekoRobot import LOGGER, NEKO_PTB, TIGERS
-from NekoRobot.modules.helper_funcs.chat_status import (
+from OrekiRobot import LOGGER, NEKO_PTB, TIGERS
+from OrekiRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
     is_user_admin,
     user_admin,
 )
-from NekoRobot.modules.helper_funcs.extraction import (
+from OrekiRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from NekoRobot.modules.helper_funcs.string_handling import extract_time
-from NekoRobot.modules.log_channel import loggable
+from OrekiRobot.modules.helper_funcs.string_handling import extract_time
+from OrekiRobot.modules.log_channel import loggable
 
 
 def check_user(user_id: int, bot: Bot, chat: Chat) -> Optional[str]:

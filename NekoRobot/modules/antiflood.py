@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -37,18 +37,18 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from NekoRobot import NEKO_PTB, TIGERS, WOLVES
-from NekoRobot.modules.connection import connected
-from NekoRobot.modules.helper_funcs.alternate import send_message
-from NekoRobot.modules.helper_funcs.chat_status import (
+from OrekiRobot import NEKO_PTB, TIGERS, WOLVES
+from OrekiRobot.modules.connection import connected
+from OrekiRobot.modules.helper_funcs.alternate import send_message
+from OrekiRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from NekoRobot.modules.helper_funcs.string_handling import extract_time
-from NekoRobot.modules.log_channel import loggable
-from NekoRobot.modules.sql import antiflood_sql as sql
+from OrekiRobot.modules.helper_funcs.string_handling import extract_time
+from OrekiRobot.modules.log_channel import loggable
+from OrekiRobot.modules.sql import antiflood_sql as sql
 
 FLOOD_GROUP = 3
 

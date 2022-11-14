@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -27,15 +27,15 @@ from telegram import ChatPermissions, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
 
-from NekoRobot import NEKO_PTB
-from NekoRobot.modules.helper_funcs.chat_status import (
+from OrekiRobot import NEKO_PTB
+from OrekiRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_bot_admin,
     is_user_ban_protected,
     is_user_in_chat,
 )
-from NekoRobot.modules.helper_funcs.extraction import extract_user_and_text
-from NekoRobot.modules.helper_funcs.filters import CustomFilters
+from OrekiRobot.modules.helper_funcs.extraction import extract_user_and_text
+from OrekiRobot.modules.helper_funcs.filters import CustomFilters
 
 RBAN_ERRORS = {
     "User is an administrator of the chat",

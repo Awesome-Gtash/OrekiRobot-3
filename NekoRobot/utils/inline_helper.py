@@ -17,9 +17,9 @@ from pyrogram.types import (
 )
 from search_engine_parser import GoogleSearch
 
-from NekoRobot import OWNER_ID, arq, pgram
-from NekoRobot.utils.pluginhelpers import convert_seconds_to_minutes as time_convert
-from NekoRobot.utils.pluginhelpers import fetch
+from OrekiRobot import OWNER_ID, arq, pgram
+from OrekiRobot.utils.pluginhelpers import convert_seconds_to_minutes as time_convert
+from OrekiRobot.utils.pluginhelpers import fetch
 
 SUDOERS = OWNER_ID
 app = pgram

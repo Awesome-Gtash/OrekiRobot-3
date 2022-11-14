@@ -12,7 +12,7 @@ from telegram import (
 )
 from telegram.error import TelegramError
 
-from NekoRobot import NO_LOAD
+from OrekiRobot import NO_LOAD
 
 
 class EqInlineKeyboardButton(InlineKeyboardButton):

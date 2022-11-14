@@ -8,8 +8,8 @@ import requests
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler
 
-from NekoRobot import DEV_USERS, DRAGONS, NEKO_PTB, OWNER_ID
-from NekoRobot.modules.disable import DisableAbleCommandHandler
+from OrekiRobot import DEV_USERS, DRAGONS, NEKO_PTB, OWNER_ID
+from OrekiRobot.modules.disable import DisableAbleCommandHandler
 
 info_btn = "More Information"
 kaizoku_btn = "Kaizoku ☠️"

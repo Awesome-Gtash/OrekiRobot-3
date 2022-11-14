@@ -3,7 +3,7 @@ import threading
 from sqlalchemy import Column, UnicodeText
 from sqlalchemy.sql.sqltypes import BigInteger
 
-from NekoRobot.modules.sql import BASE, SESSION
+from OrekiRobot.modules.sql import BASE, SESSION
 
 
 class UserInfo(BASE):

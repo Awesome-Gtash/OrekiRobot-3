@@ -8,8 +8,8 @@ from telegram.error import BadRequest, TelegramError, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
 from telegram.utils.helpers import mention_html
 
-import NekoRobot.modules.sql.global_bans_sql as sql
-from NekoRobot import (
+import OrekiRobot.modules.sql.global_bans_sql as sql
+from OrekiRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -23,17 +23,17 @@ from NekoRobot import (
     WOLVES,
     sw,
 )
-from NekoRobot.modules.helper_funcs.chat_status import (
+from OrekiRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from NekoRobot.modules.helper_funcs.extraction import (
+from OrekiRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from NekoRobot.modules.helper_funcs.misc import send_to_list
-from NekoRobot.modules.sql.users_sql import get_user_com_chats
+from OrekiRobot.modules.helper_funcs.misc import send_to_list
+from OrekiRobot.modules.sql.users_sql import get_user_com_chats
 
 GBAN_ENFORCE_GROUP = 6
 

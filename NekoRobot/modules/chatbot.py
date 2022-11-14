@@ -23,11 +23,11 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import NekoRobot.modules.sql.chatbot_sql as sql
-from NekoRobot import NEKO_PTB
-from NekoRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from NekoRobot.modules.helper_funcs.filters import CustomFilters
-from NekoRobot.modules.log_channel import gloggable
+import OrekiRobot.modules.sql.chatbot_sql as sql
+from OrekiRobot import NEKO_PTB
+from OrekiRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from OrekiRobot.modules.helper_funcs.filters import CustomFilters
+from OrekiRobot.modules.log_channel import gloggable
 
 
 @user_admin_no_reply

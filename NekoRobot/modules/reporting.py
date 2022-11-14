@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Prince, [ https://github.com/Awesome-Prince]
-Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/NekoRobot-3 ]
+Copyright (c) 2022-2023, Programmer Network, [ https://github.com/Awesome-Prince/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -36,10 +36,10 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from NekoRobot import DRAGONS, LOGGER, NEKO_PTB, TIGERS, WOLVES
-from NekoRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from NekoRobot.modules.log_channel import loggable
-from NekoRobot.modules.sql import reporting_sql as sql
+from OrekiRobot import DRAGONS, LOGGER, NEKO_PTB, TIGERS, WOLVES
+from OrekiRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from OrekiRobot.modules.log_channel import loggable
+from OrekiRobot.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 12
 REPORT_IMMUNE_USERS = DRAGONS + TIGERS + WOLVES

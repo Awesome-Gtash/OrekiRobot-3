@@ -1,6 +1,6 @@
 from envparse import env
 
-from NekoRobot import LOGGER
+from OrekiRobot import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
