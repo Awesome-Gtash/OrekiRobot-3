@@ -31,13 +31,7 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 
 <a href="https://github.com/Awesome-Prince/NekoRobot-3"> <img src="https://img.shields.io/badge/nekorobot-black?style=for-the-badge&logo=github" alt="Neko" /> </a>
 
-
-## 💘 Join our Support Group & Updates Channel
 	
-	
-<a href="https://t.me/Tiger_SupportChat"><img src="https://img.shields.io/badge/Support 💌-Telegram%20Group-red.svg?logo=telegram"></a>
-<a href="https://t.me/Tiger_Updates"><img src="https://img.shields.io/badge/Updates 📣-Telegram%20Channel-red.svg?logo=telegram"></a>
-
 	
 <details>
 	<summary>More Deploy Options</summary>
