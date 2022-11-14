@@ -53,7 +53,7 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 </p>
 
 ```console
-    ~$ git clone https://github.com/Awesome-Prince/OrekiRobot-3.git
+    ~$ git clone https://github.com/Awesome-Gtash/OrekiRobot-3.git
     ~$ cd OrekiRobot
     ~$ cp sample_config.py config.py
 ```
