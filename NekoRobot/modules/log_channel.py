@@ -32,13 +32,14 @@ from telegram.ext import CallbackContext
 FILENAME = __name__.rsplit(".", 1)[-1]
 
 if is_module_loaded(FILENAME):
-    from OrekiRobot import EVENT_LOGS, LOGGER, NEKO_PTB
     from OrekiRobot.modules.helper_funcs.chat_status import user_admin
     from OrekiRobot.modules.sql import log_channel_sql as sql
     from telegram import ParseMode, Update
     from telegram.error import BadRequest, Unauthorized
     from telegram.ext import CommandHandler, JobQueue
     from telegram.utils.helpers import escape_markdown
+
+    from OrekiRobot import EVENT_LOGS, LOGGER, NEKO_PTB
 
     def loggable(func):
         @wraps(func)

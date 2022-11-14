@@ -28,10 +28,11 @@ import subprocess
 import sys
 from time import sleep
 
-from OrekiRobot import NEKO_PTB
 from OrekiRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler
+
+from OrekiRobot import NEKO_PTB
 
 
 @dev_plus

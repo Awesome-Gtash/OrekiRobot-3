@@ -30,7 +30,6 @@ from io import BytesIO
 from typing import Optional
 
 import OrekiRobot.modules.sql.notes_sql as sql
-from OrekiRobot import DRAGONS, JOIN_LOGGER, LOGGER, NEKO_PTB, SUPPORT_CHAT
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from OrekiRobot.modules.helper_funcs.chat_status import connection_status, user_admin
 from OrekiRobot.modules.helper_funcs.handlers import MessageHandlerChecker
@@ -56,6 +55,8 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import escape_markdown, mention_markdown
+
+from OrekiRobot import DRAGONS, JOIN_LOGGER, LOGGER, NEKO_PTB, SUPPORT_CHAT
 
 FILE_MATCHER = re.compile(r"^###file_id(!photo)?###:(.*?)(?:\s|$)")
 STICKER_MATCHER = re.compile(r"^###sticker(!photo)?###:")

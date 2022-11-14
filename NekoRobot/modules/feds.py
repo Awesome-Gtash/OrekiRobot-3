@@ -32,7 +32,6 @@ import uuid
 from io import BytesIO
 
 import OrekiRobot.modules.sql.feds_sql as sql
-from OrekiRobot import DRAGONS, EVENT_LOGS, LOGGER, NEKO_PTB, OWNER_ID, TIGERS, WOLVES
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from OrekiRobot.modules.helper_funcs.alternate import send_message
 from OrekiRobot.modules.helper_funcs.chat_status import is_user_admin
@@ -52,6 +51,8 @@ from telegram import (
 from telegram.error import BadRequest, TelegramError, Unauthorized
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
 from telegram.utils.helpers import mention_html, mention_markdown
+
+from OrekiRobot import DRAGONS, EVENT_LOGS, LOGGER, NEKO_PTB, OWNER_ID, TIGERS, WOLVES
 
 FBAN_ERRORS = {
     "User is an administrator of the chat",

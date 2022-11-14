@@ -29,8 +29,6 @@ SOFTWARE.
 import html
 import os
 
-from OrekiRobot import DRAGONS, NEKO_PTB
-from OrekiRobot import tbot as bot
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from OrekiRobot.modules.helper_funcs.alternate import send_message
 from OrekiRobot.modules.helper_funcs.chat_status import (
@@ -57,6 +55,9 @@ from telethon import events
 from telethon.errors import *
 from telethon.tl import *
 from telethon.tl import functions, types
+
+from OrekiRobot import DRAGONS, NEKO_PTB
+from OrekiRobot import tbot as bot
 
 
 async def is_register_admin(chat, user):

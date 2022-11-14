@@ -8,17 +8,6 @@ from uuid import uuid4
 
 import OrekiRobot.modules.sql.users_sql as sql
 import requests
-from OrekiRobot import (
-    DEMONS,
-    DEV_USERS,
-    DRAGONS,
-    LOGGER,
-    OWNER_ID,
-    TIGERS,
-    WOLVES,
-    pgram,
-    sw,
-)
 from OrekiRobot.modules.helper_funcs.decorators import nekoinline
 from OrekiRobot.modules.helper_funcs.miku_misc import article
 from OrekiRobot.modules.sudoers import bot_sys_stats as wall
@@ -37,6 +26,18 @@ from telegram import (
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import mention_html
+
+from OrekiRobot import (
+    DEMONS,
+    DEV_USERS,
+    DRAGONS,
+    LOGGER,
+    OWNER_ID,
+    TIGERS,
+    WOLVES,
+    pgram,
+    sw,
+)
 
 
 def remove_prefix(text, prefix):

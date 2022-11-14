@@ -5,10 +5,11 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from OrekiRobot import DEV_USERS, DRAGONS, NEKO_PTB, OWNER_ID
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler
+
+from OrekiRobot import DEV_USERS, DRAGONS, NEKO_PTB, OWNER_ID
 
 info_btn = "More Information"
 kaizoku_btn = "Kaizoku ☠️"

@@ -28,11 +28,12 @@ from collections.abc import Iterable
 from typing import Generator, List, Union
 
 import OrekiRobot.modules.sql.language_sql as sql
-from OrekiRobot import NEKO_PTB
 from OrekiRobot.langs import get_language, get_languages, get_string
 from OrekiRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import CallbackQueryHandler, CommandHandler
+
+from OrekiRobot import NEKO_PTB
 
 
 def paginate(iterable: Iterable, page_size: int) -> Generator[List, None, None]:

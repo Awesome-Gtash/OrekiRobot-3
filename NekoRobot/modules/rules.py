@@ -26,7 +26,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 from typing import Optional
 
 import OrekiRobot.modules.sql.rules_sql as sql
-from OrekiRobot import NEKO_PTB
 from OrekiRobot.modules.helper_funcs.chat_status import user_admin
 from OrekiRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
@@ -40,6 +39,8 @@ from telegram import (
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters
 from telegram.utils.helpers import escape_markdown
+
+from OrekiRobot import NEKO_PTB
 
 
 def get_rules(update: Update, context: CallbackContext):

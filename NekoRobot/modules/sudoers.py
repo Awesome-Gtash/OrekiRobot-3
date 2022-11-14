@@ -29,6 +29,7 @@ import time
 import OrekiRobot.modules.sql.users_sql as sql
 import OrekiRobot.utils.formatter as formatter
 import psutil
+
 from OrekiRobot import StartTime
 
 # Stats Module

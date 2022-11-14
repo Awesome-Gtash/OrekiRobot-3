@@ -1,7 +1,6 @@
 import html
 from typing import Optional
 
-from OrekiRobot import DEMONS, DEV_USERS, DRAGONS, LOGGER, OWNER_ID, TIGERS, WOLVES
 from OrekiRobot.modules.helper_funcs.anonymous import AdminPerms, user_admin
 from OrekiRobot.modules.helper_funcs.chat_status import (
     bot_admin,
@@ -19,6 +18,8 @@ from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters
 from telegram.utils.helpers import mention_html
+
+from OrekiRobot import DEMONS, DEV_USERS, DRAGONS, LOGGER, OWNER_ID, TIGERS, WOLVES
 
 
 @nekocmd(command="cban", pass_args=True)

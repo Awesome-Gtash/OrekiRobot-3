@@ -24,10 +24,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
 from gpytranslate import SyncTranslator
-from OrekiRobot import NEKO_PTB
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
+
+from OrekiRobot import NEKO_PTB
 
 trans = SyncTranslator()
 

@@ -5,7 +5,6 @@ from time import sleep
 
 import OrekiRobot.modules.sql.chatbot_sql as sql
 import requests
-from OrekiRobot import NEKO_PTB
 from OrekiRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
 from OrekiRobot.modules.helper_funcs.filters import CustomFilters
 from OrekiRobot.modules.log_channel import gloggable
@@ -27,6 +26,8 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import mention_html
+
+from OrekiRobot import NEKO_PTB
 
 
 @user_admin_no_reply

@@ -26,7 +26,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import html
 
 import OrekiRobot.modules.sql.approve_sql as sql
-from OrekiRobot import DRAGONS, NEKO_PTB
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from OrekiRobot.modules.helper_funcs.chat_status import user_admin
 from OrekiRobot.modules.helper_funcs.extraction import extract_user
@@ -35,6 +34,8 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Upda
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler
 from telegram.utils.helpers import mention_html
+
+from OrekiRobot import DRAGONS, NEKO_PTB
 
 
 @loggable

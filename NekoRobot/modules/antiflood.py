@@ -26,7 +26,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import html
 from typing import Optional
 
-from OrekiRobot import NEKO_PTB, TIGERS, WOLVES
 from OrekiRobot.modules.connection import connected
 from OrekiRobot.modules.helper_funcs.alternate import send_message
 from OrekiRobot.modules.helper_funcs.chat_status import (
@@ -48,6 +47,8 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import mention_html
+
+from OrekiRobot import NEKO_PTB, TIGERS, WOLVES
 
 FLOOD_GROUP = 3
 

@@ -5,7 +5,6 @@ import time
 import OrekiRobot.modules.helper_funcs.string_store as fun
 import OrekiRobot.modules.NekoFunBot_Strings as fun_strings
 import requests
-from OrekiRobot import NEKO_PTB, SUPPORT_CHAT
 from OrekiRobot.events import register
 from OrekiRobot.modules.disable import (
     DisableAbleCommandHandler,
@@ -17,6 +16,8 @@ from OrekiRobot.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters
+
+from OrekiRobot import NEKO_PTB, SUPPORT_CHAT
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 

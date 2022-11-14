@@ -2,8 +2,9 @@ import io
 import sys
 import traceback
 
-from OrekiRobot import tbot as client
 from telethon.sync import events
+
+from OrekiRobot import tbot as client
 
 # telethon eval
 

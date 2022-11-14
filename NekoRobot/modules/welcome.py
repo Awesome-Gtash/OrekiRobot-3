@@ -5,17 +5,6 @@ import time
 from functools import partial
 
 import OrekiRobot.modules.sql.welcome_sql as sql
-from OrekiRobot import (
-    DEMONS,
-    DEV_USERS,
-    DRAGONS,
-    LOGGER,
-    NEKO_PTB,
-    OWNER_ID,
-    TIGERS,
-    WOLVES,
-    sw,
-)
 from OrekiRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
@@ -44,6 +33,18 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
+
+from OrekiRobot import (
+    DEMONS,
+    DEV_USERS,
+    DRAGONS,
+    LOGGER,
+    NEKO_PTB,
+    OWNER_ID,
+    TIGERS,
+    WOLVES,
+    sw,
+)
 
 VALID_WELCOME_FORMATTERS = [
     "first",

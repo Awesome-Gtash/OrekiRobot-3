@@ -25,8 +25,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from OrekiRobot import OWNER_ID
-from OrekiRobot import tbot as tbot
 from OrekiRobot.events import register
 from OrekiRobot.modules.sql_extended.night_mode_sql import (
     add_nightmode,
@@ -37,6 +35,9 @@ from OrekiRobot.modules.sql_extended.night_mode_sql import (
 from telethon import *
 from telethon import functions
 from telethon.tl.types import ChatBannedRights
+
+from OrekiRobot import OWNER_ID
+from OrekiRobot import tbot as tbot
 
 hehes = ChatBannedRights(
     until_date=None,

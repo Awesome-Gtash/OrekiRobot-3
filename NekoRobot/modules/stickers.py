@@ -6,8 +6,6 @@ from html import escape
 
 import requests
 from bs4 import BeautifulSoup as bs
-from OrekiRobot import NEKO_PTB
-from OrekiRobot import tbot as bot
 from OrekiRobot.events import register as Cutiepii
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from PIL import Image, ImageDraw, ImageFont
@@ -20,6 +18,9 @@ from telegram import (
 )
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import mention_html
+
+from OrekiRobot import NEKO_PTB
+from OrekiRobot import tbot as bot
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 

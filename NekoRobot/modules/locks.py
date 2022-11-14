@@ -27,7 +27,6 @@ import html
 
 import OrekiRobot.modules.sql.locks_sql as sql
 from alphabet_detector import AlphabetDetector
-from OrekiRobot import LOGGER, NEKO_PTB
 from OrekiRobot.modules.connection import connected
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from OrekiRobot.modules.helper_funcs.alternate import send_message, typing_action
@@ -50,6 +49,8 @@ from telegram import (
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, MessageHandler
 from telegram.utils.helpers import mention_html
+
+from OrekiRobot import LOGGER, NEKO_PTB
 
 ad = AlphabetDetector()
 

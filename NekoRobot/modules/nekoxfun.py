@@ -21,9 +21,10 @@ SOFTWARE.
 """
 
 import nekos
-from OrekiRobot import NEKO_PTB
 from telegram import Chat
 from telegram.ext import CommandHandler
+
+from OrekiRobot import NEKO_PTB
 
 
 def is_user_in_chat(chat: Chat, user_id: int) -> bool:

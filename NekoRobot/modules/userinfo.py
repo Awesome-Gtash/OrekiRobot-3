@@ -6,19 +6,6 @@ from platform import python_version
 
 import OrekiRobot.modules.sql.userinfo_sql as sql
 import requests
-from OrekiRobot import (
-    DEMONS,
-    DEV_USERS,
-    DRAGONS,
-    INFOPIC,
-    NEKO_PTB,
-    OWNER_ID,
-    TIGERS,
-    WOLVES,
-    StartTime,
-    sw,
-    tbot,
-)
 from OrekiRobot.__main__ import STATS, TOKEN, USER_INFO
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from OrekiRobot.modules.helper_funcs.chat_status import sudo_plus
@@ -42,6 +29,20 @@ from telegram.utils.helpers import escape_markdown, mention_html
 from telethon import events
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.types import ChannelParticipantsAdmins
+
+from OrekiRobot import (
+    DEMONS,
+    DEV_USERS,
+    DRAGONS,
+    INFOPIC,
+    NEKO_PTB,
+    OWNER_ID,
+    TIGERS,
+    WOLVES,
+    StartTime,
+    sw,
+    tbot,
+)
 
 NEKO_IMG = "https://te.legra.ph/file/c3eac007902fab16f7aa2.jpg"
 

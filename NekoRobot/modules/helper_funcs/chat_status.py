@@ -28,6 +28,10 @@ from threading import RLock
 from time import perf_counter
 
 from cachetools import TTLCache
+from pyrogram import filters
+from telegram import Chat, ChatMember, ParseMode, Update, User
+from telegram.ext import CallbackContext
+
 from OrekiRobot import (
     DEL_CMDS,
     DEMONS,
@@ -38,9 +42,6 @@ from OrekiRobot import (
     TIGERS,
     WOLVES,
 )
-from pyrogram import filters
-from telegram import Chat, ChatMember, ParseMode, Update, User
-from telegram.ext import CallbackContext
 
 # stores admemes in memory for 10 min.
 ADMIN_CACHE = TTLCache(maxsize=512, ttl=60 * 10, timer=perf_counter)

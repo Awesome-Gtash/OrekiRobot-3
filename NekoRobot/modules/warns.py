@@ -28,7 +28,6 @@ import re
 from typing import Optional
 
 import telegram
-from OrekiRobot import NEKO_PTB, TIGERS, WOLVES
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from OrekiRobot.modules.helper_funcs.chat_status import (
     bot_admin,
@@ -66,6 +65,8 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import mention_html
+
+from OrekiRobot import NEKO_PTB, TIGERS, WOLVES
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"

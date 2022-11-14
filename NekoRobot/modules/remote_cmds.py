@@ -23,7 +23,6 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-from OrekiRobot import NEKO_PTB
 from OrekiRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_bot_admin,
@@ -35,6 +34,8 @@ from OrekiRobot.modules.helper_funcs.filters import CustomFilters
 from telegram import ChatPermissions, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
+
+from OrekiRobot import NEKO_PTB
 
 RBAN_ERRORS = {
     "User is an administrator of the chat",

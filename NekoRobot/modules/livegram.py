@@ -1,7 +1,8 @@
-from OrekiRobot import OWNER_ID
-from OrekiRobot import pgram as bot
 from pyrogram import Client, filters
 from pyrogram.types import Message
+
+from OrekiRobot import OWNER_ID
+from OrekiRobot import pgram as bot
 
 
 @bot.on_message(filters.private & filters.incoming)

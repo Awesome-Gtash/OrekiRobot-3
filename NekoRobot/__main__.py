@@ -41,23 +41,6 @@ from sys import argv
 from typing import Optional
 
 import OrekiRobot.modules.sql.users_sql as sql
-from OrekiRobot import (
-    BOT_NAME,
-    BOT_USERNAME,
-    DONATION_LINK,
-    HELP_IMG,
-    LOGGER,
-    NEKO_PTB,
-    OWNER_ID,
-    PORT,
-    SUPPORT_CHAT,
-    TOKEN,
-    WEBHOOK,
-    StartTime,
-    pgram,
-    tbot,
-    updater,
-)
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
@@ -82,6 +65,24 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import escape_markdown
+
+from OrekiRobot import (
+    BOT_NAME,
+    BOT_USERNAME,
+    DONATION_LINK,
+    HELP_IMG,
+    LOGGER,
+    NEKO_PTB,
+    OWNER_ID,
+    PORT,
+    SUPPORT_CHAT,
+    TOKEN,
+    WEBHOOK,
+    StartTime,
+    pgram,
+    tbot,
+    updater,
+)
 
 
 def get_readable_time(seconds: int) -> str:

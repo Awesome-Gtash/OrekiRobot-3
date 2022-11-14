@@ -26,11 +26,12 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import os
 from datetime import datetime
 
-from OrekiRobot import tbot
 from OrekiRobot.events import register
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
 from telethon import types
+
+from OrekiRobot import tbot
 
 TMP_DOWNLOAD_DIRECTORY = "tg-File/"
 babe = "OrekiRobot"

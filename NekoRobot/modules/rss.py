@@ -27,11 +27,12 @@ import html
 import re
 
 from feedparser import parse
-from OrekiRobot import NEKO_PTB, updater
 from OrekiRobot.modules.helper_funcs.chat_status import user_admin
 from OrekiRobot.modules.sql import rss_sql as sql
 from telegram import ParseMode, Update, constants
 from telegram.ext import CallbackContext, CommandHandler
+
+from OrekiRobot import NEKO_PTB, updater
 
 
 def show_url(update: Update, context: CallbackContext):

@@ -27,12 +27,13 @@ import asyncio
 import datetime
 from datetime import datetime
 
-from OrekiRobot import BOT_NAME
-from OrekiRobot import tbot as neko
 from OrekiRobot.events import register
 from pyrogram import __version__ as pyrover
 from telethon import Button
 from telethon import __version__ as tlhver
+
+from OrekiRobot import BOT_NAME
+from OrekiRobot import tbot as neko
 
 edit_time = 5
 """ =======================Neko====================== """

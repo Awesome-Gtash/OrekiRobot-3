@@ -1,9 +1,10 @@
 from typing import List, Optional
 
-from OrekiRobot import LOGGER
 from OrekiRobot.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
+
+from OrekiRobot import LOGGER
 
 
 def id_from_reply(message):

@@ -1,7 +1,8 @@
 import random
 
-from OrekiRobot import tbot as neko
 from telethon import events
+
+from OrekiRobot import tbot as neko
 
 
 @neko.on(events.NewMessage(pattern="/guess ?(.*)"))

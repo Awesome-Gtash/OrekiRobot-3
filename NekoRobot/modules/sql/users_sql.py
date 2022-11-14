@@ -1,9 +1,10 @@
 import threading
 
-from OrekiRobot import NEKO_PTB
 from OrekiRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, ForeignKey, String, UnicodeText, UniqueConstraint, func
 from sqlalchemy.sql.sqltypes import BigInteger
+
+from OrekiRobot import NEKO_PTB
 
 
 class Users(BASE):

@@ -25,11 +25,12 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 from asyncio import sleep
 
-from OrekiRobot import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, tbot
 from telethon import events
 from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChannelParticipantsAdmins, ChatBannedRights
+
+from OrekiRobot import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, tbot
 
 # =================== CONSTANT ===================
 

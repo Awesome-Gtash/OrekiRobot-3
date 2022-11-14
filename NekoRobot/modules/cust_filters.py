@@ -3,7 +3,6 @@ import re
 from html import escape
 
 import telegram
-from OrekiRobot import DRAGONS, LOGGER, NEKO_PTB
 from OrekiRobot.modules.connection import connected
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from OrekiRobot.modules.helper_funcs.alternate import send_message, typing_action
@@ -24,6 +23,8 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Message, ParseM
 from telegram.error import BadRequest
 from telegram.ext import CallbackQueryHandler, Filters, MessageHandler
 from telegram.utils.helpers import escape_markdown, mention_html
+
+from OrekiRobot import DRAGONS, LOGGER, NEKO_PTB
 
 HANDLER_GROUP = 10
 
