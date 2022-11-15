@@ -600,3 +600,219 @@ def settings_button(update: Update, context: CallbackContext) -> None:
                     )
                 ),
             )
+
+        elif back_match:
+            chat_id = back_match[1]
+            chat = bot.get_chat(chat_id)
+            query.message.edit_text(
+                text=f"Hi there! There are quite a few settings for {escape_markdown(chat.title)} - go ahead and pick what you're interested in.",
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(
+                    paginate_modules(0, CHAT_SETTINGS, "stngs", chat=chat_id)
+                ),
+            )
+
+        # ensure no spinny white circle
+        bot.answer_callback_query(query.id)
+    except BadRequest as excp:
+        if excp.message not in [
+            "Message is not modified",
+            "Query_id_invalid",
+            "Message can't be deleted",
+        ]:
+            LOGGER.exception("Exception in settings buttons. %s", str(query.data))
+
+
+def get_settings(update: Update, context: CallbackContext) -> None:
+    chat = update.effective_chat  # type: Optional[Chat]
+    user = update.effective_user  # type: Optional[User]
+    msg = update.effective_message  # type: Optional[Message]
+
+    # ONLY send settings in PM
+    if chat.type == chat.PRIVATE:
+        send_settings(chat.id, user.id, True)
+
+    elif is_user_admin(update, user.id):
+        text = "Click here to get this chat's settings, as well as yours."
+        msg.reply_text(
+            text,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="Settings",
+                            url=f"https://telegram.dog/{OREKI_PTB.bot.username}?start=stngs_{chat.id}",
+                        )
+                    ]
+                ]
+            ),
+        )
+
+    else:
+        text = "Click here to check your settings."
+
+
+def donate(update: Update, context: CallbackContext) -> None:
+    chat = update.effective_chat  # type: Optional[Chat]
+    if chat.type == "private":
+        update.effective_message.reply_text(
+            DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
+        )
+
+        if OWNER_ID != 5189767566 and DONATION_LINK:
+            update.effective_message.reply_text(
+                f"You can also donate to the person currently running me [here]({DONATION_LINK})",
+                parse_mode=ParseMode.MARKDOWN,
+            )
+
+
+    else:
+        user = update.effective_message.from_user
+        bot = context.bot
+        try:
+            bot.send_message(
+                user.id,
+                DONATE_STRING,
+                parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=True,
+            )
+
+            update.effective_message.reply_text(
+                text="I'm free for everyone❤️\njust donate by subs channel, Don't forget to join the support group.",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(
+                                text="📢 Updates",
+                                url="https://telegram.dog/Tiger_Updates",
+                            ),
+                            InlineKeyboardButton(
+                                text="🚑 Support",
+                                url=f"https://telegram.dog/Tiger_SupportChat",
+                            ),
+                        ]
+                    ]
+                ),
+            )
+        except Unauthorized:
+            update.effective_message.reply_text(
+                "Contact me in PM first to get donation information."
+            )
+
+
+def migrate_chats(update: Update):
+    msg = update.effective_message  # type: Optional[Message]
+    if msg.migrate_to_chat_id:
+        old_chat = update.effective_chat.id
+        new_chat = msg.migrate_to_chat_id
+    elif msg.migrate_from_chat_id:
+        old_chat = msg.migrate_from_chat_id
+        new_chat = update.effective_chat.id
+    else:
+        return
+
+
+    LOGGER.info("Migrating from %s, to %s", old_chat, new_chat)
+    for mod in MIGRATEABLE:
+        with contextlib.suppress(KeyError, AttributeError):
+            mod.__migrate__(old_chat, new_chat)
+    LOGGER.info("Successfully migrated!")
+
+
+def main():
+    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
+        try:
+            OREKI_PTB.bot.sendMessage(
+                f"@{SUPPORT_CHAT}",
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(
+                                text="[► Click Here ◄]", url=f"https://t.me/Galaxy_Tamil"
+                            ),
+                        ]
+                    ]
+                ),
+            )
+        except Unauthorized:
+            LOGGER.warning(
+                "Bot isnt able to send message to support_chat, go and check!"
+            )
+        except BadRequest as e:
+            LOGGER.warning(e.message)
+
+    test_handler = CommandHandler("test", test, run_async=True)
+    start_handler = CommandHandler("start", start, run_async=True)
+
+    help_handler = CommandHandler("help", get_help, run_async=True)
+    help_callback_handler = CallbackQueryHandler(
+        help_button, pattern=r"help_.*", run_async=True
+    )
+
+    settings_handler = CommandHandler("settings", get_settings)
+    settings_callback_handler = CallbackQueryHandler(
+        settings_button, pattern=r"stngs_", run_async=True
+    )
+
+    data_callback_handler = CallbackQueryHandler(
+        oreki_callback_data, pattern=r"oreki_", run_async=True
+    )
+    donate_handler = CommandHandler("donate", donate, run_async=True)
+    migrate_handler = MessageHandler(
+        Filters.status_update.migrate, migrate_chats, run_async=True
+    )
+
+    OREKI_PTB.add_handler(start_handler)
+    OREKI_PTB.add_handler(help_handler)
+    OREKI_PTB.add_handler(data_callback_handler)
+    OREKI_PTB.add_handler(settings_handler)
+    OREKI_PTB.add_handler(help_callback_handler)
+    OREKI_PTB.add_handler(settings_callback_handler)
+    OREKI_PTB.add_handler(migrate_handler)
+    OREKI_PTB.add_handler(donate_handler)
+
+    OREKI_PTB.add_error_handler(error_callback)
+
+    if WEBHOOK:
+        LOGGER.info("Using webhooks.")
+        updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN)
+
+        if CERT_PATH:
+            updater.bot.set_webhook(url=URL + TOKEN, certificate=open(CERT_PATH, "rb"))
+        else:
+            updater.bot.set_webhook(url=URL + TOKEN)
+
+    else:
+        LOGGER.info(
+            f"Oreki started, Using long polling. | BOT: [@{OREKI_PTB.bot.username}]"
+        )
+        updater.start_polling(
+            timeout=15,
+            read_latency=4,
+            drop_pending_updates=True,
+            allowed_updates=Update.ALL_TYPES,
+        )
+
+    if len(argv) in {1, 3, 4}:
+        tbot.run_until_disconnected()
+
+    else:
+        tbot.disconnect()
+    updater.idle()
+
+
+"""
+try:
+    ubot.start()
+except BaseException:
+    print("Userbot Error! Have you added a STRING_SESSION in deploying??")
+    sys.exit(1)
+"""
+
+if __name__ == "__main__":
+    LOGGER.info(f"Successfully loaded modules: {str(ALL_MODULES)}")
+    tbot.start(bot_token=TOKEN)
+    pgram.start()
+    main()
+    idle()
