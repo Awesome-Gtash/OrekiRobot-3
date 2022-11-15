@@ -2,7 +2,7 @@
 BSD 2-Clause License
 Copyright (C) 2017-2019, Paul Larsen
 Copyright (C) 2022-2023, Awesome-Gtash, [ https://github.com/Awesome-Gtash ]
-Copyright (c) 2022-2023, White Tiger • Network, [ https://github.com/Awesome-Gtash/OrekiRobot-2 ]
+Copyright (c) 2022-2023, White Tiger • Network, [ https://github.com/Awesome-Gtash/OrekiRobot-3 ]
 All rights reserved.
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -315,3 +315,187 @@ def start(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
+                        InlineKeyboardButton(
+                            text="📢 Updates",
+                            url="https://telegram.dog/Tiger_Updates",
+                        ),
+                    ]
+                ]
+            ),
+        )
+
+
+def error_handler(update: Update, context: CallbackContext):
+    """Log the error and send a telegram message to notify the developer."""
+    # Log the error before we do anything else, so we can see it even if something breaks.
+    LOGGER.error(msg="Exception while handling an update:", exc_info=context.error)
+
+    # traceback.format_exception returns the usual python message about an exception, but as a
+    # list of strings rather than a single string, so we have to join them together.
+    tb_list = traceback.format_exception(
+        None, context.error, context.error.__traceback__
+    )
+    tb = "".join(tb_list)
+
+    # Build the message with some markup and additional information about what happened.
+    message = f"An exception was raised while handling an update\n<pre>update = {html.escape(json.dumps(update.to_dict(), indent=2, ensure_ascii=False))}</pre>\n\n<pre>{html.escape(tb)}</pre>"
+
+    if len(message) >= 4096:
+        message = message[:4096]
+    # Finally, send the message
+    OREKI_PTB.bot.send_message(chat_id=OWNER_ID, text=message, parse_mode=ParseMode.HTML)
+
+
+# for test purposes
+def error_callback(_, context: CallbackContext):
+    try:
+        raise context.error
+    except (BadRequest):
+        pass
+        # remove update.message.chat_id from conversation list
+    except TimedOut:
+        pass
+        # handle slow connection problems
+    except NetworkError:
+        pass
+        # handle other connection problems
+    except ChatMigrated:
+        pass
+        # the chat_id of a group has changed, use e.new_chat_id instead
+    except TelegramError:
+        pass
+        # handle all other telegram related errors
+
+
+def help_button(update: Update, context: CallbackContext) -> None:
+    query = update.callback_query
+    mod_match = re.match(r"help_module\((.+?)\)", query.data)
+    prev_match = re.match(r"help_prev\((.+?)\)", query.data)
+    next_match = re.match(r"help_next\((.+?)\)", query.data)
+    back_match = re.match(r"help_back", query.data)
+
+    with contextlib.suppress(BadRequest):
+        if mod_match:
+            module = mod_match[1]
+            text = (
+                f"╔═━「 *{HELPABLE[module].__mod_name__}* module: 」\n"
+                + HELPABLE[module].__help__
+            )
+
+            query.message.edit_text(
+                text=text,
+                parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(
+                                text="[► Back ◄]", callback_data="help_back"
+                            ),
+                            InlineKeyboardButton(
+                                text="[► Support ◄]",
+                                url=f"https://t.me/Tiger_SupportChat",
+                            ),
+                        ]
+                    ]
+                ),
+            )
+
+        elif prev_match:
+            curr_page = int(prev_match[1])
+            query.message.edit_text(
+                text=HELP_STRINGS,
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(
+                    paginate_modules(curr_page - 1, HELPABLE, "help")
+                ),
+            )
+
+        elif next_match:
+            next_page = int(next_match[1])
+            query.message.edit_text(
+                text=HELP_STRINGS,
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(
+                    paginate_modules(next_page + 1, HELPABLE, "help")
+                ),
+            )
+
+elif back_match:
+            query.message.edit_text(
+                text=HELP_STRINGS,
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(
+                    paginate_modules(0, HELPABLE, "help")
+                ),
+            )
+
+        # ensure no spinny white circle
+        context.bot.answer_callback_query(query.id)
+        # query.message.delete()
+
+
+def oreki_callback_data(update: Update, context: CallbackContext) -> None:
+    query = update.callback_query
+    uptime = get_readable_time((time.time() - StartTime))
+    if query.data == "oreki_":
+        query.message.edit_text(
+            text="""CallBackQueriesData Here""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="oreki_back")]]
+            ),
+        )
+    elif query.data == "oreki_back":
+        first_name = update.effective_user.first_name
+        query.message.edit_text(
+            PM_START_TEXT.format(
+                escape_markdown(context.bot.first_name),
+                escape_markdown(first_name),
+                escape_markdown(uptime),
+                sql.num_users(),
+                sql.num_chats(),
+            ),
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
+            disable_web_page_preview=False,
+        )
+
+
+def get_help(update: Update, context: CallbackContext) -> None:
+    chat = update.effective_chat  # type: Optional[Chat]
+    args = update.effective_message.text.split(None, 1)
+
+    # ONLY send help in PM
+    if chat.type != chat.PRIVATE:
+
+        update.effective_message.reply_photo(
+            HELP_IMG,
+            HELP_MSG,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="Open In Private Chat",
+                            url=f"t.me/{OREKI_PTB.bot.username}?start=help",
+                        )
+                    ]
+                ]
+            ),
+        )
+
+        return
+
+    if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
+        module = args[1].lower()
+        text = f" 〔 *{HELPABLE[module].__mod_name__}* 〕\n{HELPABLE[module].__help__}"
+
+        send_help(
+            chat.id,
+            text,
+            InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
+            ),
+        )
