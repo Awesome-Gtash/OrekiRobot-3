@@ -60,7 +60,7 @@ from OrekiRobot import (
     DONATION_LINK,
     HELP_IMG,
     LOGGER,
-    NEKO_PTB,
+    OREKI_PTB,
     OWNER_ID,
     PORT,
     SUPPORT_CHAT,
@@ -499,3 +499,104 @@ def get_help(update: Update, context: CallbackContext) -> None:
                 [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
             ),
         )
+
+    else:
+        send_help(chat.id, HELP_STRINGS)
+
+
+def send_settings(context: CallbackContext, chat_id, user_id, user=False):
+    if user:
+        if USER_SETTINGS:
+            settings = "\n\n".join(
+                f"*{mod.__mod_name__}*:\n{mod.__user_settings__(user_id)}"
+                for mod in USER_SETTINGS.values()
+            )
+
+            OREKI_PTB.bot.send_message(
+                user_id,
+                "These are your current settings:" + "\n\n" + settings,
+                parse_mode=ParseMode.MARKDOWN,
+            )
+
+        else:
+            NEKO_PTB.bot.send_message(
+                user_id,
+                "Seems like there aren't any user specific settings available :'(",
+                parse_mode=ParseMode.MARKDOWN,
+            )
+
+    elif CHAT_SETTINGS:
+        chat_name = OREKI_PTB.bot.getChat(chat_id).title
+        OREKI_PTB.bot.send_message(
+            user_id,
+            text=f"Which module would you like to check {chat_name}'s settings for?",
+            reply_markup=InlineKeyboardMarkup(
+                paginate_modules(0, CHAT_SETTINGS, "stngs", chat=chat_id)
+            ),
+        )
+    else:
+        OREKI_PTB.bot.send_message(
+            user_id,
+            "Seems like there aren't any chat settings available :'(\nSend this "
+            "in a group chat you're admin in to find its current settings!",
+            parse_mode=ParseMode.MARKDOWN,
+        )
+
+
+def settings_button(update: Update, context: CallbackContext) -> None:
+    query = update.callback_query
+    user = update.effective_user
+    bot = context.bot
+    mod_match = re.match(r"stngs_module\((.+?),(.+?)\)", query.data)
+    prev_match = re.match(r"stngs_prev\((.+?),(.+?)\)", query.data)
+    next_match = re.match(r"stngs_next\((.+?),(.+?)\)", query.data)
+    back_match = re.match(r"stngs_back\((.+?)\)", query.data)
+    try:
+        if mod_match:
+            chat_id = mod_match[1]
+            module = mod_match[2]
+            chat = bot.get_chat(chat_id)
+            text = f"*{escape_markdown(chat.title)}* has the following settings for the *{CHAT_SETTINGS[module].__mod_name__}* module:\n\n" + CHAT_SETTINGS[
+                module
+            ].__chat_settings__(
+                chat_id, user.id
+            )
+
+            try:
+                keyboard = CHAT_SETTINGS[module].__chat_settings_buttons__(
+                    chat_id, user.id
+                )
+            except AttributeError:
+                keyboard = []
+            kbrd = InlineKeyboardMarkup(
+                InlineKeyboardButton(text="Back", callback_data=f"stngs_back({chat_id}")
+            )
+            keyboard.append(kbrd)
+            query.message.edit_text(
+                text=text, parse_mode=ParseMode.MARKDOWN, reply_markup=keyboard
+            )
+        elif prev_match:
+            chat_id = prev_match[1]
+            curr_page = int(prev_match[2])
+            chat = bot.get_chat(chat_id)
+            query.message.reply_text(
+                f"Hi there! There are quite a few settings for {chat.title} - go ahead and pick what you're interested in.",
+                reply_markup=InlineKeyboardMarkup(
+                    paginate_modules(
+                        curr_page - 1, CHAT_SETTINGS, "stngs", chat=chat_id
+                    )
+                ),
+            )
+
+        elif next_match:
+            chat_id = next_match[1]
+            next_page = int(next_match[2])
+            chat = bot.get_chat(chat_id)
+            query.message.edit_text(
+                f"Hi there! There are quite a few settings for {chat.title} - go ahead and pick what you're interested in.",
+                reply_markup=InlineKeyboardMarkup(
+                    paginate_modules(
+                        next_page + 1, CHAT_SETTINGS, "stngs", chat=chat_id
+                    )
+                ),
+            )
