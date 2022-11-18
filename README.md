@@ -22,11 +22,11 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 ## Creditz
 	
 	
-- Owner: [Myaav Boi](github.com//Awesome-Gtash)
-- Dev: [Lovely Prince](github.com//Awesome-Prince)
-- Helper: [OTAZUKI](github.com//Otazuki004)
+- Owner: [Myaav Boi](github.com/Awesome-Gtash)
+- Dev: [Lovely Prince](github.com/Awesome-Prince)
+- Helper: [OTAZUKI](github.com/Otazuki004)
 
-- Base: [NekoRobot](github.com//Awesome_Prince//Awesome-Prince/NekoRobot-3)
+- Base: [NekoRobot](github.com/Awesome_Prince//Awesome-Prince/NekoRobot-3)
 	
 <details>
 	<summary>Other Deploy Options</summary>
