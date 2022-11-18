@@ -22,16 +22,14 @@
 Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-3"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-## Special Creditz
+## Creditz
 	
 	
-<a href="https://github.com/Awesome-Gtash"> <img src="https://img.shields.io/badge/myaav boi-black?style=for-the-badge&logo=github" alt="myaav boi" /> </a>
+- Owner: [@Awesome_Gtash](github.com//Awesome-Gtash)
+- Dev: [@Awesome_Prince](github.com//Awesome-Prince)
+- Helper: [@Otazuki_004](github.com//Otazuki004)
 
-<a href="https://github.com/Awesome-Prince"> <img src="https://img.shields.io/badge/lovely prince-black?style=for-the-badge&logo=github" alt="lovely prince" /> </a>
-
-<a href="https://github.com/Awesome-Prince/NekoRobot-3.git"> <img src="https://img.shields.io/badge/NekoRobot-black?style=for-the-badge&logo=github" alt="Neko" /> </a>
-
-	
+- Base: [@NekoRobot](github.com//Awesome_Prince//Awesome-Prince/NekoRobot-3)
 	
 <details>
 	<summary>Other Deploy Options</summary>
