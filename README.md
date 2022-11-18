@@ -11,9 +11,6 @@
 <p align="center"><a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=pink&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a></p>
 
 
-**Going to fork this repo? first Hit a star 💫 Then Fork🤞...**
-
-
 
 ## Oreki Is Available on Telegram as [@OrekiXProRobot](https://t.me/Orekixprorobot)
 
