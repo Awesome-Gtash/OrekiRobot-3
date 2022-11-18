@@ -1,28 +1,3 @@
-"""
-BSD 2-Clause License
-Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2023, Awesome-Gtash, [ https://github.com/Awesome-Gtash ]
-Copyright (c) 2022-2023, White Tiger • Network, [ https://github.com/Awesome-Gtash/OrekiRobot-3 ]
-All rights reserved.
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-1. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
-2. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-"""
-
 import contextlib
 import html
 import importlib
@@ -60,8 +35,8 @@ from OrekiRobot import (
     DONATION_LINK,
     HELP_IMG,
     LOGGER,
-    OREKI_PTB,
     OWNER_ID,
+    OREKI_MOD,
     PORT,
     SUPPORT_CHAT,
     TOKEN,
@@ -107,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
 START_MSG = "I'm Awake Already!\n<b>Haven't Slept Since:</b> <code>{}</code>"
 
-NEKO_STICKERS = (
+OREKI_STICKERS = (
     "CAACAgQAAx0Cb_P9BQACFsdjUVxcW5w3HTH1k0dJWX172OVYSQACiggAAk3XEFKGGWr9yYBHjioE",
     "CAACAgQAAx0Cb_P9BQACFtBjUV2Z2ptlwcaQIFz0aCvl2DLPzQACnwoAAnulCFJnpb4Q4L3qZSoE",
     "CAACAgQAAx0Cb_P9BQACFttjUV3JS-Ma9JKJxYTIWKsidqogaAACnwcAAthvEFIVm9fgYJwwOCoE",
@@ -138,7 +113,7 @@ buttons = [
         InlineKeyboardButton(text="🎗️ Help", callback_data="help_back"),
         InlineKeyboardButton(
             text="Source Code 🖤",
-            url=f"https://github.com/Awesome-Gtash/OrekiRobot-2.git",
+            url=f"https://github.com/Awesome-Gtash/OrekiRobot-3.git",
         ),
     ],
     [
@@ -236,7 +211,7 @@ for module_name in ALL_MODULES:
 def send_help(chat_id, text, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
-    OREKI_PTB.bot.send_message(
+    OREKI_MOD.bot.send_message(
         chat_id=chat_id,
         text=text,
         parse_mode=ParseMode.MARKDOWN,
@@ -279,7 +254,7 @@ def start(update: Update, context: CallbackContext):
 
             elif args[0].lower().startswith("stngs_"):
                 match = re.match("stngs_(.*)", args[0].lower())
-                chat = NEKO_PTB.bot.getChat(match[1])
+                chat = OREKI_MOD.bot.getChat(match[1])
 
                 if is_user_admin(chat, update.effective_user.id):
                     send_settings(match[1], update.effective_user.id, False)
@@ -343,7 +318,7 @@ def error_handler(update: Update, context: CallbackContext):
     if len(message) >= 4096:
         message = message[:4096]
     # Finally, send the message
-    OREKI_PTB.bot.send_message(chat_id=OWNER_ID, text=message, parse_mode=ParseMode.HTML)
+    OREKI_MOD.bot.send_message(chat_id=OWNER_ID, text=message, parse_mode=ParseMode.HTML)
 
 
 # for test purposes
@@ -479,7 +454,7 @@ def get_help(update: Update, context: CallbackContext) -> None:
                     [
                         InlineKeyboardButton(
                             text="Open In Private Chat",
-                            url=f"t.me/{OREKI_PTB.bot.username}?start=help",
+                            url=f"t.me/{OREKI_MOD.bot.username}?start=help",
                         )
                     ]
                 ]
@@ -512,22 +487,22 @@ def send_settings(context: CallbackContext, chat_id, user_id, user=False):
                 for mod in USER_SETTINGS.values()
             )
 
-            OREKI_PTB.bot.send_message(
+            OREKI_MOD.bot.send_message(
                 user_id,
                 "These are your current settings:" + "\n\n" + settings,
                 parse_mode=ParseMode.MARKDOWN,
             )
 
         else:
-            NEKO_PTB.bot.send_message(
+            OREKI_MOD.bot.send_message(
                 user_id,
                 "Seems like there aren't any user specific settings available :'(",
                 parse_mode=ParseMode.MARKDOWN,
             )
 
     elif CHAT_SETTINGS:
-        chat_name = OREKI_PTB.bot.getChat(chat_id).title
-        OREKI_PTB.bot.send_message(
+        chat_name = OREKI_MOD.bot.getChat(chat_id).title
+        OREKI_MOD.bot.send_message(
             user_id,
             text=f"Which module would you like to check {chat_name}'s settings for?",
             reply_markup=InlineKeyboardMarkup(
@@ -535,7 +510,7 @@ def send_settings(context: CallbackContext, chat_id, user_id, user=False):
             ),
         )
     else:
-        OREKI_PTB.bot.send_message(
+        OREKI_MOD.bot.send_message(
             user_id,
             "Seems like there aren't any chat settings available :'(\nSend this "
             "in a group chat you're admin in to find its current settings!",
@@ -641,7 +616,7 @@ def get_settings(update: Update, context: CallbackContext) -> None:
                     [
                         InlineKeyboardButton(
                             text="Settings",
-                            url=f"https://telegram.dog/{OREKI_PTB.bot.username}?start=stngs_{chat.id}",
+                            url=f"https://telegram.dog/{OREKI_MOD.bot.username}?start=stngs_{chat.id}",
                         )
                     ]
                 ]
@@ -722,7 +697,7 @@ def migrate_chats(update: Update):
 def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            OREKI_PTB.bot.sendMessage(
+            OREKI_MOD.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -763,16 +738,16 @@ def main():
         Filters.status_update.migrate, migrate_chats, run_async=True
     )
 
-    OREKI_PTB.add_handler(start_handler)
-    OREKI_PTB.add_handler(help_handler)
-    OREKI_PTB.add_handler(data_callback_handler)
-    OREKI_PTB.add_handler(settings_handler)
-    OREKI_PTB.add_handler(help_callback_handler)
-    OREKI_PTB.add_handler(settings_callback_handler)
-    OREKI_PTB.add_handler(migrate_handler)
-    OREKI_PTB.add_handler(donate_handler)
+    OREKI_MOD.add_handler(start_handler)
+    OREKI_MOD.add_handler(help_handler)
+    OREKI_MOD.add_handler(data_callback_handler)
+    OREKI_MOD.add_handler(settings_handler)
+    OREKI_MOD.add_handler(help_callback_handler)
+    OREKI_MOD.add_handler(settings_callback_handler)
+    OREKI_MOD.add_handler(migrate_handler)
+    OREKI_MOD.add_handler(donate_handler)
 
-    OREKI_PTB.add_error_handler(error_callback)
+    OREKI_MOD.add_error_handler(error_callback)
 
     if WEBHOOK:
         LOGGER.info("Using webhooks.")
@@ -785,7 +760,7 @@ def main():
 
     else:
         LOGGER.info(
-            f"Oreki started, Using long polling. | BOT: [@{OREKI_PTB.bot.username}]"
+            f"Oreki started, Using long polling.
         )
         updater.start_polling(
             timeout=15,
