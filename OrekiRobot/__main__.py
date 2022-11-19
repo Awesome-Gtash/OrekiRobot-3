@@ -785,6 +785,23 @@ except BaseException:
     sys.exit(1)
 """
 
+PHOTO = "https://te.legra.ph/file/23b709c3f1e9e69f12559.jpg"
+
+OREKI_START = f"""
+Prince Oreki 왕자 Is Started!
+
+♡︎ Uptime:</b> <code>{}</code>
+♡︎ Python:</b> <code>{}</code>
+♡︎ Modules Loaded:</b> <code>{}</code>
+
+INLINE_BUTTON = [
+    [                  
+                       InlineKeyboardButton(
+                             text="Stats 🎗️",
+                             callback_data="stats_callback")
+    ] 
+]
+
 if __name__ == "__main__":
     LOGGER.info(f"Successfully loaded modules: {str(ALL_MODULES)}")
     tbot.start(bot_token=TOKEN)
