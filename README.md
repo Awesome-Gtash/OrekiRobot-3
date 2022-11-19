@@ -29,7 +29,8 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 ## Special Creditz
 
 - Base: [NekoRobot](https://github.com/Awesome-Prince/NekoRobot-3)
-	
+- Fonts: [Stylish Text](https://github.com/ZauteKm/Stylish-Text-Bot)
+
 <details>
 	<summary>Other Deploy Options</summary>
 
