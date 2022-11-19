@@ -21,7 +21,7 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 
 ## Config Vars
 
-- `API_HASH:´ Get this value From [my.telegram.org](https://my.telegram.org)
+- `API_HASH:` Get this value From [my.telegram.org](https://my.telegram.org)
 
 - `API_ID:´ Get this value From [my.telegram.org](https://my.telegram.org)
 
