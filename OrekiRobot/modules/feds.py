@@ -605,7 +605,7 @@ def fed_ban(update: Update, context: CallbackContext):
 
     if fban:
         fed_name = info["fname"]
-        # https://t.me/OnePunchSupport/41606 // https://t.me/OnePunchSupport/41619
+        # https://t.me/Tiger_SupportChat
         # starting = "The reason fban is replaced for {} in the Federation <b>{}</b>.".format(user_target, fed_name)
         # send_message(update.effective_message, starting, parse_mode=ParseMode.HTML)
 
@@ -702,7 +702,7 @@ def fed_ban(update: Update, context: CallbackContext):
             except BadRequest as excp:
                 if excp.message in FBAN_ERRORS:
                     try:
-                        NEKO_PTB.bot.getChat(fedschat)
+                        OREKI_MOD.bot.getChat(fedschat)
                     except Unauthorized:
                         sql.chat_leave_fed(fedschat)
                         LOGGER.info(
@@ -742,7 +742,7 @@ def fed_ban(update: Update, context: CallbackContext):
                     except BadRequest as excp:
                         if excp.message in FBAN_ERRORS:
                             try:
-                                NEKO_PTB.bot.getChat(fedschat)
+                                OREKI_MOD.bot.getChat(fedschat)
                             except Unauthorized:
                                 targetfed_id = sql.get_fed_id(fedschat)
                                 sql.unsubs_fed(fed_id, targetfed_id)
@@ -894,7 +894,7 @@ def fed_ban(update: Update, context: CallbackContext):
                     except BadRequest as excp:
                         if excp.message in FBAN_ERRORS:
                             try:
-                                NEKO_PTB.bot.getChat(fedschat)
+                                OREKI_MOD.bot.getChat(fedschat)
                             except Unauthorized:
                                 targetfed_id = sql.get_fed_id(fedschat)
                                 sql.unsubs_fed(fed_id, targetfed_id)
@@ -1256,7 +1256,7 @@ def fed_broadcast(update: Update, context: CallbackContext):
                 bot.sendMessage(chat, title + text, parse_mode="markdown")
             except TelegramError:
                 try:
-                    NEKO_PTB.bot.getChat(chat)
+                    OREKI_MOD.bot.getChat(chat)
                 except Unauthorized:
                     failed += 1
                     sql.chat_leave_fed(chat)
@@ -2371,33 +2371,33 @@ FED_OWNER_HELP_HANDLER = CommandHandler("fedownerhelp", fed_owner_help, run_asyn
 FED_ADMIN_HELP_HANDLER = CommandHandler("fedadminhelp", fed_admin_help, run_async=True)
 FED_USER_HELP_HANDLER = CommandHandler("feduserhelp", fed_user_help, run_async=True)
 
-NEKO_PTB.add_handler(NEW_FED_HANDLER)
-NEKO_PTB.add_handler(DEL_FED_HANDLER)
-NEKO_PTB.add_handler(RENAME_FED)
-NEKO_PTB.add_handler(JOIN_FED_HANDLER)
-NEKO_PTB.add_handler(LEAVE_FED_HANDLER)
-NEKO_PTB.add_handler(PROMOTE_FED_HANDLER)
-NEKO_PTB.add_handler(DEMOTE_FED_HANDLER)
-NEKO_PTB.add_handler(INFO_FED_HANDLER)
-NEKO_PTB.add_handler(BAN_FED_HANDLER)
-NEKO_PTB.add_handler(UN_BAN_FED_HANDLER)
-NEKO_PTB.add_handler(FED_BROADCAST_HANDLER)
-NEKO_PTB.add_handler(FED_SET_RULES_HANDLER)
-NEKO_PTB.add_handler(FED_GET_RULES_HANDLER)
-NEKO_PTB.add_handler(FED_CHAT_HANDLER)
-NEKO_PTB.add_handler(FED_ADMIN_HANDLER)
-NEKO_PTB.add_handler(FED_USERBAN_HANDLER)
-NEKO_PTB.add_handler(FED_NOTIF_HANDLER)
-NEKO_PTB.add_handler(FED_CHATLIST_HANDLER)
-# NEKO_PTB.add_handler(FED_IMPORTBAN_HANDLER)
-NEKO_PTB.add_handler(FEDSTAT_USER)
-NEKO_PTB.add_handler(SET_FED_LOG)
-NEKO_PTB.add_handler(UNSET_FED_LOG)
-NEKO_PTB.add_handler(SUBS_FED)
-NEKO_PTB.add_handler(UNSUBS_FED)
-NEKO_PTB.add_handler(MY_SUB_FED)
-NEKO_PTB.add_handler(MY_FEDS_LIST)
-NEKO_PTB.add_handler(DELETEBTN_FED_HANDLER)
-NEKO_PTB.add_handler(FED_OWNER_HELP_HANDLER)
-NEKO_PTB.add_handler(FED_ADMIN_HELP_HANDLER)
-NEKO_PTB.add_handler(FED_USER_HELP_HANDLER)
+OREKI_MOD.add_handler(NEW_FED_HANDLER)
+OREKI_MOD.add_handler(DEL_FED_HANDLER)
+OREKI_MOD.add_handler(RENAME_FED)
+OREKI_MOD.add_handler(JOIN_FED_HANDLER)
+OREKI_MOD.add_handler(LEAVE_FED_HANDLER)
+OREKI_MOD.add_handler(PROMOTE_FED_HANDLER)
+OREKI_MOD.add_handler(DEMOTE_FED_HANDLER)
+OREKI_MOD.add_handler(INFO_FED_HANDLER)
+OREKI_MOD.add_handler(BAN_FED_HANDLER)
+OREKI_MOD.add_handler(UN_BAN_FED_HANDLER)
+OREKI_MOD.add_handler(FED_BROADCAST_HANDLER)
+OREKI_MOD.add_handler(FED_SET_RULES_HANDLER)
+OREKI_MOD.add_handler(FED_GET_RULES_HANDLER)
+OREKI_MOD.add_handler(FED_CHAT_HANDLER)
+OREKI_MOD.add_handler(FED_ADMIN_HANDLER)
+OREKI_MOD.add_handler(FED_USERBAN_HANDLER)
+OREKI_MOD.add_handler(FED_NOTIF_HANDLER)
+OREKI_MOD.add_handler(FED_CHATLIST_HANDLER)
+# OREKI_MOD.add_handler(FED_IMPORTBAN_HANDLER)
+OREKI_MOD.add_handler(FEDSTAT_USER)
+OREKI_MOD.add_handler(SET_FED_LOG)
+OREKI_MOD.add_handler(UNSET_FED_LOG)
+OREKI_MOD.add_handler(SUBS_FED)
+OREKI_MOD.add_handler(UNSUBS_FED)
+OREKI_MOD.add_handler(MY_SUB_FED)
+OREKI_MOD.add_handler(MY_FEDS_LIST)
+OREKI_MOD.add_handler(DELETEBTN_FED_HANDLER)
+OREKI_MOD.add_handler(FED_OWNER_HELP_HANDLER)
+OREKI_MOD.add_handler(FED_ADMIN_HELP_HANDLER)
+OREKI_MOD.add_handler(FED_USER_HELP_HANDLER)
