@@ -1,28 +1,3 @@
-"""
-BSD 2-Clause License
-Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2022-2023, Awesome-Gtash, [ https://github.com/Awesome-Gtash ]
-Copyright (c) 2022-2023, White Tiger • Network, [ https://github.com/Awesome-Gtash/OrekiRobot-3 ]
-All rights reserved.
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-1. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
-2. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-"""
-
 import html
 from typing import Optional
 
@@ -37,7 +12,7 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from OrekiRobot import OREKI_PTB, TIGERS, WOLVES
+from OrekiRobot import OREKI_MOD, TIGERS, WOLVES
 from OrekiRobot.modules.connection import connected
 from OrekiRobot.modules.helper_funcs.alternate import send_message
 from OrekiRobot.modules.helper_funcs.chat_status import (
@@ -153,7 +128,7 @@ def set_flood(update, context) -> str:
     conn = connected(context.bot, update, chat, user.id, need_admin=True)
     if conn:
         chat_id = conn
-        chat_name = NEKO_PTB.bot.getChat(conn).title
+        chat_name = OREKI_MOD.bot.getChat(conn).title
     else:
         if update.effective_message.chat.type == "private":
             send_message(
@@ -228,7 +203,7 @@ def flood(update, context):
     conn = connected(context.bot, update, chat, user.id, need_admin=False)
     if conn:
         chat_id = conn
-        chat_name = NEKO_PTB.bot.getChat(conn).title
+        chat_name = OREKI_MOD.bot.getChat(conn).title
     else:
         if update.effective_message.chat.type == "private":
             send_message(
@@ -267,9 +242,9 @@ def set_flood_mode(update, context):
 
     conn = connected(context.bot, update, chat, user.id, need_admin=True)
     if conn:
-        chat = NEKO_PTB.bot.getChat(conn)
+        chat = OREKI_MOD.bot.getChat(conn)
         chat_id = conn
-        chat_name = NEKO_PTB.bot.getChat(conn).title
+        chat_name = OREKI_MOD.bot.getChat(conn).title
     else:
         if update.effective_message.chat.type == "private":
             send_message(
@@ -407,11 +382,11 @@ FLOOD_HANDLER = CommandHandler(
     "flood", flood, filters=Filters.chat_type.groups, run_async=True
 )
 
-OREKI_PTB.add_handler(FLOOD_BAN_HANDLER, FLOOD_GROUP)
-OREKI_PTB.add_handler(FLOOD_QUERY_HANDLER)
-OREKI_PTB.add_handler(SET_FLOOD_HANDLER)
-OREKI_PTB.add_handler(SET_FLOOD_MODE_HANDLER)
-OREKI_PTB.add_handler(FLOOD_HANDLER)
+OREKI_MOD.add_handler(FLOOD_BAN_HANDLER, FLOOD_GROUP)
+OREKI_MOD.add_handler(FLOOD_QUERY_HANDLER)
+OREKI_MOD.add_handler(SET_FLOOD_HANDLER)
+OREKI_MOD.add_handler(SET_FLOOD_MODE_HANDLER)
+OREKI_MOD.add_handler(FLOOD_HANDLER)
 
 __handlers__ = [
     (FLOOD_BAN_HANDLER, FLOOD_GROUP),
