@@ -5,7 +5,7 @@ from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler
 
-from OrekiRobot import OREKI_PTB
+from OrekiRobot import OREKI_MOD
 from OrekiRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
@@ -146,10 +146,10 @@ AFK_REPLY_HANDLER = MessageHandler(
     Filters.all & Filters.chat_type.groups, reply_afk, run_async=True
 )
 
-OREKI_PTB.add_handler(AFK_HANDLER, AFK_GROUP)
-OREKI_PTB.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
-OREKI_PTB.add_handler(NO_AFK_HANDLER, AFK_GROUP)
-OREKI_PTB.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
+OREKI_MOD.add_handler(AFK_HANDLER, AFK_GROUP)
+OREKI_MOD.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
+OREKI_MOD.add_handler(NO_AFK_HANDLER, AFK_GROUP)
+OREKI_MOD.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
 __mod_name__ = "Afk"
 __command_list__ = ["afk"]
