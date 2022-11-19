@@ -23,31 +23,31 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 
 - `API_HASH:` Get this value From [my.telegram.org](https://my.telegram.org)
 
-- `API_ID:´ Get this value From [my.telegram.org](https://my.telegram.org)
+- `API_ID:` Get this value From [my.telegram.org](https://my.telegram.org)
 
-- `BOT_ID:´ Get your bot id, Use any other bot to get
+- `BOT_ID:` Get your bot id, Use any other bot to get
 
-- `BOT_NAME:´ Enter your bot name
+- `BOT_NAME:` Enter your bot name
 
-- `BOT_USERNAME:´ Enter your bot username
+- `BOT_USERNAME:` Enter your bot username
 
-- `ERROR_LOGS:´ Replace your logs channel/group
+- `ERROR_LOGS:` Replace your logs channel/group
 
-- `HEROKU_API_KEY:´ Your heroku api key Get from [dashboard.heroku.com](https://dashboard.heroku.com/account)
+- `HEROKU_API_KEY:` Your heroku api key Get from [dashboard.heroku.com](https://dashboard.heroku.com/account)
 
-- `HEROKU_APP_NAME:´ Enter your app name
+- `HEROKU_APP_NAME:` Enter your app name
 
-- `JOIN_LOGGER:´ Replace your logs channel/group
+- `JOIN_LOGGER:` Replace your logs channel/group
 
-- `OWNER_ID:´ Enter your id if u don't know use [@OrekiXProRobot](https://t.me/OrekiXProRobot) & Do /id
+- `OWNER_ID:` Enter your id if u don't know use [@OrekiXProRobot](https://t.me/OrekiXProRobot) & Do /id
 
-- `OWNER_USERNAME´ Enter your username
+- `OWNER_USERNAME` Enter your username
 
-- `STRING_SESSION´ Wants Telethon based Session [Here](https://repl.it/@SpEcHiDe/GenerateStringSession) not required
+- `STRING_SESSION` Wants Telethon based Session [Here](https://repl.it/@SpEcHiDe/GenerateStringSession) not required
 
-- `SUPPORT_CHAT´ Your bot support group username
+- `SUPPORT_CHAT` Your bot support group username
 
-- `TOKEN´ Your bot Token Get from [@Botfather](https://t.me/botfather)
+- `TOKEN` Your bot Token Get from [@Botfather](https://t.me/botfather)
 
 
 ## Creditz
@@ -56,6 +56,7 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 - Owner: [Myaav Boi](https://github.com/Awesome-Gtash)
 - Dev: [Lovely Prince](https://github.com/Awesome-Prince)
 - Helper: [OTAZUKI](https://github.com/Otazuki004)
+- Motive: [GOD OF LOVE](https://github.com/GODOFLOVE)
 
 ## Special Creditz
 
