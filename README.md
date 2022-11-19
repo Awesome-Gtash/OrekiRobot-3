@@ -56,7 +56,7 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 - Owner: [Myaav Boi](https://github.com/Awesome-Gtash)
 - Dev: [Lovely Prince](https://github.com/Awesome-Prince)
 - Helper: [OTAZUKI](https://github.com/Otazuki004)
-- Motive: [GOD OF LOVE](https://github.com/GODOFLOVE)
+- Motive: [GOD OF LOVE](https://github.com/GOD-OF-LOVE)
 
 ## Special Creditz
 
