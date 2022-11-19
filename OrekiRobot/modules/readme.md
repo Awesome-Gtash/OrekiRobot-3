@@ -58,10 +58,10 @@ __help__ = """
 """
 ```
 
-## Advanced: PTB
+## Advanced: MOD
 ```python3
 
-from OrekiRobot import NEKO_PTB
+from OrekiRobot import OREKI_MOD
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler
 
@@ -70,7 +70,7 @@ def hi(update: Update, context: CallbackContext):
     update.effective_message.reply_text(j)
 
 HANDLER = CommandHandler("hi", hi, run_async=True)
-OREKI_PTB.add_handler(HANDLER)
+OREKI_MOD.add_handler(HANDLER)
 
 __handlers__ = [ HANDLER, ]
     
