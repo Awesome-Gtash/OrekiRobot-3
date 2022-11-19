@@ -8,7 +8,7 @@ import requests
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler
 
-from OrekiRobot import DEV_USERS, DRAGONS, NEKO_PTB, OWNER_ID
+from OrekiRobot import DEV_USERS, DRAGONS, OREKI_MOD, OWNER_ID
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 
 info_btn = "More Information"
@@ -589,15 +589,15 @@ KAIZOKU_SEARCH_HANDLER = DisableAbleCommandHandler("kaizoku", kaizoku, run_async
 KAYO_SEARCH_HANDLER = DisableAbleCommandHandler("kayo", kayo, run_async=True)
 BUTTON_HANDLER = CallbackQueryHandler(button, pattern="anime_.*", run_async=True)
 
-OREKI_PTB.add_handler(BUTTON_HANDLER)
-OREKI_PTB.add_handler(ANIME_HANDLER)
-OREKI_PTB.add_handler(CHARACTER_HANDLER)
-OREKI_PTB.add_handler(MANGA_HANDLER)
-OREKI_PTB.add_handler(AIRING_HANDLER)
-OREKI_PTB.add_handler(USER_HANDLER)
-OREKI_PTB.add_handler(KAIZOKU_SEARCH_HANDLER)
-OREKI_PTB.add_handler(KAYO_SEARCH_HANDLER)
-OREKI_PTB.add_handler(UPCOMING_HANDLER)
+OREKI_MOD.add_handler(BUTTON_HANDLER)
+OREKI_MOD.add_handler(ANIME_HANDLER)
+OREKI_MOD.add_handler(CHARACTER_HANDLER)
+OREKI_MOD.add_handler(MANGA_HANDLER)
+OREKI_MOD.add_handler(AIRING_HANDLER)
+OREKI_MOD.add_handler(USER_HANDLER)
+OREKI_MOD.add_handler(KAIZOKU_SEARCH_HANDLER)
+OREKI_MOD.add_handler(KAYO_SEARCH_HANDLER)
+OREKI_MOD.add_handler(UPCOMING_HANDLER)
 
 __mod_name__ = "Anime"
 __command_list__ = [
