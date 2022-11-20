@@ -1,4 +1,4 @@
-<h1 align="center"><b>Prince Oreki v3<h2 align="center">
+<h1 align="center"><b>Prince Oreki v3❤️<h2 align="center">
 
 <h4 align="center">I am an anime themed advanced telegram group management bot with a lot of cool features <br> ..Written with Pyrogram & Telethon..</h4>
 <p align='center'>
