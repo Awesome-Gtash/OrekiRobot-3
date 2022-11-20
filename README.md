@@ -19,37 +19,6 @@
 Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Awesome-Gtash/OrekiRobot-3"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-## Config Vars
-
-- `API_HASH:` Get this value From [my.telegram.org](https://my.telegram.org)
-
-- `API_ID:` Get this value From [my.telegram.org](https://my.telegram.org)
-
-- `BOT_ID:` Get your bot id, Use any other bot to get
-
-- `BOT_NAME:` Enter your bot name
-
-- `BOT_USERNAME:` Enter your bot username
-
-- `ERROR_LOGS:` Replace your logs channel/group
-
-- `HEROKU_API_KEY:` Your heroku api key Get from [dashboard.heroku.com](https://dashboard.heroku.com/account)
-
-- `HEROKU_APP_NAME:` Enter your app name
-
-- `JOIN_LOGGER:` Replace your logs channel/group
-
-- `OWNER_ID:` Enter your id if u don't know use [@OrekiXProRobot](https://t.me/OrekiXProRobot) & Do /id
-
-- `OWNER_USERNAME` Enter your username
-
-- `STRING_SESSION` Wants Telethon based Session [Here](https://repl.it/@SpEcHiDe/GenerateStringSession) not required
-
-- `SUPPORT_CHAT` Your bot support group username
-
-- `TOKEN` Your bot Token Get from [@Botfather](https://t.me/botfather)
-
-
 ## Creditz
 	
 	
