@@ -3,8 +3,8 @@ import threading
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
 
-from NekoRobot import NEKO_PTB
-from NekoRobot.modules.sql import BASE, SESSION
+from OrekiRobot import OREKI_MOD
+from OrekiRobot.modules.sql import BASE, SESSION
 
 
 class Federations(BASE):
