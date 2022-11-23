@@ -760,7 +760,7 @@ def main():
 
     else:
         LOGGER.info(
-            f"Oreki started, Using long polling.
+            f"Prince oreki started, Using long polling."
         )
         updater.start_polling(
             timeout=15,
