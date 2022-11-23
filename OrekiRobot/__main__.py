@@ -793,7 +793,7 @@ Prince Oreki 왕자 Is Started!
 ♡︎ Uptime:</b> <code>{}</code>
 ♡︎ Python:</b> <code>{}</code>
 ♡︎ Modules Loaded:</b> <code>{}</code>
-
+"""
 INLINE_BUTTON = [
     [                  
                        InlineKeyboardButton(
