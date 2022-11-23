@@ -1,23 +1,3 @@
-Skip to content
-Awesome-Gtash
-/
-OrekiRobot-2
-Private template
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Security
-1
-Insights
-Settings
-OrekiRobot-2/NekoRobot/modules/sql/users_sql.py
-@Awesome-Prince
-Awesome-Prince Push PTB: 13.12
- 2 contributors
-227 lines (173 sloc)  5.47 KB
 import threading
 
 from sqlalchemy import Column, ForeignKey, String, UnicodeText, UniqueConstraint, func
