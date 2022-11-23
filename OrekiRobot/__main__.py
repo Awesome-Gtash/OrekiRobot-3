@@ -9,6 +9,7 @@ import traceback
 from sys import argv
 from typing import Optional
 
+from pyrogram import __version__ as pyrover
 from pyrogram import idle
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
@@ -27,6 +28,8 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import escape_markdown
+from telethon import Button
+from telethon import __version__ as tlhver
 
 import OrekiRobot.modules.sql.users_sql as sql
 from OrekiRobot import (
@@ -788,11 +791,11 @@ except BaseException:
 PHOTO = "https://te.legra.ph/file/23b709c3f1e9e69f12559.jpg"
 
 OREKI_START = f"""
-Prince Oreki 왕자 Is Started!
+{BOT_NAME} Is Started!
 
-♡︎ Uptime:</b> <code>{}</code>
-♡︎ Python:</b> <code>{}</code>
-♡︎ Modules Loaded:</b> <code>{}</code>
+♡︎ Uptime: {uptime}
+♡︎ Pyrogram Version: {pyrover}
+♡︎ Telethon Version: {tlhver}
 """
 INLINE_BUTTON = [
     [                  
@@ -801,7 +804,6 @@ INLINE_BUTTON = [
                              callback_data="stats_callback")
     ] 
 ]
-
 if __name__ == "__main__":
     LOGGER.info(f"Successfully loaded modules: {str(ALL_MODULES)}")
     tbot.start(bot_token=TOKEN)
