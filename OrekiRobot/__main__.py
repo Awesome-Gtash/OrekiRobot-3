@@ -396,7 +396,7 @@ def help_button(update: Update, context: CallbackContext) -> None:
                 ),
             )
 
-elif back_match:
+        elif back_match:
             query.message.edit_text(
                 text=HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
