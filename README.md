@@ -12,7 +12,7 @@
 
 
 
-## Oreki Is Available on Telegram as [@OrekiXProRobot](https://t.me/Orekixprorobot)
+## Oreki Is Available on Telegram as [@OrekiProXBot](https://t.me/Orekiproxbot)
 
 ## Deploy to Heroku 💌
 
