@@ -1,5 +1,5 @@
 {
-      "name": "Prince Oreki",
+      "name": "Prince Oreki v3",
       "description": "an anime Themed Advanced Group Management bot with a lot of cool features.",
       "logo": "https://te.legra.ph/file/9b4b80b011fd5de41a35b.jpg",
       "keywords": [
@@ -52,7 +52,7 @@
       "BOT_USERNAME": {
          "description": "Your Bot UserName Without the @.",
          "required": true,
-         "value": "OrekiXProRobot"
+         "value": "OrekiProXbot"
       },
       "ERROR_LOGS": {
          "description": "Error Logs (Channel or Group Choice Is Yours)",
@@ -67,12 +67,12 @@
       "OWNER_ID": {
          "description": "Replace Your user ID as an integer.",
          "required": true,
-         "value": "5189767566"
+         "value": "5534661034"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
          "required": true,
-         "value": "Awesome_MB"
+         "value": "Awesome_Gtashxd"
       },
       "BOT_ID": {
          "description": "Needs your bot ID. Use any other bot to get it.",
@@ -82,12 +82,7 @@
       "SUPPORT_CHAT": {
          "description": "Replace Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "Tiger_SupportChat"
-      },
-      "HEROKU_API_KEY": {
-        "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-        "required": true,
-        "value": ""
+         "value": "Dev_SupportChat"
       },
       "EVENT_LOGS": {
          "description": "Replace Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
@@ -182,11 +177,6 @@
       "WALL_API": {
          "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
          "required": false,
-         "value": ""
-      },
-      "HEROKU_APP_NAME": {
-        "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
-        "required": true,
          "value": ""
       }
    }
