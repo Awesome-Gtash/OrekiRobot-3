@@ -6,7 +6,7 @@
   <a href="https://github.com/Awesome-Gtash/OrekiRobot-3/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-Yes-red.svg?style=flat-square" /> </a>
 </p>
 
-<p align="center"><a href="https://t.me/OrekiXProRobot"><img src="https://te.legra.ph/file/bf426ef1ca910801efbd3.jpg" width="600"></a></p>
+<p align="center"><a href="https://t.me/OrekiProXBot"><img src="https://te.legra.ph/file/bf426ef1ca910801efbd3.jpg" width="600"></a></p>
 
 <p align="center"><a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=pink&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a></p>
 
@@ -25,7 +25,6 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 - Owner: [Myaav Boi](https://github.com/Awesome-Gtash)
 - Dev: [Lovely Prince](https://github.com/Awesome-Prince)
 - Helper: [OTAZUKI](https://github.com/Otazuki004)
-- Motive: [GOD OF LOVE](https://github.com/GOD-OF-LOVE)
 
 ## Special Creditz
 
