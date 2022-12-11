@@ -8,8 +8,8 @@
 
 <p align="center"><a href="https://t.me/OrekiProXBot"><img src="https://te.legra.ph/file/bf426ef1ca910801efbd3.jpg" width="600"></a></p>
 
-<p align="center"><a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=pink&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a></p>
-
+<p align="center"><a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=red&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a></p>
+<p align="center"><a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=blue&label=pyrogram&logo=python&logoColor=green&style=for-the-badge" /></a></p>
 
 
 ## Oreki Is Available on Telegram as [@OrekiProXBot](https://t.me/Orekiproxbot)
