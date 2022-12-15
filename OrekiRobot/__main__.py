@@ -109,7 +109,7 @@ buttons = [
     [
         InlineKeyboardButton(
             text=f"Add {BOT_NAME} To Your Group",
-            url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
+            url=f"https://telegram.dog/OrekiProXBot?startgroup=true",
         )
     ],
     [
@@ -121,21 +121,21 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🚑 Support", url=f"https://telegram.dog/Tiger_SupportChat"
+            text="🚑 Support", url=f"https://telegram.dog/Dev_SupportChat"
         ),
         InlineKeyboardButton(
-            text="📢 Updates", url=f"https://telegram.dog/Tiger_Updates"
+            text="📢 Updates", url=f"https://telegram.dog/Dev_Updates"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="My Master 💌", url=f"https://telegram.dog/Awesome_MB"
+            text="My Master 💌", url=f"https://telegram.dog/Awesome_Gtashxd"
         ),
     ],
 ]
 
 HELP_STRINGS = """
-────「 [Prince Oreki 왕자](https://te.legra.ph/file/39b288a934734512d98e5.jpg) 」────
+────「 [{BOT_NAME}](https://te.legra.ph/file/39b288a934734512d98e5.jpg) 」────
 Hey, your *Prince* Is here!
 I Help Admins To Manage Their Groups!
 *Main* commands available: 
@@ -295,7 +295,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="📢 Updates",
-                            url="https://telegram.dog/Tiger_Updates",
+                            url="https://telegram.dog/Dev_Updates",
                         ),
                     ]
                 ]
@@ -372,7 +372,7 @@ def help_button(update: Update, context: CallbackContext) -> None:
                             ),
                             InlineKeyboardButton(
                                 text="[► Support ◄]",
-                                url=f"https://t.me/Tiger_SupportChat",
+                                url=f"https://t.me/Dev_SupportChat",
                             ),
                         ]
                     ]
@@ -662,11 +662,11 @@ def donate(update: Update, context: CallbackContext) -> None:
                         [
                             InlineKeyboardButton(
                                 text="📢 Updates",
-                                url="https://telegram.dog/Tiger_Updates",
+                                url="https://telegram.dog/Dev_Updates",
                             ),
                             InlineKeyboardButton(
                                 text="🚑 Support",
-                                url=f"https://telegram.dog/Tiger_SupportChat",
+                                url=f"https://telegram.dog/Dev_SupportChat",
                             ),
                         ]
                     ]
