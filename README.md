@@ -36,8 +36,10 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?repository=https://github.com/Awesome-Gtash/OrekiRobot-3)
 
-[![Deploy to Okteto](https://cloud.okteto.com/#/deploy?repository=https://github.com/Awesome-Gtash/OrekiRobot-3)
 <a href="https://railway.app"><img src="https://railway.app/button.svg" height="40"></a>
+
+[![Deploy to Koyeb](https://www.render.com/static/images/deploy/button.svg)](https://app.render.com/deploy?repository=https://github.com/Awesome-Gtash/OrekiRobot-3)
+
 </details> 
 
 <details>
