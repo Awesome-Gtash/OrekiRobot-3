@@ -4,6 +4,7 @@ from datetime import datetime
 
 from pyrogram import __version__ as pyrover
 from telethon import Button
+from telegram import __version__ as ptb
 from telethon import __version__ as tlhver
 
 from OrekiRobot import BOT_NAME
@@ -11,13 +12,13 @@ from OrekiRobot import tbot as oreki
 from OrekiRobot.events import register
 
 edit_time = 5
-""" =======================Oreki====================== """
+""" =======================oreki====================== """
 file1 = "https://te.legra.ph/file/e3a37df24dd0965dba2cf.jpg"
 file2 = "https://te.legra.ph/file/0de0f032e682c031f17d9.jpg"
 file3 = "https://te.legra.ph/file/283d0016973127a7f6cbf.jpg"
 file4 = "https://te.legra.ph/file/964030fa52d6dcc53fe4d.jpg"
 file5 = "https://te.legra.ph/file/d64efaf679941b87b1341.jpg"
-""" =======================Oreko====================== """
+""" =======================oreki====================== """
 
 START_TIME = datetime.utcnow()
 START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
@@ -47,16 +48,16 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    Oreki = f"** ♡ Hola I'm {BOT_NAME}!**\n\n"
-    Oreki += f"**♡ My Uptime ~ 🖤:** `{uptime}`\n\n"
-    Oreki += f"**♡ Python-telegram-bot Version ~ 🖤 :** `{ptb}`\n\n"
-    Oreki += f"**♡ Telethon Version ~ 🖤:** `{tlhver}`\n\n"
-    Oreki += f"**♡ Pyrogram Version ~ 🖤:** `{pyrover}`\n\n"
-    Oreki += "**♡ My Master ~ 🖤 :** [Myaav Boi](https://t.me/Awesome_MB) "
+    oreki += f"**♡ Hola I'm {BOT_NAME}!**\n\n"
+    oreki += f"**♡ My Uptime ~ 🖤:** `{uptime}`\n\n"
+    oreki += f"**♡ Python-telegram-bot Version ~ 🖤 :** `{ptb}`\n\n"
+    oreki += f"**♡ Telethon Version ~ 🖤:** `{tlhver}`\n\n"
+    oreki += f"**♡ Pyrogram Version ~ 🖤:** `{pyrover}`\n\n"
+    oreki += f"**♡ My Master ~ 🖤 :** [The Gtash](https://t.me/Awesome_Gtashxd)"
     BUTTON = [
         [
-            Button.url("【► Updates ◄】", f"https://t.me/Tiger_Updates"),
-            Button.url("【► Support ◄】", f"https://t.me/Tiger_SupportChat"),
+            Button.url("【► Updates ◄】", f"https://t.me/Dev_Updates"),
+            Button.url("【► Support ◄】", f"https://t.me/Dev_SupportChat"),
         ]
     ]
     on = await oreki.send_file(yes.chat_id, file=file2, caption=Oreki, buttons=BUTTON)
