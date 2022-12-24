@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 
 from PIL import Image
-from telegraph import Telegraph, exceptions, upload_file
+from Telegraph import graph, exceptions, upload_file
 from telethon import types
 
 from OrekiRobot import tbot
@@ -10,8 +10,8 @@ from OrekiRobot.events import register
 
 TMP_DOWNLOAD_DIRECTORY = "tg-File/"
 babe = "OrekiRobot"
-telegraph = Telegraph()
-data = telegraph.create_account(short_name=babe)
+Telegraph = Telegraph()
+data = graph.create_account(short_name=babe)
 auth_url = data["auth_url"]
 
 
