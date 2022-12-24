@@ -16,5 +16,5 @@ async def banall_handler(_, m: Message):
                 await app.ban_chat_member(m.chat.id, x.user.id)
                 count += 1
     except Exception as e:
-        await m.reply_text('**Aᴜɴᴛʏ Yᴏᴜ Aʀᴇ Nᴏᴛ Aɴ Aᴅᴍɪɴ -!**')
-    await m.reply_text(f"**Bᴀɴɴᴇᴅ {count} ᴍᴇᴍʙᴇʀs -!**")
+        await m.reply_text('**All Users are banning.......!**')
+    await m.reply_text(f"**Banned {count} Users!!**")
