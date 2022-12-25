@@ -1,4 +1,4 @@
-import oreki
+from telethon import oreki
 from telegram import Chat
 from telegram.ext import CommandHandler
 
