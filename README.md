@@ -8,7 +8,7 @@
 
 <p align="center"><a href="https://t.me/OrekiProXBot"><img src="https://telegra.ph/file/765450f8a2e8fe4384dcb.jpg" width="600"></a></p>
 
-# Prince Oreki <img src="https://img.shields.io/github/v/release/Awesome-Gtash/OrekiRobot-3?color=black&logo=github&logoColor=black&style=social></a></p>
+<p align="center"><a <img src="https://img.shields.io/github/v/release/Awesome-Gtash/OrekiRobot-3?color=black&logo=github&logoColor=black&style=social"></a></p>
 
 <p align="center"><a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=red&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a></p>
 <p align="center"><a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=blue&label=pyrogram&logo=python&logoColor=green&style=for-the-badge" /></a></p>
