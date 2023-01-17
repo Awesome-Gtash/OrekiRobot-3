@@ -63,7 +63,7 @@ CurrencyConverter
 googletrans==4.0.0-rc1
 google_trans_new
 pyrate-limiter
-oreki.py
+nekos.py
 tgcrypto
 python-arq==6.0.3
 hachoir
