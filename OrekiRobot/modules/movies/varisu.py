@@ -1,24 +1,27 @@
+from telethon import Button
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from OrekiRobot import tbot as tbot
 from OrekiRobot.events import register
-
-@register(pattern=("Varisu"))
-async def awake(event):
- await event.reply("Uploading...💫")
 
 IMAGE = "https://te.legra.ph/file/191a2b533e49ddd8f63cc.jpg"
 
 @register(pattern=("Varisu"))
 async def awake(event):
-    IMG_CAP_OREKI = """
-**Name : Varisu**
-**Year : 2023**
-**Lang : Tamil**
-**Quality : HQ PreDVD**
-**Size : 450MB - 700MB**
+      IMG_CAPTION = """
+*Results for Varisu*
 """
-    await tbot.send_file(event.chat_id, IMAGE, caption=IMG_CAP_OREKI)
 
-
+BUTTON = [
+     [
+       InlineKeyboardButton(
+       text=f"Download [285.9MB] File", callback data="file1"),
+       text=f"Download [436.4MB] File", callback data="file2"),
+       text=f"Download [711.1MB] File", callback data="file3"),
+       text=f"Download [1.07GB] File", callback data="file4"),
+       text=f"Download [1.74GB] File", callback data="file5"),
+     ]
+]
+await tbot.send_file(event.chat_id, IMAGE, caption=IMG_CAPTION, buttons=BUTTON)
 
 file1 = "https://t.me/OrekiMovies/6"
 
