@@ -9,7 +9,7 @@ from OrekiRobot.events import register
 
 IMAGE = "https://te.legra.ph/file/191a2b533e49ddd8f63cc.jpg"
 
-@bot.on.message(pattern=("Varisu"))
+@register(pattern=("Varisu"))
 async def awake(event):
       IMG_CAPTION = """
 *Results for Varisu*
@@ -75,6 +75,6 @@ FILE5_CAP = """
 
 
 
-@bot.on.message(pattern=("Varisu"))
+@register(pattern=("Varisu"))
 async def awake(event):
   await event.reply("**➠ Uploaded by : {BOT_NAME}**")
