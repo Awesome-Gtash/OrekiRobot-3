@@ -1,5 +1,5 @@
-# this module created by me this is my own module
-# thanks for my friend he gave me some idea @Otazuki_004
+# this module made by me this is my own module
+# thanks for my friend he gave me some ideas @Otazuki_004
 
 from telethon import Button
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
@@ -74,6 +74,6 @@ FILE5_CAP = """
 
 
 
-@register(pattern=("Varisu"))
+@bot.on.message(pattern=("Varisu"))
 async def awake(event):
   await event.reply("➠ Uploaded by : @OrekiProXBot")
