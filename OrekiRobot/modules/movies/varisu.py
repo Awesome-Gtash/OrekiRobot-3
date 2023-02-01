@@ -1,3 +1,6 @@
+# this module created by me this is my own module
+# thanks for my friend he gave me some idea @Otazuki_004
+
 from telethon import Button
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from OrekiRobot import tbot as tbot
