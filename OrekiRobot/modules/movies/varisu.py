@@ -3,7 +3,8 @@
 
 from telethon import Button
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
-from OrekiRobot import tbot as tbot
+from OrekiRobot import BOT_NAME
+from OrekiRobot import tbot as oreki
 from OrekiRobot.events import register
 
 IMAGE = "https://te.legra.ph/file/191a2b533e49ddd8f63cc.jpg"
@@ -24,7 +25,7 @@ BUTTON = [
        text=f"Download [1.74GB] File", callback data="file5"),
      ]
 ]
- await tbot.send_file(event.chat_id, IMAGE, caption=IMG_CAPTION, buttons=BUTTON)
+ await oreki.send_file(event.chat_id, IMAGE, caption=IMG_CAPTION, buttons=BUTTON)
 
 
 
@@ -34,7 +35,7 @@ FILE1_CAP = """
 **Varisu (2023) HQ PreDVD - x264 - Tamil**
 **➠ Uploaded by :** @OrekiProXBot
 """
- await tbot.send_file(event.chat_id, file1, caption=FILE1_CAP)
+ await oreki.send_file(event.chat_id, file=file1, caption=FILE1_CAP)
 
 
 file2 = "https://t.me/OrekiMovies/7"
@@ -43,7 +44,7 @@ FILE2_CAP = """
 **Varisu (2023) HQ PreDVD - x264 - Tamil**
 **➠ Uploaded by :** @OrekiProXBot
 """
- await tbot.send_file(event.chat_id, file2, caption=FILE2_CAP)
+ await oreki.send_file(event.chat_id, file=file2, caption=FILE2_CAP)
 
 
 file3 = "https://t.me/OrekiMovies/8"
@@ -52,7 +53,7 @@ FILE3_CAP = """
 **Varisu (2023) HQ PreDVD - x264 - Tamil**
 **➠ Uploaded by :** @OrekiProXBot
 """
- await tbot.send_file(event.chat_id, file3, caption=FILE3_CAP)
+ await oreki.send_file(event.chat_id, file=file3, caption=FILE3_CAP)
 
 
 file4 = "https://t.me/OrekiMovies/9"
@@ -61,7 +62,7 @@ FILE4_CAP = """
 **Varisu (2023) HQ PreDVD - x264 - Tamil**
 **➠ Uploaded by :** @OrekiProXBot
 """
- await tbot.send_file(event.chat_id, file4, caption=FILE4_CAP)
+ await oreki.send_file(event.chat_id, file=file4, caption=FILE4_CAP)
 
 
 file5 = "https://t.me/OrekiMovies/10"
@@ -70,10 +71,10 @@ FILE5_CAP = """
 **Varisu (2023) HQ PreDVD - x264 - Tamil**
 **➠ Uploaded by :** @OrekiProXBot
 """
- await tbot.send_file(event.chat_id, file5, caption=FILE5_CAP)
+ await oreki.send_file(event.chat_id, file=file5, caption=FILE5_CAP)
 
 
 
 @bot.on.message(pattern=("Varisu"))
 async def awake(event):
-  await event.reply("➠ Uploaded by : @OrekiProXBot")
+  await event.reply("**➠ Uploaded by : {BOT_NAME}**")
