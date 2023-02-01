@@ -5,35 +5,37 @@ from telethon import __version__ as tlhver
 
 from OrekiRobot import BOT_NAME
 from OrekiRobot import tbot as oreki
-from OrekiRobot.events import register
+from OrekiRobot.events import register as bot
 
 IMAGE = "https://te.legra.ph/file/3fad527f4557d914834ee.jpg"
 
 
-@register(pattern=("/alive"))
+@bot(pattern=("/alive"))
 async def awake(event):
     OREKI = """
-**Hola I'm {BOT_NAME}!**
-**♡ My Uptime ~ 🖤:** `{uptime}`\n\n
-**♡ Python-Telegram-Bot Version ~ 🖤 :** `{ptb}`\n\n
-**♡ Telethon Version ~ 🖤:** `{tlhver}`\n\n
-**♡ Pyrogram Version ~ 🖤:** `{pyrover}`\n\n
-**♡ My Master ~ 🖤 :** [GTASH](https://t.me/Awesome_Gtashxd)
+**Hola I'm {BOT_NAME} ~ 🖤!**
+**My Uptime ~ 🖤:** `{uptime}`\n\n
+**Python-Telegram-Bot Version ~ 🖤 :** `{ptb}`\n\n
+**Telethon Version ~ 🖤:** `{tlhver}`\n\n
+**Pyrogram Version ~ 🖤:** `{pyrover}`\n\n
+**My Master ~ 🖤 :** [GTASH](https://t.me/Awesome_Gtashxd)
 """
 
     BUTTON = [
         [
             Button.url(
-                "[► Repo 1 ◄]", "https://github.com/Awesome-Gtash/OrekiRobot-1.git"
+                "Add {BOT_NAME} To Your Group ✅", "https://t.me/{BOT_NAME}?startgroup=true"
             ),
-            Button.url(
-                "[► Repo 2 ◄]", "https://github.com/Awesome-Gtash/OrekiRobot-2.git"
-        ),
     ],
     [
             Button.url(
-                "[► Repo 3 ◄]", "https://github.com/Awesome-Gtash/OrekiRobot-3.git"
+                "Developer🎗", "https://t.me/Awesome_Gtashxd"
+            ),
+    ],
+    [
+            Button.url(
+                "Support🎯", "https://t.me/Gtash_Association"
          ),
      ],
   ]
-    await tbot.send_file(event.chat_id, PHOTO, caption=OREKI, buttons=BUTTON)
+    await oreki.send_file(event.chat_id, IMAGE, caption=OREKI, buttons=BUTTON)
