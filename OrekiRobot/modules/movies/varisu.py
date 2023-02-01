@@ -8,7 +8,7 @@ from OrekiRobot.events import register
 
 IMAGE = "https://te.legra.ph/file/191a2b533e49ddd8f63cc.jpg"
 
-@register(pattern=("Varisu"))
+@bot.on.message(pattern=("Varisu"))
 async def awake(event):
       IMG_CAPTION = """
 *Results for Varisu*
@@ -24,61 +24,53 @@ BUTTON = [
        text=f"Download [1.74GB] File", callback data="file5"),
      ]
 ]
-await tbot.send_file(event.chat_id, IMAGE, caption=IMG_CAPTION, buttons=BUTTON)
+ await tbot.send_file(event.chat_id, IMAGE, caption=IMG_CAPTION, buttons=BUTTON)
+
+
 
 file1 = "https://t.me/OrekiMovies/6"
 
-FILE1_CAP_OREKI = """
+FILE1_CAP = """
 **Varisu (2023) HQ PreDVD - x264 - Tamil**
 **➠ Uploaded by :** @OrekiProXBot
 """
-@register(pattern=("Varisu"))
-async def awake(event):
-    await tbot.send_file(event.chat_id, file1, caption=FILE1_CAP_OREKI)
+ await tbot.send_file(event.chat_id, file1, caption=FILE1_CAP)
 
 
 file2 = "https://t.me/OrekiMovies/7"
 
-FILE2_CAP_OREKI = """
+FILE2_CAP = """
 **Varisu (2023) HQ PreDVD - x264 - Tamil**
 **➠ Uploaded by :** @OrekiProXBot
 """
-@register(pattern=("Varisu"))
-async def awake(event):
-    await tbot.send_file(event.chat_id, file2, caption=FILE2_CAP_OREKI)
+ await tbot.send_file(event.chat_id, file2, caption=FILE2_CAP)
 
 
 file3 = "https://t.me/OrekiMovies/8"
 
-FILE3_CAP_OREKI = """
+FILE3_CAP = """
 **Varisu (2023) HQ PreDVD - x264 - Tamil**
 **➠ Uploaded by :** @OrekiProXBot
 """
-@register(pattern=("Varisu"))
-async def awake(event):
-    await tbot.send_file(event.chat_id, file3, caption=FILE3_CAP_OREKI)
+ await tbot.send_file(event.chat_id, file3, caption=FILE3_CAP)
 
 
 file4 = "https://t.me/OrekiMovies/9"
 
-FILE4_CAP_OREKI = """
+FILE4_CAP = """
 **Varisu (2023) HQ PreDVD - x264 - Tamil**
 **➠ Uploaded by :** @OrekiProXBot
 """
-@register(pattern=("Varisu"))
-async def awake(event):
-    await tbot.send_file(event.chat_id, file4, caption=FILE4_CAP_OREKI)
+ await tbot.send_file(event.chat_id, file4, caption=FILE4_CAP)
 
 
 file5 = "https://t.me/OrekiMovies/10"
 
-FILE5_CAP_OREKI = """
+FILE5_CAP = """
 **Varisu (2023) HQ PreDVD - x264 - Tamil**
 **➠ Uploaded by :** @OrekiProXBot
 """
-@register(pattern=("Varisu"))
-async def awake(event):
-    await tbot.send_file(event.chat_id, file5, caption=FILE5_CAP_OREKI)
+ await tbot.send_file(event.chat_id, file5, caption=FILE5_CAP)
 
 
 
