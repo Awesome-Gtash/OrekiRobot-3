@@ -78,3 +78,5 @@ FILE5_CAP = """
 @register(pattern=("Varisu"))
 async def awake(event):
   await event.reply("**➠ Uploaded by : {BOT_NAME}**")
+
+__mod_name__ = "Varisu"
