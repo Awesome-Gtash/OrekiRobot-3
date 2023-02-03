@@ -98,9 +98,14 @@ PM_START_TEXT = """
 *Hey Prince Is Here! {},*
 *I am an Anime Themed Advance Group Management Bot With Lot Of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➪ *Uptime:* `{}`
-➪ *Python:* 3.10.8
-➪ `{}` *Users, Across* `{}` *Chats.*
+❍ *Uptime ~* `{}`
+❍ `{}` *Users, Across* `{}` *Chats.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+❍ *Latest Update ~* 1/3/23
+❍ *Version Name ~* Pro Version
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+❍ *Next Version Update ~* 5/21/23
+❍ *Next Version Name ~* Ultimate Version
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ Hit The *Help* Button Below To Know My Powers ××
 """
