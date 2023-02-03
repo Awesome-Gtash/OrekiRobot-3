@@ -1,5 +1,3 @@
-"""
-
 import subprocess
 
 from telegram import ParseMode, Update
