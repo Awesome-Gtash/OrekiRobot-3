@@ -43,7 +43,7 @@ async def vsong(client, message):
     except Exception as e:
         return await msg.edit(f"🚫 Error: {e}")
     preview = wget.download(thumbnail)
-    await msg.edit(Process Complete..\n Now Uploading...")
+    await msg.edit("Process Complete..\n Now Uploading...")
     title = ytdl_data["title"]
     await message.reply_video(
         file_name,
