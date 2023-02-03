@@ -175,7 +175,7 @@ class OrekiTelegramHandler:
         return _inlinequery
 
 
-orekicmd = OrekiTelegramHandler(d).command
-orekimsg = OrekiTelegramHandler(d).message
-orekicallback = OrekiTelegramHandler(d).callbackquery
-orekiinline = OrekiTelegramHandler(d).inlinequery
+orekicmd = OrekiTelegramHandler.command
+orekimsg = OrekiTelegramHandler.message
+orekicallback = OrekiTelegramHandler.callbackquery
+orekiinline = OrekiTelegramHandler.inlinequery
