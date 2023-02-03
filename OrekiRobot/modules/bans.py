@@ -16,7 +16,7 @@ from OrekiRobot import (
     DEV_USERS,
     DRAGONS,
     LOGGER,
-    OREKI MOD,
+    OREKI_MOD,
     OWNER_ID,
     TIGERS,
     WOLVES,
