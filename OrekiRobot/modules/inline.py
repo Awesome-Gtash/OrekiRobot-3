@@ -35,7 +35,7 @@ from OrekiRobot import (
     pgram,
 )
 from OrekiRobot.modules.helper_funcs.decorators import orekiinline
-from OrekiRobot.modules.helper_funcs.miku_misc import article
+from OrekiRobot.modules.helper_funcs.oreki_misc import article
 from OrekiRobot.modules.sudoers import bot_sys_stats as wall
 
 
