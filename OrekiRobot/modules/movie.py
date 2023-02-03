@@ -1,1 +1,1 @@
-from OrekiRobot.modules.movies import Varisu
+from OrekiRobot.modules.movies import varisu
