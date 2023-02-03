@@ -33,7 +33,6 @@ from OrekiRobot import (
     TIGERS,
     WOLVES,
     StartTime,
-    sw,
     tbot,
 )
 from OrekiRobot.__main__ import STATS, TOKEN, USER_INFO
