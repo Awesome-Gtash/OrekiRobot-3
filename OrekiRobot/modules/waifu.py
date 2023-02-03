@@ -1,5 +1,5 @@
 import requests
-from telegram.constants import ParseMode, MARKDOWN,
+from telegram import ParseMode, MARKDOWN
 
 from OrekiRobot.events import register as bot
 
