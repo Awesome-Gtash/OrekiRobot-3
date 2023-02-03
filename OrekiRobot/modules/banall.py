@@ -1,5 +1,3 @@
-from Meta import * 
-from Meta.config import *
 from pyrogram.types import Message
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
