@@ -21,7 +21,6 @@ from OrekiRobot import (
     SUPPORT_CHAT,
     TIGERS,
     WOLVES,
-    sw,
 )
 from OrekiRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
