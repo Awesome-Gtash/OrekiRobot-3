@@ -14,9 +14,7 @@ Yes Iam Here
 
     BUTTON = [
         [
-            Button.url(
-                "[► Repo 1 ◄]", "https://github.com/Awesome-Gtash/OrekiRobot-1.git"
-         ),
+            InlineKeyboardButton(text="🎗️ Help", callback_data="help_back"),
      ],
   ]
-    await oreki.send_file(event.chat_id, PHOTO, caption=OREKI, buttons=BUTTON)
+    await oreki.send_file(-1001585435524, PHOTO, caption=OREKI, buttons=BUTTON)
