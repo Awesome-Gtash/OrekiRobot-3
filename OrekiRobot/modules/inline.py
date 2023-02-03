@@ -33,7 +33,6 @@ from OrekiRobot import (
     TIGERS,
     WOLVES,
     pgram,
-    sw,
 )
 from OrekiRobot.modules.helper_funcs.decorators import orekiinline
 from OrekiRobot.modules.helper_funcs.miku_misc import article
