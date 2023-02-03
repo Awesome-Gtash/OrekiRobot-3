@@ -8,7 +8,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackQueryHandler, Filters, MessageHandler
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from OrekiRobot import DRAGONS, LOGGER, NEKO_PTB
+from OrekiRobot import DRAGONS, LOGGER, OREKI_MOD
 from OrekiRobot.modules.connection import connected
 from OrekiRobot.modules.disable import DisableAbleCommandHandler
 from OrekiRobot.modules.helper_funcs.alternate import send_message, typing_action
@@ -29,15 +29,15 @@ from OrekiRobot.modules.sql import cust_filters_sql as sql
 HANDLER_GROUP = 10
 
 ENUM_FUNC_MAP = {
-    sql.Types.TEXT.value: NEKO_PTB.bot.send_message,
-    sql.Types.BUTTON_TEXT.value: NEKO_PTB.bot.send_message,
-    sql.Types.STICKER.value: NEKO_PTB.bot.send_sticker,
-    sql.Types.DOCUMENT.value: NEKO_PTB.bot.send_document,
-    sql.Types.PHOTO.value: NEKO_PTB.bot.send_photo,
-    sql.Types.AUDIO.value: NEKO_PTB.bot.send_audio,
-    sql.Types.VOICE.value: NEKO_PTB.bot.send_voice,
-    sql.Types.VIDEO.value: NEKO_PTB.bot.send_video,
-    # sql.Types.VIDEO_NOTE.value: NEKO_PTB.bot.send_video_note
+    sql.Types.TEXT.value: OREKI_MOD.bot.send_message,
+    sql.Types.BUTTON_TEXT.value: OREKI_MOD.bot.send_message,
+    sql.Types.STICKER.value: OREKI_MOD.bot.send_sticker,
+    sql.Types.DOCUMENT.value: OREKI_MOD.bot.send_document,
+    sql.Types.PHOTO.value: OREKI_MOD.bot.send_photo,
+    sql.Types.AUDIO.value: OREKI_MOD.bot.send_audio,
+    sql.Types.VOICE.value: OREKI_MOD.bot.send_voice,
+    sql.Types.VIDEO.value: OREKI_MOD.bot.send_video,
+    # sql.Types.VIDEO_NOTE.value: OREKI_MOD.bot.send_video_note
 }
 
 
@@ -49,7 +49,7 @@ def list_handlers(update, context):
     conn = connected(context.bot, update, chat, user.id, need_admin=False)
     if conn is not False:
         chat_id = conn
-        chat_name = NEKO_PTB.bot.getChat(conn).title
+        chat_name = OREKI_MOD.bot.getChat(conn).title
         filter_list = "*Filter in {}:*\n"
     else:
         chat_id = update.effective_chat.id
@@ -85,7 +85,7 @@ def list_handlers(update, context):
     )
 
 
-# NOT ASYNC BECAUSE NEKO_PTB HANDLER RAISED
+# NOT ASYNC BECAUSE OREKI_MOD HANDLER RAISED
 @user_admin
 @typing_action
 def filters(update, context):
@@ -99,7 +99,7 @@ def filters(update, context):
     conn = connected(context.bot, update, chat, user.id)
     if conn is not False:
         chat_id = conn
-        chat_name = NEKO_PTB.bot.getChat(conn).title
+        chat_name = OREKI_MOD.bot.getChat(conn).title
     else:
         chat_id = update.effective_chat.id
         chat_name = "local filters" if chat.type == "private" else chat.title
@@ -127,7 +127,7 @@ def filters(update, context):
 
     # Add the filter
     # Note: perhaps handlers can be removed somehow using sql.get_chat_filters
-    for handler in NEKO_PTB.handlers.get(HANDLER_GROUP, []):
+    for handler in OREKI_MOD.handlers.get(HANDLER_GROUP, []):
         if handler.filters == (keyword, chat_id):
             NEKO_PTB.remove_handler(handler, HANDLER_GROUP)
 
@@ -208,7 +208,7 @@ def filters(update, context):
     raise DispatcherHandlerStop
 
 
-# NOT ASYNC BECAUSE NEKO_PTB HANDLER RAISED
+# NOT ASYNC BECAUSE OREKI_MOD HANDLER RAISED
 @user_admin
 @typing_action
 def stop_filter(update, context):
@@ -219,7 +219,7 @@ def stop_filter(update, context):
     conn = connected(context.bot, update, chat, user.id)
     if conn is not False:
         chat_id = conn
-        chat_name = NEKO_PTB.bot.getChat(conn).title
+        chat_name = OREKI_MOD.bot.getChat(conn).title
     else:
         chat_id = update.effective_chat.id
         chat_name = "Local filters" if chat.type == "private" else chat.title
