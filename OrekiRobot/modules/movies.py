@@ -82,4 +82,4 @@ async def awake(e):
 async def awake(e):
  await send.message("➠ Uploaded by : @OrekiProXBot!")
 
-__Mod__: Thunivu
+__mod_name__ = "Thunivu"
