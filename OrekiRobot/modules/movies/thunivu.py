@@ -23,6 +23,11 @@ FIRST_BUTTON = [
   )
  await oreki.send_file(event.chat_id, POSTER, caption=CAP, buttons=FIRST_BUTTON)
 
+def convert(seconds): 
+    seconds = seconds % (24 * 3600) 
+    hour = seconds // 3600 seconds %= 3600 
+    minutes = seconds // 60 seconds %= 60 return "%d:%02d:%02d" % (hour, minutes, seconds)
+
 file1 = ""
 
 async def awake(e):
