@@ -8,7 +8,7 @@ POSTER = ""
 
 @bot(pattern=("Thunivu"))
 async def awake(e):
-    CAP """
+    CAP = """
 Choose the size of Thunivu
 """
 
@@ -27,4 +27,8 @@ file1 = ""
 
 async def awake(e):
     FILE_CAP = """
-Thunivu () All Episodes 720p - x264 - Tamil - 250MB
+**Thunivu (2023) on HDRip 320p - x264 - Tamil - 250MB**
+"""
+ await oreki.send_file(event.chat_id, file1, caption=FILE_CAP)
+
+file2 = ""
