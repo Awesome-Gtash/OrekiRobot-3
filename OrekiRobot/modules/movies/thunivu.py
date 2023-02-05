@@ -44,6 +44,9 @@ async def convert(seconds):
     seconds %= 60 
     return "%d:%02d:%02d" % (hour, minutes, seconds)
 
+async def awake(e):
+ await event.reply("Uploading Please wait!")
+
 file1 = ""
 
 async def awake(e):
@@ -77,4 +80,6 @@ async def awake(e):
  await oreki.send_file(event.chat_id, file4, caption=FILE4_CAP)
 
 async def awake(e):
- await event.reply("Processing Please wait!")
+ await send.message("➠ Uploaded by : @OrekiProXBot!")
+
+Movie Name: Thunivu
