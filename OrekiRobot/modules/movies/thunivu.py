@@ -1,3 +1,4 @@
+import time
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telethon import Button
 
