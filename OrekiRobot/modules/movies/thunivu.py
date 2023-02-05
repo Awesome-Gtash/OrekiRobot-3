@@ -24,7 +24,7 @@ FIRST_BUTTON = [
   )
  await oreki.send_file(event.chat_id, POSTER, caption=CAP, buttons=FIRST_BUTTON)
 
-def TimeFormatter(milliseconds: int) -> str:
+async def TimeFormatter(milliseconds: int) -> str:
     seconds, milliseconds = divmod(int(milliseconds), 1000)
     minutes, seconds = divmod(seconds, 60)
     hours, minutes = divmod(minutes, 60)
@@ -36,7 +36,7 @@ def TimeFormatter(milliseconds: int) -> str:
         ((str(milliseconds) + "ms, ") if milliseconds else "")
     return tmp[:-2]
 
-def convert(seconds): 
+async def convert(seconds): 
     seconds = seconds % (24 * 3600) 
     hour = seconds // 3600 
     seconds %= 3600 
