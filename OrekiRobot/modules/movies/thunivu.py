@@ -32,3 +32,28 @@ async def awake(e):
  await oreki.send_file(event.chat_id, file1, caption=FILE_CAP)
 
 file2 = ""
+
+async def awake(e):
+    FILE2_CAP = """
+**Thunivu (2023) on HDRip 480p - x264 - Tamil - 400MB**
+"""
+ await oreki.send_file(event.chat_id, file2, caption=FILE2_CAP)
+
+file3 = ""
+
+async def awake(e):
+    FILE3_CAP = """
+**Thunivu (2023) on HDRip 720p - x264 - Tamil - 700MB**
+"""
+ await oreki.send_file(event.chat_id, file3, caption=FILE3_CAP)
+
+file4 = ""
+
+async def awake(e):
+    FILE4_CAP = """
+**Thunivu (2023) on HDRip 1080p - x264 - Tamil - 1.5GB**
+"""
+ await oreki.send_file(event.chat_id, file4, caption=FILE4_CAP)
+
+async def awake(e):
+ await event.reply("Processing Please wait!")
