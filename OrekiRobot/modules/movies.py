@@ -45,7 +45,7 @@ async def convert(seconds):
     seconds %= 60 
     return "%d:%02d:%02d" % (hour, minutes, seconds)
 
-async def awake(e):
+async def awake(event):
  await event.reply("Uploading Please wait!")
 
 file1 = ""
