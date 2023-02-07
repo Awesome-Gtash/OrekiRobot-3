@@ -8,8 +8,6 @@
 
 <p align="center"><a href="https://t.me/OrekiProXBot"><img src="https://telegra.ph/file/765450f8a2e8fe4384dcb.jpg" width="600"></a></p>
 
-<p align="center"><a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=red&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a></p>
-<p align="center"><a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=blue&label=pyrogram&logo=python&logoColor=green&style=for-the-badge" /></a></p>
 
 
 ## Oreki Is Available on Telegram as [@OrekiProXBot](https://t.me/Orekiproxbot)
@@ -25,13 +23,6 @@ Click The Blue Deploy Button & Fill the vars Then Bot Runs on Heroku!
 - Owner: [Myaav Boi](https://github.com/Awesome-Gtash)
 - Dev: [Lovely Prince](https://github.com/Awesome-Prince)
 - Helper: [OTAZUKI](https://github.com/Otazuki004)
-- Oreki's Deployer: [GODOFLOVE](https://github.com/GOD-OF-LOVE)
-
-## Special Creditz
-
-- Neko Bot: [Base](https://github.com/Awesome-Prince/NekoRobot-3)
-- Stylish Text: [Fonts Module](https://github.com/ZauteKm/Stylish-Text-Bot)
-- Cutiepii Bot: [Some Modules](https://github.com/Awesome-RJ/CutiepiiRobot)
 <details>
 	<summary>Other Deploy Options</summary>
 
