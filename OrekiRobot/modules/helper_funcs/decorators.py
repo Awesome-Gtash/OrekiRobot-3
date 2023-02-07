@@ -9,7 +9,7 @@ from telegram.ext import (
 from telegram.ext.filters import BaseFilter
 
 from OrekiRobot import LOGGER
-from OrekiRobot import OREKI_MOD
+from OrekiRobot import OREKI_MOD as d
 from OrekiRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
@@ -175,7 +175,7 @@ class OrekiTelegramHandler:
         return _inlinequery
 
 
-orekicmd = OrekiTelegramHandler().command
-orekimsg = OrekiTelegramHandler.message
-orekicallback = OrekiTelegramHandler.callbackquery
-orekiinline = OrekiTelegramHandler.inlinequery
+orekicmd = OrekiTelegramHandler(d).command
+orekimsg = OrekiTelegramHandler(d).message
+orekicallback = OrekiTelegramHandler(d).callbackquery
+orekiinline = OrekiTelegramHandler(d).inlinequery
