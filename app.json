@@ -22,17 +22,17 @@
       "TOKEN": {
          "description": "Your bot token. Get token from @BotFather on telegram",
          "required": true,
-         "value": "5634572222:AAHV8CbM1dutV3MpFNU3zyiRWRG-cBOPG8o"
+         "value": ""
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "25642619"
+         "value": ""
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "f9c72c0058e98a1581221bf6654a75e2"
+         "value": ""
       },
        "STRING_SESSION": {
          "description": "Telethon Based String Session (2nd ID) [ From https://repl.it/@SpEcHiDe/GenerateStringSession ]",
@@ -57,12 +57,12 @@
       "ERROR_LOGS": {
          "description": "Error Logs (Channel or Group Choice Is Yours)",
          "required": true,
-         "value": "-1001852609544"
+         "value": "-12345678"
       },
        "HELP_IMG": {
          "description": "Give Your Bot Group Help Image Link.",
          "required": true,
-         "value": "https://te.legra.ph/file/3fc4ca9097c7ec4522dbf.jpg"
+         "value": ""
       },
       "OWNER_ID": {
          "description": "Replace Your user ID as an integer.",
@@ -76,8 +76,8 @@
       },
       "BOT_ID": {
          "description": "Needs your bot ID. Use any other bot to get it.",
-         "required": true,
-         "value": "5634572222"
+         "required": false,
+         "value": ""
       },
       "SUPPORT_CHAT": {
          "description": "Replace Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
@@ -87,12 +87,12 @@
       "EVENT_LOGS": {
          "description": "Replace Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-1001852609544"
+         "value": "-12345678"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-1001852609544"
+         "value": "-12345678"
       },
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
