@@ -13,8 +13,9 @@ Yes Iam Here
 """
 
     BUTTON = [
-        (
-            InlineKeyboardButton(text="🎗️ Help", callback_data="help_back"),
+        [
+            InlineKeyboardButton(text="🎗️ Help", callback_data="help_back"
+          ),
      ],
   ]
     await oreki.send_file(-1001585435524, PHOTO, caption=OREKI, buttons=BUTTON)
