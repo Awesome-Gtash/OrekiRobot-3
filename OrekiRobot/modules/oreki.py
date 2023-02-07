@@ -1,19 +1,19 @@
 from telethon import Button
 
 from OrekiRobot import tbot as oreki
-from OrekiRobot.events import register as bot
+from OrekiRobot.events import register
 
 PHOTO = "https://te.legra.ph/file/3fad527f4557d914834ee.jpg"
 
 
-@bot(pattern=("Oreki"))
+@register(pattern=("Oreki"))
 async def awake(event):
     OREKI = """
 Yes Iam Here
 """
 
     BUTTON = [
-        [
+        (
             InlineKeyboardButton(text="🎗️ Help", callback_data="help_back"),
      ],
   ]
