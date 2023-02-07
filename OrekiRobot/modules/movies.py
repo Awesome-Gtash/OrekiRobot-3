@@ -3,12 +3,12 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telethon import Button
 
 from OrekiRobot import tbot as oreki
-from OrekiRobot.events import register as bot
+from OrekiRobot.events import register
 
 POSTER = ""
 
-@bot(pattern=("Thunivu"))
-async def awake(e):
+@register(pattern=("Thunivu"))
+async def awake(event):
     CAP = """
 Choose the size of Thunivu
 """
@@ -16,12 +16,13 @@ Choose the size of Thunivu
 FIRST_BUTTON = [
         [
                InlineKeyboardButton(
-               text="[247.7MB] SIZE FILE" url="https://telegram.me/OrekiProXBot?start=file1"
-               text="[399.5MB] SIZE FILE" url="https://telegram.me/OrekiProXBot?start=file2"
-               text="[700.3MB] SIZE FILE" url="https://telegram.me/OrekiProXBot?start=file3"
-               text="[1.41GB] SIZE FILE" url="https://telegram.me/OrekiProXBot?start=file4"
-        ),
-  )
+               text="[247.7MB] SIZE FILE" url="https://telegram.me/OrekiProXBot?start=file1",
+               text="[399.5MB] SIZE FILE" url="https://telegram.me/OrekiProXBot?start=file2",
+               text="[700.3MB] SIZE FILE" url="https://telegram.me/OrekiProXBot?start=file3",
+               text="[1.41GB] SIZE FILE" url="https://telegram.me/OrekiProXBot?start=file4",
+            ),
+       ]
+  ]
  await oreki.send_file(event.chat_id, POSTER, caption=CAP, buttons=FIRST_BUTTON)
 
 async def TimeFormatter(milliseconds: int) -> str:
@@ -49,7 +50,7 @@ async def awake(e):
 
 file1 = ""
 
-async def awake(e):
+async def awake(event):
     FILE_CAP = """
 **Thunivu (2023) on HDRip 320p - x264 - Tamil - 250MB**
 """
@@ -57,7 +58,7 @@ async def awake(e):
 
 file2 = ""
 
-async def awake(e):
+async def awake(event):
     FILE2_CAP = """
 **Thunivu (2023) on HDRip 480p - x264 - Tamil - 400MB**
 """
@@ -65,7 +66,7 @@ async def awake(e):
 
 file3 = ""
 
-async def awake(e):
+async def awake(event):
     FILE3_CAP = """
 **Thunivu (2023) on HDRip 720p - x264 - Tamil - 700MB**
 """
@@ -73,13 +74,13 @@ async def awake(e):
 
 file4 = ""
 
-async def awake(e):
+async def awake(event):
     FILE4_CAP = """
 **Thunivu (2023) on HDRip 1080p - x264 - Tamil - 1.5GB**
 """
  await oreki.send_file(event.chat_id, file4, caption=FILE4_CAP)
 
-async def awake(e):
+async def awake(event):
  await send.message("➠ Uploaded by : @OrekiProXBot!")
 
 __mod_name__ = "Thunivu"
