@@ -7,7 +7,7 @@ from telegram.utils.helpers import mention_html
 import OrekiRobot.modules.sql.logger_sql as sql
 from OrekiRobot.modules.helper_funcs.anonymous import AdminPerms
 from OrekiRobot.modules.helper_funcs.anonymous import user_admin as u_admin
-from OrekiRobot.modules.helper_funcs.decorators import nekocmd
+from OrekiRobot.modules.helper_funcs.decorators import orekicmd
 from OrekiRobot.modules.log_channel import loggable
 
 
