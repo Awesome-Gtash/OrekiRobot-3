@@ -5,12 +5,12 @@ from telethon import __version__ as tlhver
 
 from OrekiRobot import BOT_NAME
 from OrekiRobot import tbot as oreki
-from OrekiRobot.events import register as bot
+from OrekiRobot.events import register
 
 IMAGE = "https://te.legra.ph/file/3fad527f4557d914834ee.jpg"
 
 
-@bot(pattern=("/alive"))
+@register(pattern=("/alive"))
 async def awake(event):
     OREKI = """
 **Hola I'm {BOT_NAME} ~ 🖤!**
