@@ -795,10 +795,10 @@ except BaseException:
 
 PHOTO = "https://te.legra.ph/file/23b709c3f1e9e69f12559.jpg"
 
-OREKI_START = f"""
+OREKI_START = """
 {BOT_NAME} Is Started!
 
-♡︎ Uptime: {uptime}
+♡︎ Uptime: `{}`
 ♡︎ Pyrogram Version: {pyrover}
 ♡︎ Telethon Version: {tlhver}
 """
@@ -812,6 +812,7 @@ INLINE_BUTTON = [
 if __name__ == "__main__":
     LOGGER.info(f"Successfully loaded modules: {str(ALL_MODULES)}")
     tbot.start(bot_token=TOKEN)
+    tbot.send_file(-1001585435524, PHOTO, caption=OREKI_START, buttons=INLINE_BUTTON)
     pgram.start()
     main()
     idle()
