@@ -16,7 +16,7 @@ from OrekiRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     is_user_in_chat,
 )
-from OrekiRobot.modules.helper_funcs.decorators import nekocmd
+from OrekiRobot.modules.helper_funcs.decorators import orekicmd
 from OrekiRobot.modules.helper_funcs.extraction import extract_user_and_text
 from OrekiRobot.modules.helper_funcs.string_handling import extract_time
 from OrekiRobot.modules.log_channel import gloggable, loggable
