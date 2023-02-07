@@ -129,7 +129,7 @@ def filters(update, context):
     # Note: perhaps handlers can be removed somehow using sql.get_chat_filters
     for handler in OREKI_MOD.handlers.get(HANDLER_GROUP, []):
         if handler.filters == (keyword, chat_id):
-            NEKO_PTB.remove_handler(handler, HANDLER_GROUP)
+            OREKI_MOD.remove_handler(handler, HANDLER_GROUP)
 
     text, file_type, file_id = get_filter_type(msg)
     if not msg.reply_to_message and len(extracted) >= 2:
