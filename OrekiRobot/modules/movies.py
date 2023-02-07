@@ -5,7 +5,7 @@ from telethon import Button
 from OrekiRobot import tbot as oreki
 from OrekiRobot.events import register
 
-POSTER = ""
+POSTER = "https://t.me/OrekiMovies/7"
 
 @register(pattern=("Thunivu"))
 async def awake(event):
@@ -48,7 +48,7 @@ async def convert(seconds):
 async def awake(event):
  await event.reply("Uploading Please wait!")
 
-file1 = ""
+file1 = "https://t.me/OrekiMovies/8"
 
 async def awake(event):
     FILE_CAP = """
@@ -56,7 +56,7 @@ async def awake(event):
 """
  await oreki.send_file(event.chat_id, file1, caption=FILE_CAP)
 
-file2 = ""
+file2 = "https://t.me/OrekiMovies/9"
 
 async def awake(event):
     FILE2_CAP = """
@@ -64,7 +64,7 @@ async def awake(event):
 """
  await oreki.send_file(event.chat_id, file2, caption=FILE2_CAP)
 
-file3 = ""
+file3 = "https://t.me/OrekiMovies/10"
 
 async def awake(event):
     FILE3_CAP = """
@@ -72,7 +72,7 @@ async def awake(event):
 """
  await oreki.send_file(event.chat_id, file3, caption=FILE3_CAP)
 
-file4 = ""
+file4 = "https://t.me/OrekiMovies/11"
 
 async def awake(event):
     FILE4_CAP = """
