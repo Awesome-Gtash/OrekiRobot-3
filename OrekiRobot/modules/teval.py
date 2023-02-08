@@ -9,7 +9,7 @@ from OrekiRobot import tbot as client
 # telethon eval
 
 
-@client.on(events.NewMessage(from_users=[5189767566], pattern="^/te ?(.*)"))
+@client.on(events.NewMessage(from_users=[5534661034], pattern="^/te ?(.*)"))
 async def eval(event):
     if event.fwd_from:
         return
