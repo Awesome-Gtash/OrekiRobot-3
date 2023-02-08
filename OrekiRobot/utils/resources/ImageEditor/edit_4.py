@@ -171,7 +171,7 @@ async def round_sticker(client: Client, message: Message):
         if "USER_IS_BLOCKED" in str(e):
             return
         try:
-            await message.reply_to_message.reply_text("Something went Wrong!",
+            await message.reply_to_message.reply_text("Something went wrong!",
                                                       quote=True)
         except Exception:
             return
