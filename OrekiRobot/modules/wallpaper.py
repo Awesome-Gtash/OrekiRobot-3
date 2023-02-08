@@ -1,3 +1,4 @@
+import ChatAction
 import requests as r
 
 from random import randint
@@ -11,7 +12,7 @@ from OrekiRobot.modules.helper_funcs.alternate import send_action
 # Wallpaper module powered by wall.alphacoders.com
 
 
-@send_action(UPLOAD_PHOTO)
+@send_action(ChatAction.UPLOAD_PHOTO)
 async def wall(update: Update, context: CallbackContext) -> None:
     chat_id = update.effective_chat.id
     msg = update.effective_message
