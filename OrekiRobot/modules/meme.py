@@ -8,7 +8,6 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters
 
 import OrekiRobot.modules.helper_funcs.string_store as fun
-import OrekiRobot.modules.OrekiFunBot_Strings as fun_strings
 from OrekiRobot import OREKI_MOD, SUPPORT_CHAT
 from OrekiRobot.events import register
 from OrekiRobot.modules.disable import (
