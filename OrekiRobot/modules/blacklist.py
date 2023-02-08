@@ -13,7 +13,7 @@ from OrekiRobot.modules.helper_funcs.alternate import send_message, typing_actio
 from OrekiRobot.modules.helper_funcs.anonymous import AdminPerms, user_admin
 from OrekiRobot.modules.helper_funcs.chat_status import user_admin as u_admin
 from OrekiRobot.modules.helper_funcs.chat_status import user_not_admin
-from OrekiRobot.modules.helper_funcs.decorators import nekocmd, nekomsg
+from OrekiRobot.modules.helper_funcs.decorators import orekicmd, orekimsg
 from OrekiRobot.modules.helper_funcs.extraction import extract_text
 from OrekiRobot.modules.helper_funcs.misc import split_message
 from OrekiRobot.modules.helper_funcs.string_handling import extract_time
