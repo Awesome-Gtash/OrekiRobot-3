@@ -29,7 +29,7 @@ from traceback import format_exc as err
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 from pyrogram.types import Message
 
-from OrekiRobot import SUDO_USERS, LOGGER
+from OrekiRobot import LOGGER
 from OrekiRobot.utils.pluginhelp import member_permissions
 
 
