@@ -2,7 +2,7 @@ import os
 import time
 import zipfile
 import datetime
-import extractmetadata
+import extractMetadata
 import createParser
 
 
