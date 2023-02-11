@@ -4,7 +4,7 @@ envparse==0.2.0
 multicolorcaptcha
 faker
 ffmpeg
-movie.py
+moviepy
 humanize
 wget==3.2
 secureme==0.0.4
