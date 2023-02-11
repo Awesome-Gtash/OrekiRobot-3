@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+import datetime
 
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
