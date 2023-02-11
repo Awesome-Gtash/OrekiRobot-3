@@ -1,8 +1,9 @@
+import sys
+
+from OrekiRobot import DATABASE_URI, LOGGER
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
-
-from OrekiRobot import DB_URI
 
 
 def start() -> scoped_session:
