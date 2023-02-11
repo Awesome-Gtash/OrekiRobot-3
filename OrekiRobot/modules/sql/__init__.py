@@ -13,4 +13,10 @@ def start() -> scoped_session:
 
 
 BASE = declarative_base()
-SESSION = start()
+try:
+    SESSION: scoped_session = start()
+except Exception as e:
+    LOGGER.exception(f"PostgreSQL Failed to connect due to {e}")
+    sys.exit()
+
+LOGGER.info("PostgreSQL Connection successful, session started.")
