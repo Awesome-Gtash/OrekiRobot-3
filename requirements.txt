@@ -4,7 +4,7 @@ envparse==0.2.0
 multicolorcaptcha
 faker
 ffmpeg
-moviepy
+movie.py
 humanize
 wget==3.2
 secureme==0.0.4
@@ -40,7 +40,6 @@ speedtest-cli==2.1.3
 coffeehouse
 regex==2022.9.13
 bleach
-wikipedia
 spamwatch
 alphabet_detector
 cachetools
@@ -72,17 +71,14 @@ pyrate-limiter
 nekos.py
 tgcrypto
 python-arq==6.0.3
-hachoir
 configparser
 python-dotenv==0.19.2
-bing_image_downloader
 parsel
 urllib3
 heroku3
 telegraph
 youtube_search
 search_engine_parser
-glitch_this
 NumPy
 opencv-python-headless
 countryinfo==0.1.2
