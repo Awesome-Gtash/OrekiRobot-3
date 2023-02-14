@@ -189,7 +189,7 @@ print(
 )
 ubot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 print(
-    "[OrekiRobot]: Connecting To White Tiger • Oreki Robot (https://telegram.dog/OrekiXProRobot)"
+    "[OrekiRobot]: Connecting To White Tiger • Oreki Userbot (https://telegram.dog/Oreki_Assistant)"
 )
 timeout = httpx.Timeout(40)
 http = httpx.AsyncClient(http2=True, timeout=timeout)
