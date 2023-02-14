@@ -7,7 +7,6 @@ import re
 import time
 import traceback
 from sys import argv
-from typing import Optional
 
 from pyrogram import __version__ as pyrover
 from pyrogram import idle
@@ -18,7 +17,6 @@ from telegram.error import (
     NetworkError,
     TelegramError,
     TimedOut,
-    Unauthorized,
 )
 from telegram.ext import (
     CallbackContext,
@@ -126,10 +124,10 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🚑 Support", url=f"https://telegram.dog/Dev_SupportChat"
+            text="🚑 Support", url=f"https://telegram.dog/Gtash_Association"
         ),
         InlineKeyboardButton(
-            text="📢 Updates", url=f"https://telegram.dog/Dev_Updates"
+            text="📢 Updates", url=f"https://telegram.dog/Gtash_Updates"
         ),
     ],
     [
@@ -377,7 +375,7 @@ def help_button(update: Update, context: CallbackContext) -> None:
                             ),
                             InlineKeyboardButton(
                                 text="[► Support ◄]",
-                                url=f"https://t.me/Dev_SupportChat",
+                                url=f"https://t.me/Gtash_Association",
                             ),
                         ]
                     ]
