@@ -1,13 +1,13 @@
 import sys
 
-from OrekiRobot import DATABASE_URL, LOGGER
+from OrekiRobot import DB_URL, LOGGER
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 
 def start() -> scoped_session:
-    engine = create_engine(DATABASE_URL, client_encoding="utf8")
+    engine = create_engine(DB_URL, client_encoding="utf8")
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
