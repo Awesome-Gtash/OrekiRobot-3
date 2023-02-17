@@ -4,7 +4,7 @@ from telegram import ParseMode
 from OrekiRobot.events import register as bot
 
 
-@bot(pattern="[/!]waifu")
+@bot.on.message(pattern="[/!]waifu")
 async def ok(event):
     url = "https://api.waifu.pics/sfw/waifu"
     r = requests.get(url)
@@ -15,12 +15,12 @@ async def ok(event):
         file=e["url"])
 
 
-@bot(pattern="[/!]protecc")
+@bot.on.message(pattern="[/!]protecc")
 async def ok(event):
     await event.reply(
         "OwO you protecc'd A Waifu This waifu has been added to your harem.")
 
 
-@bot(pattern="[/!]harem")
+@bot.on.message(pattern="[/!]harem")
 async def ok(event):
     await event.reply("You haven't protecc'd any waifu yet...")
