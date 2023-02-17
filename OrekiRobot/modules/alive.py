@@ -5,20 +5,20 @@ from telethon import __version__ as tlhver
 
 from OrekiRobot import BOT_NAME
 from OrekiRobot import tbot as oreki
-from OrekiRobot.events import register
+from OrekiRobot.events import register as oreki
 
 IMAGE = "https://te.legra.ph/file/3fad527f4557d914834ee.jpg"
 
 
-@register(pattern=("/alive"))
+@oreki.on.message(pattern=("/alive"))
 async def awake(event):
     OREKI = """
 **Hola I'm {BOT_NAME} ~ 🖤!**
-**My Uptime ~ 🖤:** `{uptime}`\n\n
+**My Uptime ~ 🖤:** `{}`\n\n
 **Python-Telegram-Bot Version ~ 🖤 :** `{ptb}`\n\n
 **Telethon Version ~ 🖤:** `{tlhver}`\n\n
 **Pyrogram Version ~ 🖤:** `{pyrover}`\n\n
-**My Master ~ 🖤 :** [GTASH](https://t.me/Awesome_Gtashxd)
+**My Master ~ 🖤 :** [THE GTASH](https://t.me/Awesome_Gtashxd)
 """
 
     BUTTON = [
