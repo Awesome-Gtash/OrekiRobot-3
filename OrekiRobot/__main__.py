@@ -99,10 +99,10 @@ PM_START_TEXT = """
 ❍ *Uptime ~* `{}`
 ❍ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Latest Update ~* 1/3/23
+❍ *Latest Update ~* 2/21/23
 ❍ *Version Name ~* Pro Version
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Next Version Update ~* 5/21/23
+❍ *Next Version Update ~* 3/19/23
 ❍ *Next Version Name ~* Ultimate Version
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➪ Hit The *Help* Button Below To Know My Powers ××
