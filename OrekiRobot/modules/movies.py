@@ -1,3 +1,5 @@
+# this module created by me and my friend @Otazuki_004
+
 from telethon import Button
 
 from OrekiRobot import tbot as oreki
@@ -19,14 +21,7 @@ THUNIVU
 𖦹 Powered By : @Gtash_Association
 """
 
-DO_BUTTON = [
-        [
-               Button.url(
-               text="Galaxy Tamil" url="https://telegram.me/Galaxy_tamil",
-            ),
-       ]
-  ]
- await oreki.send_file(event.chat_id, POSTER, caption=CAP, buttons=DO_BUTTON)
+ await oreki.send_file(event.chat_id, POSTER, caption=CAP)
 
 file1 = "https://t.me/OrekiMovies/8"
 
