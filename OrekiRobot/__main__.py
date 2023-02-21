@@ -795,9 +795,9 @@ except BaseException:
 PHOTO = "https://te.legra.ph/file/23b709c3f1e9e69f12559.jpg"
 
 OREKI_START = """
-{BOT_NAME} Is Started!
+Prince Oreki 왕자 Is Started!
 
-♡︎ Uptime: `{}`
+♡︎ Version Name: Pro Version
 ♡︎ Pyrogram Version: {pyrover}
 ♡︎ Telethon Version: {tlhver}
 """
