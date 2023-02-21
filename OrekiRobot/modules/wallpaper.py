@@ -1,8 +1,8 @@
-import ChatAction
 import requests as r
 
 from random import randint
 from telegram import Update
+from telegram.constants import ChatAction
 from telegram.ext import CallbackContext
 
 from OrekiRobot import SUPPORT_CHAT, WALL_API, OREKI_MOD
