@@ -7,10 +7,10 @@ from OrekiRobot import BOT_NAME
 from OrekiRobot import tbot as oreki
 from OrekiRobot.events import register as oreki
 
-IMAGE = "https://te.legra.ph/file/3fad527f4557d914834ee.jpg"
+IMAGE = "https://te.legra.ph/file/344cdfc69c65647c10313.jpg"
 
 
-@oreki.on.message(pattern=("/alive"))
+@oreki(pattern=("/alive"))
 async def awake(event):
     OREKI = """
 **Hola I'm {BOT_NAME} ~ 🖤!**
