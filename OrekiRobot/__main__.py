@@ -8,7 +8,7 @@ import time
 import traceback
 from sys import argv
 
-from pyrogram import __version__ as pyrover
+from pyrogram import __version__ as Otazu
 from pyrogram import idle
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
@@ -794,11 +794,11 @@ except BaseException:
 
 PHOTO = "https://te.legra.ph/file/23b709c3f1e9e69f12559.jpg"
 
-OREKI_START = """
-Prince Oreki 왕자 Is Started!
+OREKI_START = f"""
+[Prince Oreki 왕자]({BOT_USERNAME}) Is Started!
 
 ♡︎ Version Name: Pro Version
-♡︎ Pyrogram Version: {pyrover}
+♡︎ Pyrogram Version: {Otazu}
 ♡︎ Telethon Version: {tlhver}
 """
 INLINE_BUTTON = [
