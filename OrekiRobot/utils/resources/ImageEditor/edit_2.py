@@ -8,7 +8,7 @@ from OrekiRobot import LOGGER
 from PIL import Image, ImageDraw, ImageEnhance
 
 
-async def circle_with_bg(client: Client, message: Message):
+async def circle_with_bg(message: Message):
     try:
         userid = str(chat_id)
         if not os.path.isdir(f"./DOWNLOADS/{userid}"):
