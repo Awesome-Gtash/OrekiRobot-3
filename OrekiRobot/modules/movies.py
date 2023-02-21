@@ -1,4 +1,3 @@
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telethon import Button
 
 from OrekiRobot import tbot as oreki
@@ -22,7 +21,7 @@ THUNIVU
 
 DO_BUTTON = [
         [
-               InlineKeyboardButton(
+               Button.url(
                text="Galaxy Tamil" url="https://telegram.me/Galaxy_tamil",
             ),
        ]
