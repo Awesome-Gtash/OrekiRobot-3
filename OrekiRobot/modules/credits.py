@@ -1,12 +1,12 @@
 from telethon import Button
 
 from OrekiRobot import tbot as oreki
-from OrekiRobot.events import register as bot
+from OrekiRobot.events import register
 
-PHOTO = ""
+PHOTO = "https://te.legra.ph/file/013365b3d0b9e514ac388.jpg"
 
 
-@bot.on.message(pattern=("/credits"))
+@register(pattern=("/credits"))
 async def awake(event):
     OREKI = """
      **Credits:**
