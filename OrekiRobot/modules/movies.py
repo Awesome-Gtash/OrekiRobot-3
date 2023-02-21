@@ -15,7 +15,7 @@ THUNIVU
 ➤ Year : 2023
 ➤ Lang : Tamil
 ➤ Quality : HDRip
-➤ Genre : Action, Thriller
+➤ Genre : Action
 ➤ Size : 250MB-1.41GB
 
 𖦹 Powered By : @Gtash_Association
