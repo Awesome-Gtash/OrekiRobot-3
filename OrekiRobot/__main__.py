@@ -810,7 +810,7 @@ except BaseException:
     sys.exit(1)
 """
 
-PHOTO = "https://te.legra.ph/file/23b709c3f1e9e69f12559.jpg"
+PHOTO = "https://telegra.ph/file/367e4ae92a1dc22098fe2.jpg"
 
 OREKI_START = f"""
 [Prince Oreki 왕자]({BOT_USERNAME}) Is Started!
