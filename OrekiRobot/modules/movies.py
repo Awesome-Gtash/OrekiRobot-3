@@ -1,4 +1,3 @@
-import time
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telethon import Button
 
@@ -10,43 +9,25 @@ POSTER = "https://t.me/OrekiMovies/7"
 @register(pattern=("Thunivu"))
 async def awake(event):
     CAP = """
-Choose the size of Thunivu
+THUNIVU
+
+➤ Year : 2023
+➤ Lang : Tamil
+➤ Quality : HDRip
+➤ Genre : Action, Thriller
+➤ Size : 250MB-1.41GB
+
+𖦹 Powered By : @Gtash_Association
 """
 
-FIRST_BUTTON = [
+DO_BUTTON = [
         [
                InlineKeyboardButton(
-               text="[247.7MB] SIZE FILE" url="https://telegram.me/OrekiProXBot?start=file1",
-               text="[399.5MB] SIZE FILE" url="https://telegram.me/OrekiProXBot?start=file2",
-               text="[700.3MB] SIZE FILE" url="https://telegram.me/OrekiProXBot?start=file3",
-               text="[1.41GB] SIZE FILE" url="https://telegram.me/OrekiProXBot?start=file4",
+               text="Galaxy Tamil" url="https://telegram.me/Galaxy_tamil",
             ),
        ]
   ]
- await oreki.send_file(event.chat_id, POSTER, caption=CAP, buttons=FIRST_BUTTON)
-
-async def TimeFormatter(milliseconds: int) -> str:
-    seconds, milliseconds = divmod(int(milliseconds), 1000)
-    minutes, seconds = divmod(seconds, 60)
-    hours, minutes = divmod(minutes, 60)
-    days, hours = divmod(hours, 24)
-    tmp = ((str(days) + "d, ") if days else "") + \
-        ((str(hours) + "h, ") if hours else "") + \
-        ((str(minutes) + "m, ") if minutes else "") + \
-        ((str(seconds) + "s, ") if seconds else "") + \
-        ((str(milliseconds) + "ms, ") if milliseconds else "")
-    return tmp[:-2]
-
-async def convert(seconds): 
-    seconds = seconds % (24 * 3600) 
-    hour = seconds // 3600 
-    seconds %= 3600 
-    minutes = seconds // 60 
-    seconds %= 60 
-    return "%d:%02d:%02d" % (hour, minutes, seconds)
-
-async def awake(event):
- await event.reply("Uploading Please wait!")
+ await oreki.send_file(event.chat_id, POSTER, caption=CAP, buttons=DO_BUTTON)
 
 file1 = "https://t.me/OrekiMovies/8"
 
