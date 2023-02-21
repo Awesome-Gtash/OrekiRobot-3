@@ -4,7 +4,7 @@ from functools import wraps
 
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
-from Hydra import pgram as app
+from OrekiRobot import pgram as app
 
 LOG_GROUP_ID = int(-1001681859325)
 
