@@ -2,8 +2,6 @@ import os
 import time
 import zipfile
 import datetime
-import extractMetadata
-import createParser
 
 
 from telethon import types
@@ -12,7 +10,8 @@ from telethon.tl.types import DocumentAttributeVideo
 
 from OrekiRobot import TEMP_DOWNLOAD_DIRECTORY, telethn
 from OrekiRobot.events import register
-
+from hachoir.metadata import extractMetadata
+from hachoir.parser import createParser
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChat, types.InputChannel)):
