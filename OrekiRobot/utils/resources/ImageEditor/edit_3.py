@@ -5,7 +5,7 @@ from PIL import Image, ImageOps
 from OrekiRobot import LOGGER
 
 
-async def black_border(client: Client, message: Message):
+async def black_border(message: Message):
     try:
         userid = str(chat_id)
         if not os.path.isdir(f"./DOWNLOADS/{userid}"):
