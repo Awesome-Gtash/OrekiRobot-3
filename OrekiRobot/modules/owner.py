@@ -27,14 +27,14 @@ __mod_name__: Owner
 
 BOT_PIC = "https://te.legra.ph/file/cf81f114b4e7f6bbf269e.jpg"
 
-@oreki.on.message(pattern=("[/!?]bot"))
+@oreki(pattern=("[/!?]bot"))
 async def awake(event):
     BOT = """
     **╒═══「• BOT INFO • 」**
 
 🖤 **First Name:** {BOT_NAME}
 🖤 **Second Name:** None
-🖤 **Username:** {BOT_USERNAME}
+🖤 **Username:** [@OrekiProXBot](https://telegram.dog/OrekiProXBot)
 🖤 **Github:** [OrekiRobot-3](https://Github.com/Awesome-Gtash/OrekiRobot-3.git)
 
 🎗 **SUPPORT:** [Gtash Association](https://telegram.dog/Gtash_Association)
