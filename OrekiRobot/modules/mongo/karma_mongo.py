@@ -1,5 +1,4 @@
-import db
-
+from OrekiRobot import db
 from typing import Dict, List, Union
 
 karmadb = db.karma
