@@ -6,7 +6,7 @@ from OrekiRobot import LOGGER
 from PIL import Image, ImageEnhance, ImageFilter
 
 
-async def bright(client: Client, message: Message):
+async def bright(message: Message):
     try:
         userid = str(chat_id)
         if not os.path.isdir(f"./DOWNLOADS/{userid}"):
