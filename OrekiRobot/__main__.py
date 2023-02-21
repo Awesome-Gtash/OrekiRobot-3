@@ -8,7 +8,7 @@ import time
 import traceback
 from sys import argv
 
-from pyrogram import __version__ as Otazu
+from pyrogram import __version__ as pyrover
 from pyrogram import idle
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
@@ -718,12 +718,30 @@ def main():
                 ),
             )
         except Unauthorized:
-            LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!"
+            update.effective_message.reply_text(
+                "Contact me in PM first to get donation information."
             )
-        except BadRequest as e:
-            LOGGER.warning(e.message)
+            
+            
+        def migrate_chats(update: Update):
+    msg = update.effective_message  # type: Optional[Message]
+    if msg.migrate_to_chat_id:
+        old_chat = update.effective_chat.id
+        new_chat = msg.migrate_to_chat_id
+    elif msg.migrate_from_chat_id:
+        old_chat = msg.migrate_from_chat_id
+        new_chat = update.effective_chat.id
+    else:
+        return
 
+    LOGGER.info("Migrating from %s, to %s", old_chat, new_chat)
+    for mod in MIGRATEABLE:
+        with contextlib.suppress(KeyError, AttributeError):
+            mod.__migrate__(old_chat, new_chat)
+    LOGGER.info("Successfully migrated!")
+
+
+def main():
     test_handler = CommandHandler("test", test, run_async=True)
     start_handler = CommandHandler("start", start, run_async=True)
 
@@ -798,7 +816,7 @@ OREKI_START = f"""
 [Prince Oreki 왕자]({BOT_USERNAME}) Is Started!
 
 ♡︎ Version Name: Pro Version
-♡︎ Pyrogram Version: {Otazu}
+♡︎ Pyrogram Version: {pyrover}
 ♡︎ Telethon Version: {tlhver}
 """
 INLINE_BUTTON = [
