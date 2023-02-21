@@ -21,7 +21,7 @@ async def awake(event):
 🎗 **UPDATES:** [@Gtash Updates](https://telegram.dog/Gtash_Updates)
 """
 
-await oreki.send_file(event.chat_id, OWNER_PIC, caption=OWNER)
+ oreki.send_file(event.chat_id, OWNER_PIC, caption=OWNER)
 
 __mod_name__: Owner
 
@@ -41,6 +41,6 @@ async def awake(event):
 🎗 **UPDATES:** [Gtash Updates](https://telegram.dog/Gtash_Updates)
 """
 
-await oreki.send_file(event.chat_id, BOT_PIC, caption=BOT)
+ oreki.send_file(event.chat_id, BOT_PIC, caption=BOT)
 
 __mod_name__: Bot
