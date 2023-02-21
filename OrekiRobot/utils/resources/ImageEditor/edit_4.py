@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageOps
 from OrekiRobot import REM_BG_API_KEY, LOGGER
 
 
-async def rotate_90(client: Client, message: Message):
+async def rotate_90(message: Message):
     try:
         userid = str(chat_id)
         if not os.path.isdir(f"./DOWNLOADS/{userid}"):
