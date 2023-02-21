@@ -348,11 +348,8 @@ async def cb_handler(client: pgram, query: CallbackQuery):
             await removebg_plain(client, query.message)
         elif query.data == "rmbgsticker":
             await removebg_sticker(client, query.message)
-"""
-"""
+            
 __mod_name__ = "Image Editor"
-__help__ = f
-Prince Oreki have some advanced image editing tools inbuilt
-Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
+__help__ = Prince Oreki have some advanced image editing tools inbuilt Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
 - /edit *:* Open the image editor
 - /rmbg *:* Revove BG of replied image/sticker.
