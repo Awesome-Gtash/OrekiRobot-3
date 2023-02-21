@@ -4,7 +4,7 @@ import shutil
 
 from OrekiRobot import LOGGER
 
-async def normalglitch_1(client: Client, message: Message):
+async def normalglitch_1(message: Message):
     try:
         userid = str(chat_id)
         if not os.path.isdir(f"./DOWNLOADS/{userid}"):
