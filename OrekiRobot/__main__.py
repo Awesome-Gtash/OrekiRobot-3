@@ -31,7 +31,6 @@ from telethon import __version__ as tlhver
 
 import OrekiRobot.modules.sql.users_sql as sql
 from OrekiRobot import (
-    BOT_NAME,
     BOT_USERNAME,
     DONATION_LINK,
     HELP_IMG,
@@ -113,7 +112,7 @@ buttons = [
     [
         InlineKeyboardButton(
             text=f"Add {BOT_NAME} To Your Group",
-            url=f"https://telegram.dog/OrekiProXBot?startgroup=true",
+            url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
@@ -139,7 +138,6 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-────「 [{BOT_NAME}](https://te.legra.ph/file/39b288a934734512d98e5.jpg) 」────
 Hey, your *Prince* Is here!
 I Help Admins To Manage Their Groups!
 *Main* commands available: 
@@ -292,7 +290,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_animation(
             random.choice(GROUP_START_IMG),
-            caption=f"<b>Hola, I'm awake already!\nOreki Is Here since</b>: <code>{uptime}</code>",
+            caption=f"<b>Hola, I'm awake already!\nOreki Is Here since</b>: <code>{}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -452,7 +450,6 @@ def get_help(update: Update, context: CallbackContext) -> None:
 
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
-
         update.effective_message.reply_photo(
             HELP_IMG,
             HELP_MSG,
