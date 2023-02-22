@@ -683,7 +683,7 @@ def donate(update: Update, context: CallbackContext) -> None:
 
 
 def migrate_chats(update: Update):
-    msg = update.effective_message  # type: Optional[Message]
+    msg = update.effective_message
     if msg.migrate_to_chat_id:
         old_chat = update.effective_chat.id
         new_chat = msg.migrate_to_chat_id
